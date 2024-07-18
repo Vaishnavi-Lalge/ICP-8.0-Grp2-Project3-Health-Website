@@ -43,6 +43,13 @@
             justify-content: center;
 
         }
+        P{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            
+        }
         .info{
             margin-left: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -75,14 +82,35 @@
             background-color: yello;
             color: black;
         }
+
+         /*cards */
+
+         .card{
+        background-color: white;
+        height: 120px;
+        margin: 20px;
+        padding: 4px;
+        border-radius: 10px;
+        display: inline-block;
+        width: 320px;
+        border: none;
+        
+        }
+        .info{
+            margin-left: 140px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .highlight{
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body class="main-body">
     <div class="theme-selector-container">
     
-        <img src="icon1.png" alt="golden" class="theme-select-icon" onclick="enableLight()"/>
-        <img src="icon2.png" alt="black"   class="theme-select-icon" onclick="enableDark()"/>
+        <img src="./../Images/icon1.png" alt="golden" class="theme-select-icon" onclick="enableLight()"/>
+        <img src="./../Images/icon2.png" alt="black"   class="theme-select-icon" onclick="enableDark()"/>
     </div>
     <h1 class="heading">Christ Redeemer</h1>
     <img src="./../Images/Brazil 2.jpg" alt="mobile" id="main-product-image" />
@@ -95,12 +123,36 @@
     </div>
     <P><b>CHRIST THE REDEEMER,BRAZIL</b></P>
     
+    
     <div class="info">
-        1] Christ the Redeemer is a world-famous statue in Rio de Janeiro, Brazil.<br/>
-        2] Height and Dimensions: It is 30 meters tall with a 28-meter arm span.<br/>
-        3] Construction: Built between 1922 and 1931, designed by Heitor da Silva Costa and sculpted by Paul Landowski.<br/>
+    <div class="card">
+        <img  src="./../Images/icon1.png" alt="img" height="20px">
+        <span class="highlight">Christ the Redeemer</span>
 
+        <p>
+            Christ the Redeemer is a world-famous statue in Rio de Janeiro, Brazil. 
+        </p>  
     </div>
+    
+    <div class="card">
+        <img  src="./../Images/icon1.png" alt="img" height="20px">
+        <span class="highlight">Height & Dimensions</span>
+
+        <p>
+            It is 30 meters tall with a 28-meter arm span. 
+        </p>  
+    </div>
+    
+    <div class="card">
+        <img  src="./../Images/icon1.png" alt="img" height="20px">
+        <span class="highlight">Constructions</span>
+
+        <p>
+            Built between 1922 and 1931, designed by Heitor da Silva Costa and sculpted by Paul Landowski.
+ 
+        </p>  
+    </div>
+   </div>
     <button><a href="quiz.html">Take a Quiz </a>
 
     </button>
