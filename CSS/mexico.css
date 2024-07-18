@@ -1,0 +1,26 @@
+#main-img{
+    height: 300px;
+    width:350px;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 2px 2px 5px 5px #BDB76B;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+ }
+ .img{
+    height: 90px;
+    width:100px;
+    margin: 20px;
+    border: 1px solid black;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 3px;  
+    padding: 2px;   }
+.img-container{
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+
+}
