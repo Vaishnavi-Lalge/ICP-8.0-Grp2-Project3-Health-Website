@@ -1,0 +1,86 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.main-heading {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    flex: 1;
+}
+
+.theme-switcher-container {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.theme-selector {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.bg-dark {
+    background-color: #10353e;
+    color: white;
+}
+
+.bg-light {
+    background-color: #d3f1f1;
+}
+
+#main-product-img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.product-img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.product-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.info-container {
+    display: block;
+    justify-content: center;
+    font-size: 20px;
+    margin: 20px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
