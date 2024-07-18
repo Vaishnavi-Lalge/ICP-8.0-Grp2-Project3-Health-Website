@@ -1,6 +1,9 @@
+h1{
+    text-align: center;
+}
 #main-img{
-    height: 300px;
-    width:350px;
+    max-width: 100%; 
+    height: auto;
     display: block;
     margin: 30px auto;
     box-shadow: 2px 2px 5px 5px #BDB76B;
@@ -22,5 +25,18 @@
     display: flex;
     margin: 20px auto;
     justify-content: center;
-
+}
+.info-card{
+    margin: 20px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.icons{
+    height: 30px;
+    width: 40px;
+    margin: 5px;
+    border: 1px grey solid;
+    border-radius: 50%;
+    padding: 3px;
 }
