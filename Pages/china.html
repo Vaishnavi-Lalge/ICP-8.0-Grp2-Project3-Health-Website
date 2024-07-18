@@ -8,10 +8,12 @@
     <style>
         h1 {
             text-align: center;
+            color:#201E43;
+            
             
         }
         .sub-heading{
-            margin-top: 40px;
+            margin-top: 0px;
             background-color: #23527c;
             object-fit: cover;
             font-size: large;
@@ -68,6 +70,15 @@
             margin-left: 13px;
             margin-top: 20px;
         }
+        .page_info_container{
+            width:700px;
+            background-color: whitesmoke;
+            color:black;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px 40px;
+            padding:20px 40px;
+            text-align: justify;
+        }
     </style>
 
 
@@ -83,13 +94,13 @@
 
             <div class="img_container">
                 <img src="./../Images/china_Wall_map.jpg" class="img_table"
-                    onclick="ShowImage('./../Images/china_Wall_map.jpg')" />
+                    onclick="showImage('./../Images/china_Wall_map.jpg')" />
                 <img src="./../Images/wall_real_img.jpg" class="img_table"
-                    onclick="ShowImage('./../Images/wall_real_img.jpg')" />
+                    onclick="showImage('./../Images/wall_real_img.jpg')" />
                 <img src="./../Images/wall_tower.jpg" class="img_table"
-                    onclick="ShowImage('./../Images/wall_tower.jpg')" />
+                    onclick="showImage('./../Images/wall_tower.jpg')" />
                 <img src="./../Images/wall_yan_mountain.jpg" class="img_table"
-                    onclick="ShowImage('./../Images/wall_yan_mountain.jpg')" />
+                    onclick="showImage('./../Images/wall_yan_mountain.jpg')" />
 
             </div>
          
@@ -100,9 +111,23 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
+        <div class="page_info_container">
+           <h2 class="sub-heading"> Did You Know ?</h2>
+           <span>The Great Wall of China is one of the biggest structures ever made by humans. The ancient Chinese built the wall to protect against invading armies. Today it is a tourist attraction and a symbol of China.
+            <br/><br/>
+            Workers constructed several different walls in northern China and southern Mongolia beginning in the 600s bce. Some of the walls run parallel to each other. In the 200s bce the Chinese joined some of the sections together to make one long wall. Since that time the wall has been extended and rebuilt many times. The main wall that exists today winds across the Chinese countryside for some 5,500 miles (8,850 kilometers).
+            <br/><br/>
+            Different sections of the wall were built of dirt, stone, or brick. Its height ranges from 15 to 30 feet (5 to 9 meters), and its width is 15 to 25 feet (5 to 8 meters). Many watchtowers rise above the wall, and a roadway runs along the top. The main wall has openings at positions that were important in ancient times, such as places where the wall crossed trade routes. Each opening had a gate with a watchtower on top.
+            <br/><br/>
+            The Chinese stopped using the wall for protection in the mid-1600s. The wall fell into ruin, but in the 1900s parts of it were rebuilt. The Great Wall was designated a UNESCO World Heritage site in 1987.</span>
+        </div>
     </div>
     <script>
-
+        function showImage(imgName){
+		       const imgval = document.getElementById("img_main");
+			   imgval.src=imgName;
+			   
+		  }
     </script>
 
 </body>
