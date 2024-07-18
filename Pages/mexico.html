@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family health page</title>
+    <title>Chicken Itza</title>
 </head>
 <body>
-    
+    <h1>Chichén Itzá</h1>
+    <img src="../Images/mex1.jpg" id="main-img">
+    <div class="img-container">
+        <img src="../Images/mex1.jpg" class="img" onclick="change_img('../Images/mex1.jpg')">
+        <img src="../Images/mex2.jpg" class="img" onclick="change_img('../Images/mex2.jpg')">
+        <img src="../Images/mex3.jpg" class="img" onclick="change_img('../Images/mex3.jpg')">
+        <img src="../Images/mex4.webp" class="img" onclick="change_img('../Images/mex4.webp')">
+        <img src="../Images/mex5.webp" class="img" onclick="change_img('../Images/mex5.webp')">
+
+    </div>
+    <script>
+        function change_img(imgn){
+            main = document.getElementById("main-img")
+            main.src = imgn
+        }
+    </script>
 </body>
 </html>
