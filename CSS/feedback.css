@@ -53,11 +53,15 @@ textarea {
 
 .radio-group {
     display: flex;
+    margin-left: -0px;
 }
 
 input[type="radio"] {
-    margin-right: 8px;
+    margin-right: 0px;
     cursor: pointer;
+}
+.radio-condition{
+    margin-right: 100px;
 }
 
 select {
