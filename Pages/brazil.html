@@ -1,11 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz page</title>
+    <title>Christ the Redeemer</title>
+    <style>
+        body {
+            background-color:#d3f1f1;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #main-product-image {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 25);
+            display: block;
+            margin: 20px auto;
+
+        }
+
+        .product-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .product-images-container {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        marquee {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin: 25px;
+            color: #333;
+
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #50adff;
+            color: white;
+            margin: 30px 50px;
+            border-radius: 6px;
+            box-shadow: 20px;
+            border: none;
+            cursor: pointer;  
+
+        }
+
+    button:hover {
+    background-color: #5a3e4a;
+}
+
+button a {
+    color: white;
+    text-decoration: none; 
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+        /*theme-switch*/
+        .theme-select-icon {
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .theme-selector-container {
+            position: fixed;
+            right: 30px;
+
+        }
+
+        .bg-dark {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .bg-light {
+            background-color: yello;
+            color: black;
+        }
+
+        /*cards */
+
+        .card {
+            background-color: #d3f1f1;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            display: block;
+            align-items: center;
+            width: 300px;
+            box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+            justify-content: space-between;
+            border: 2px solid #d3f1;
+
+        }
+   
+
+        .info {
+            display: flex;
+            justify-content: center;
+            margin-left: 20px;
+            flex-wrap: wrap;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .info :hover{
+            background-color: #F0F0F0;
+            cursor: pointer;
+        }
+
+
+
+        .highlight {
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="main-body">
+    <div class="theme-selector-container">
+
+        <img src="./../Images/icon1.png" alt="golden" class="theme-select-icon" onclick="enableLight()" />
+        <img src="./../Images/icon2.png" alt="black" class="theme-select-icon" onclick="enableDark()" />
+    </div>
+    <h1 class="heading">Christ Redeemer</h1>
+    <img src="./../Images/Brazil 2.jpg" alt="mobile" id="main-product-image" />
+
+    <div class="product-images-container">
+        <img src="./../Images/Brazil 1.jpg" class="product-image" onclick="changeImage(1)" />
+        <img src="./../Images/Brazil 3.jpg" class="product-image" onclick="changeImage(2)" />
+        <img src="./../Images/Brazil 4.jpg" class="product-image" onclick="changeImage(3)" />
+
+    </div>
+    <marquee><b>CHRIST THE REDEEMER,BRAZIL</b></marquee>
+
+
+    <div class="info">
+        <div class="card">
+            <img src="./../Images/icon1.png" alt="img" height="20px">
+            <span class="highlight">Christ the Redeemer</span>
+
+            <p>
+                Christ the Redeemer is a world-famous statue in Rio de Janeiro, Brazil.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="./../Images/icon1.png" alt="img" height="20px">
+            <span class="highlight">Height & Dimensions</span>
+
+            <p>
+                It is 30 meters tall with a 28-meter arm span.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="./../Images/icon1.png" alt="img" height="20px">
+            <span class="highlight">Constructions</span>
+
+            <p>
+                Built between 1922 and 1931, designed by Heitor da Silva Costa and sculpted by Paul Landowski.
+
+            </p>
+        </div>
+    </div>
+    <button><a href="Brazil-quiz.html">Take a Quiz </a>
+
+    </button>
+
+    <script>
+        function changeImage(num) {
+            const mainImage = document.getElementById('main-product-image');
+            if (num == 1) {
+                mainImage.src = "./../Images/Brazil 2.jpg";
+            } else if (num == 2) {
+                mainImage.src = "./../Images/Brazil 1.jpg";
+            } else if (num == 3) {
+                mainImage.src = "./../Images/Brazil 4.jpg"
+            } else if (num == 4) {
+                mainImage.src = "./../Images/Brazil 3.jpg";
+            }
+
+        }
+        /*Theme switch 8/
+         /*theme-matched*/
+        function enableDark() {
+            document.body.classList.add("bg-dark");
+            document.body.classList.remove("bg-light");
+        }
+
+        function enableLight() {
+            document.body.classList.add("bg-light");
+            document.body.classList.remove("bg-dark");
+        }
+    </script>
 </body>
+
+</html>
+</body>
+
 </html>

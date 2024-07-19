@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Mahal Quiz</title>
+    <style>
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif
+            margin: 20px;
+            background-color: rgb(170, 224, 245);;
+        }
+        .main-heading{
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            flex: 1;
+        }
+        .theme-switcher-container {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        right: 20px;
+        }
+        .theme-selector {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        }
+
+        .question {
+            margin-bottom: 15px;
+            font-size: 13px;
+
+        }
+        .question h2 {
+            font-size: 18px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .submit-btn{
+            display: block;
+            margin: 20px auto;
+            height: 50px;
+            width: 100px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #ff9800;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .bg-dark {
+        background-color: #10353e;
+        color: white;
+        }
+
+        .bg-light {
+         background-color: #d3f1f1;
+        }
+    </style>
+</head>
+<body class="bg-light" id="main-body">
+    <div class="header-container">
+        <h1 class="main-heading">Taj Mahal Quiz</h1>
+        <div class="theme-switcher-container">
+            <img src="../Images/light.png" class="theme-selector" onclick="lightMode()">
+            <img src="../Images/dark.png" class="theme-selector" onclick="darkMode()">
+        </div>
+    </div>
+    <form id="quizForm">
+        <div class="question">
+            <h3>1. Where is the Taj Mahal located?</h3>
+            <label><input type="radio" name="q1" value="A"> A) Delhi</label><br>
+            <label><input type="radio" name="q1" value="B"> B) Mumbai</label><br>
+            <label><input type="radio" name="q1" value="C"> C) Agra</label><br>
+            <label><input type="radio" name="q1" value="D"> D) Jaipur</label>
+        </div>
+
+        <div class="question">
+            <h3>2. Who built the Taj Mahal?</h3>
+            <label><input type="radio" name="q2" value="A"> A) Akbar</label><br>
+            <label><input type="radio" name="q2" value="B"> B) Shah Jahan</label><br>
+            <label><input type="radio" name="q2" value="C"> C) Aurangzeb</label><br>
+            <label><input type="radio" name="q2" value="D"> D) Jahangir</label>
+        </div>
+
+        <div class="question">
+            <h3>3. In which year was the Taj Mahal completed?</h3>
+            <label><input type="radio" name="q3" value="A"> A) 1631</label><br>
+            <label><input type="radio" name="q3" value="B"> B) 1640</label><br>
+            <label><input type="radio" name="q3" value="C"> C) 1653</label><br>
+            <label><input type="radio" name="q3" value="D"> D) 1665</label>
+        </div>
+
+        <div class="question">
+            <h3>4. What material is the Taj Mahal primarily made of?</h3>
+            <label><input type="radio" name="q4" value="A"> A) Sandstone</label><br>
+            <label><input type="radio" name="q4" value="B"> B) Granite</label><br>
+            <label><input type="radio" name="q4" value="C"> C) Marble</label><br>
+            <label><input type="radio" name="q4" value="D"> D) Limestone</label>
+        </div>
+
+        <div class="question">
+            <h3>5. Which architectural styles influence the design of the Taj Mahal?</h3>
+            <label><input type="radio" name="q5" value="A"> A) Gothic, Roman, Baroque</label><br>
+            <label><input type="radio" name="q5" value="B"> B) Islamic, Persian, Ottoman Turkish, Indian</label><br>
+            <label><input type="radio" name="q5" value="C"> C) Greek, Egyptian, Renaissance</label><br>
+            <label><input type="radio" name="q5" value="D"> D) Byzantine, Art Deco, Victorian</label>
+        </div>
+
+        <div class="question">
+            <h3>6. What features enhance the beauty of the Taj Mahal?</h3>
+            <label><input type="radio" name="q6" value="A"> A) Mountains and rivers</label><br>
+            <label><input type="radio" name="q6" value="B"> B) Gardens, fountains, and reflecting pools</label><br>
+            <label><input type="radio" name="q6" value="C"> C) Statues and sculptures</label><br>
+            <label><input type="radio" name="q6" value="D"> D) Forests and lakes</label>
+        </div>
+
+        <div class="question">
+            <h3>7. Why is the Taj Mahal considered a symbol of love?</h3>
+            <label><input type="radio" name="q7" value="A"> A) It was built for a wedding ceremony</label><br>
+            <label><input type="radio" name="q7" value="B"> B) It was built by Shah Jahan in memory of his wife Mumtaz Mahal</label><br>
+            <label><input type="radio" name="q7" value="C"> C) It is a popular honeymoon destination</label><br>
+            <label><input type="radio" name="q7" value="D"> D) It has romantic inscriptions</label>
+        </div>
+
+        <div class="question">
+            <h3>8. What happens to the white marble façade of the Taj Mahal with light?</h3>
+            <label><input type="radio" name="q8" value="A"> A) It changes color</label><br>
+            <label><input type="radio" name="q8" value="B"> B) It glows in the dark</label><br>
+            <label><input type="radio" name="q8" value="C"> C) It becomes transparent</label><br>
+            <label><input type="radio" name="q8" value="D"> D) It emits a fragrance</label>
+        </div>
+
+        <button type="button" class ="submit-btn" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <div id="results" class="results"></div>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'C',
+                q2: 'B',
+                q3: 'C',
+                q4: 'C',
+                q5: 'B',
+                q6: 'B',
+                q7: 'B',
+                q8: 'A'
+            };
+
+            const form = document.forms['quizForm'];
+            let score = 0;
+            for (let i = 1; i <= 8; i++) {
+                const q = 'q' + i;
+                const selected = form[q].value;
+                if (selected === answers[q]) {
+                    score++;
+                }
+            } 
+            const resultDiv = document.getElementById('results');
+            resultDiv.innerHTML = `<h2>You got ${score} out of 8 questions right!</h2>`;
+
+        }
+
+        function darkMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-light');
+            mainBody.classList.add('bg-dark');
+        }
+
+        function lightMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-dark');
+            mainBody.classList.add('bg-light');
+        }
+    </script>
+</body>
+</html>

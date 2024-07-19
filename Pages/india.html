@@ -7,42 +7,45 @@
     <link rel="stylesheet" href="../CSS/india.css">
 </head>
 <body class="bg-light" id="main-body">
-    <div class="header-container">
-        <h1 class="main-heading">Taj Mahal</h1>
+    <nav class= "nav-bar">
+        <img src="../Images/logo.jpg" class="logo">
+        <h1 class="main-heading">Wonder's World</h1> 
+    </nav>
+    <div>
+        <h1 class="wonder-heading">Taj Mahal</h1>
         <div class="theme-switcher-container">
             <img src="../Images/light.png" class="theme-selector" onclick="lightMode()">
             <img src="../Images/dark.png" class="theme-selector" onclick="darkMode()">
         </div>
+
     </div>
     <img src="../Images/frame1.jpg" id="main-product-img">
     <div class="product-img-container">
         <img src="../Images/frame2.jpg" class="product-img" onclick="changeImage('../Images/frame2.jpg')">
         <img src="../Images/frame3.jpg" class="product-img" onclick="changeImage('../Images/frame3.jpg')">
         <img src="../Images/frame4.jpg" class="product-img" onclick="changeImage('../Images/frame4.jpg')">
+        <img src="../Images/frame1.jpg" class="product-img" onclick="changeImage('../Images/frame1.jpg')">
     </div>
+    <h2 class="know-about">Let's Know about Taj Mahal</h2>
     <div class="info-container">
-        <ul>
-            <li>The Taj Mahal in Agra, India, is a white marble mausoleum built by Emperor Shah Jahan for his wife Mumtaz Mahal.</li>
-            <li>Finished in 1653, it symbolizes eternal love and is an architectural masterpiece.</li>
-            <li>It features a large central dome, four minarets, and intricate inlay work with semi-precious stones.</li>
-            <li>The site includes beautiful gardens, fountains, and reflecting pools, enhancing its beauty.</li>
-            <li>As a UNESCO World Heritage Site, it is a top example of Mughal architecture and attracts millions of visitors annually.</li>
-        </ul>
-        <h3>Why it's included in Seven Wonders?</h3>
-        <ul>
-            <li><strong>Architectural Marvel</strong>: Exemplifies Mughal architecture with influences from Islamic, Persian, Ottoman Turkish, and Indian styles.</li>
-            <li><strong>Symbol of Love</strong>: Built by Shah Jahan in memory of his wife Mumtaz Mahal, symbolizing eternal love.</li>
-            <li><strong>Intricate Craftsmanship</strong>: Features exquisite marble work and inlay with semi-precious stones, showcasing high craftsmanship.</li>
-            <li><strong>Enduring Beauty</strong>: The white marble façade changes color with light, enhancing its timeless allure.</li>
-        </ul>
-        <button class="btn" onclick="window.location.href='quiz.html'">Take a Quiz</button>
+        <div class="info">
+            <ul>
+                <li><strong>Wonder's Name</strong>: Taj Mahal</li>
+                <li><strong>Location</strong>: India</li>
+                <li><strong>Place and Others</strong>: The Taj Mahal in Agra, India,<br> is a white marble mausoleum built by Emperor Shah Jahan for his wife Mumtaz Mahal</li>
+            </ul>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14291.682633444075!2d78.03785050000001!3d27.175015600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747185d3e85e3b%3A0x6f72ad22aeb8c52!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1623246340918!5m2!1sen!2sin" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
+    
     <script>
-        function changeImage(imageName){
+         function changeImage(imageName){
             const mainImage = document.getElementById('main-product-img');
             mainImage.src = imageName;
         }
-
         function darkMode(){
             const mainBody = document.getElementById('main-body');
             mainBody.classList.remove('bg-light');
@@ -54,6 +57,7 @@
             mainBody.classList.remove('bg-dark');
             mainBody.classList.add('bg-light');
         }
+
     </script>
 </body>
 </html>
