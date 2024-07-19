@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christ the Redeemer</title>
     <style>
+        body{
+           background-color: #d3f1f1;
+        }
        
         .heading {
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         #main-product-image {
@@ -39,10 +43,75 @@
             justify-content: center;
 
         }
+        P{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+            
+        }
+        .info{
+            margin-left: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        button{
+            padding: 5px;
+            background-color: #715163;
+            color: black;
+            margin-left: 50px;
+            margin-top: 30px;
+            border-radius: 6px;
+            box-shadow: 20px;
+            border: none;
+        }
+        /*theme-switch*/
+        .theme-select-icon {
+            height: 30px;
+            cursor: pointer;
+        }
+        .theme-selector-container {
+            position: fixed;
+            right: 30px;
+        
+        }
+        .bg-dark {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .bg-light{
+            background-color: yello;
+            color: black;
+        }
+
+         /*cards */
+
+         .card{
+        background-color: white;
+        height: 120px;
+        margin: 20px;
+        padding: 4px;
+        border-radius: 10px;
+        display: inline-block;
+        width: 320px;
+        border: none;
+        
+        }
+        .info{
+            margin-left: 140px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .highlight{
+            font-weight: bold;
+        }
     </style>
 </head>
 
-<body>
+<body class="main-body">
+    <div class="theme-selector-container">
+    
+        <img src="./../Images/icon1.png" alt="golden" class="theme-select-icon" onclick="enableLight()"/>
+        <img src="./../Images/icon2.png" alt="black"   class="theme-select-icon" onclick="enableDark()"/>
+    </div>
     <h1 class="heading">Christ Redeemer</h1>
     <img src="./../Images/Brazil 2.jpg" alt="mobile" id="main-product-image" />
 
@@ -52,6 +121,41 @@
         <img src="./../Images/Brazil 4.jpg" class="product-image" onclick="changeImage(3)" />
 
     </div>
+    <P><b>CHRIST THE REDEEMER,BRAZIL</b></P>
+    
+    
+    <div class="info">
+    <div class="card">
+        <img  src="./../Images/icon1.png" alt="img" height="20px">
+        <span class="highlight">Christ the Redeemer</span>
+
+        <p>
+            Christ the Redeemer is a world-famous statue in Rio de Janeiro, Brazil. 
+        </p>  
+    </div>
+    
+    <div class="card">
+        <img  src="./../Images/icon1.png" alt="img" height="20px">
+        <span class="highlight">Height & Dimensions</span>
+
+        <p>
+            It is 30 meters tall with a 28-meter arm span. 
+        </p>  
+    </div>
+    
+    <div class="card">
+        <img  src="./../Images/icon1.png" alt="img" height="20px">
+        <span class="highlight">Constructions</span>
+
+        <p>
+            Built between 1922 and 1931, designed by Heitor da Silva Costa and sculpted by Paul Landowski.
+ 
+        </p>  
+    </div>
+   </div>
+    <button><a href="quiz.html">Take a Quiz </a>
+
+    </button>
 
     <script>
         function changeImage(num) {
@@ -66,6 +170,17 @@
                 mainImage.src = "./../Images/Brazil 3.jpg";
             } 
 
+        }
+        /*Theme switch 8/
+         /*theme-matched*/
+         function enableDark() {
+            document.body.classList.add("bg-dark");
+            document.body.classList.remove("bg-light");
+        }
+
+        function enableLight() {
+            document.body.classList.add("bg-light");
+            document.body.classList.remove("bg-dark");
         }
     </script>
 </body>
