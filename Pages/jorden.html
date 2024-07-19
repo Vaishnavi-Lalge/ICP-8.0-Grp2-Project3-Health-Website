@@ -21,23 +21,38 @@
         <img src="../Images/petra4.png" class="product-img" onclick="changeImage('../Images/petra4.png')">
         <img src="../Images/petra5.png" class="product-img" onclick="changeImage('../Images/petra5.png')">
     </div>
-    <div class="info-container">
-        <ul>
-            <li>The Taj Mahal in Agra, India, is a white marble mausoleum built by Emperor Shah Jahan for his wife Mumtaz Mahal.</li>
-            <li>Finished in 1653, it symbolizes eternal love and is an architectural masterpiece.</li>
-            <li>It features a large central dome, four minarets, and intricate inlay work with semi-precious stones.</li>
-            <li>The site includes beautiful gardens, fountains, and reflecting pools, enhancing its beauty.</li>
-            <li>As a UNESCO World Heritage Site, it is a top example of Mughal architecture and attracts millions of visitors annually.</li>
-        </ul>
-        <h3>Why it's included in Seven Wonders?</h3>
-        <ul>
-            <li><strong>Architectural Marvel</strong>: Exemplifies Mughal architecture with influences from Islamic, Persian, Ottoman Turkish, and Indian styles.</li>
-            <li><strong>Symbol of Love</strong>: Built by Shah Jahan in memory of his wife Mumtaz Mahal, symbolizing eternal love.</li>
-            <li><strong>Intricate Craftsmanship</strong>: Features exquisite marble work and inlay with semi-precious stones, showcasing high craftsmanship.</li>
-            <li><strong>Enduring Beauty</strong>: The white marble façade changes color with light, enhancing its timeless allure.</li>
-        </ul>
-        <button class="btn" onclick="window.location.href='../Pages/taj-mahal-quiz.html'">Take a Quiz</button>
+    <div class="info">
+        <div class="card">
+            <img src="./../Images/icon1.png" alt="img" height="20px">
+            <span class="highlight">Famous For</span>
+
+            <p>
+                Famous for its rock-cut architecture, the city is an important archeologic site and Jordan's biggest tourist attraction. 
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="./../Images/icon1.png" alt="img" height="20px">
+            <span class="highlight">Height & Dimensions</span>
+
+            <p>
+                The structure measures 28 meters (84 feet) east-west, and it is some 42 meters (128 feet) in length. The sandstone porch columns measure 1.5 meters (4.5 feet) in diameter.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="./../Images/icon1.png" alt="img" height="20px">
+            <span class="highlight">Constructions</span>
+
+            <p>
+                The spectacular sandstone city of Petra was built in the 3rd century BC by the Nabataeans, who carved palaces, temples, tombs, storerooms and stables from the soft stone cliffs.
+
+            </p>
+        </div>
     </div>
+    <button><a href="Brazil-quiz.html">Take a Quiz </a>
+
+    </button>
     <script>
         function changeImage(imageName){
             const mainImage = document.getElementById('main-product-img');
