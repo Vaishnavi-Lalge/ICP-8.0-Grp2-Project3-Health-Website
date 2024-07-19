@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family health page</title>
+    <title>Chicken Itza</title>
+    <link rel="stylesheet" href="../CSS/mexico.css"/>
 </head>
 <body>
-    
+    <h1>Chichén Itzá</h1>
+    <img src="../Images/mex1.jpg" id="main-img">
+    <div class="img-container">
+        <img src="../Images/mex1.jpg" class="img" onclick="change_img('../Images/mex1.jpg')">
+        <img src="../Images/mex2.jpg" class="img" onclick="change_img('../Images/mex2.jpg')">
+        <img src="../Images/mex3.jpg" class="img" onclick="change_img('../Images/mex3.jpg')">
+        <img src="../Images/mex4.webp" class="img" onclick="change_img('../Images/mex4.webp')">
+        <img src="../Images/mex5.webp" class="img" onclick="change_img('../Images/mex5.webp')">
+
+    </div>
+    <div class="info-card">
+        <img src="../Images/question-sign.png" class="icons">
+        Chichén Itzá, ruined ancient Maya city occupying an area of 4 square miles (10 square km) in south-central Yucatán state, Mexico.
+         It is thought to have been a religious, military, political, and commercial center 
+         that at its peak would have been home to 35,000 people.
+
+    </div>
+    <div class="info-card">
+        <img src="../Images/question.png" class="icons">
+         Chichen Itza was founded by the Maya, an ancient people inhabiting the Yucatan peninsula. Within the Yucatan Peninsula
+        , Mayan culture and architectural style varied from area to area, with several groups establishing themselves across the region.
+        At its height, Chichen Itza was home to Mayan people from all areas of the Yucatan Peninsula. The city 
+        exhibits many architectural styles, reminiscent of styles seen in central Mexico and of the Puuc and Chenes
+         styles found in the Northern Maya lowlands.Historians believe that Chichen Itza was founded and rose
+        to prominence due to its proximity to the Xtoloc cenote, an underground source of fresh water.  
+    </div>
+    <div class="info-card">
+        <img src="../Images/mind-blown.png" class="icons">
+        When the sun is at its highest point, you’ll get a glimpse of a magnificent view: 
+        the tail of the snake grows — its shadow — and is 
+        projected by the sun, due to the tilt of the surrounding buildings in Chichen Itza.
+
+        The phenomenon can be seen during the equinoxes of March and September when the sun hits the nine bases. 
+        This amazing sight shows the Mayans’ inclination toward mathematics, astronomy, and the sciences, and how it mixed with their culture. 
+    </div>
+    <div class="info-card">
+        <img src="../Images/location-pin.png" class="icons">
+        The archeological site is located in Tinúm Municipality, Yucatán State, Mexico.<br>
+        <a href="https://maps.app.goo.gl/wd2RcrLsn9ViTXTHA" target="_blank">Map location</a>
+    </div>
+
+
+    <script>
+        function change_img(imgn){
+            main = document.getElementById("main-img")
+            main.src = imgn
+        }
+    </script>
 </body>
 </html>
