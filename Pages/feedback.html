@@ -6,6 +6,44 @@
     <title>Feedback</title>
 </head>
 <body>
-    
+    <h3>
+        Your Feedback
+    </h3>
+    <div>
+        <form>
+            <label for="inputName">Your Name :</label>
+            <input type="text" id="inputName" required /><br>
+
+            <label for="inputEmail">Email Address :</label>
+            <input type="text" id="inputEmail" required /><br>
+
+            <label>Do you like our platform</label><br>
+            <input type="radio" name="like" id="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" name="like" id="no">
+            <label for="no">No</label>
+
+            <label for="subject">Subject: </label><br>
+            <select id="subject">
+                <option>Clarity of question</option>
+                <option>Difficulty level</option>
+                <option>User Interface</option>
+                <option>Other</option>
+            </select><br>
+            
+            <label for="msg"> 
+                <i class="fa-solid fa-comments" 
+                   style="margin-right: 3px;"></i> 
+                Write your Suggestions: 
+            </label> <br>
+            <textarea id="msg" name="msg" 
+                      rows="4" cols="10" required> 
+            </textarea> <br>
+            <button type="submit"> 
+                Submit 
+            </button>
+        </form>
+    </div>
 </body>
 </html>
