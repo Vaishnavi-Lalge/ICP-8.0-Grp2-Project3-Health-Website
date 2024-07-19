@@ -81,9 +81,30 @@
     padding:30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-shadow: 0px 0px 10px 0px rgba(18, 143, 141, 0.75);
-    background:#d3f1f1;
-}
+   }
 
 .map-container {
     width: 35%;
 }
+.theme-switcher-container {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.theme-selector {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.bg-dark {
+    background-color: #10353e;
+    color: white;
+}
+
+.bg-light {
+    background-color: #d3f1f1;
+}
+

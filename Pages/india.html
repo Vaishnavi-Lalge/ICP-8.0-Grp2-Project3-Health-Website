@@ -6,13 +6,18 @@
     <title>Taj Mahal</title>
     <link rel="stylesheet" href="../CSS/india.css">
 </head>
-<body>
-    <nav class="nav-bar">
+<body class="bg-light" id="main-body">
+    <nav class= "nav-bar">
         <img src="../Images/logo.jpg" class="logo">
         <h1 class="main-heading">Wonder's World</h1> 
     </nav>
     <div>
         <h1 class="wonder-heading">Taj Mahal</h1>
+        <div class="theme-switcher-container">
+            <img src="../Images/light.png" class="theme-selector" onclick="lightMode()">
+            <img src="../Images/dark.png" class="theme-selector" onclick="darkMode()">
+        </div>
+
     </div>
     <img src="../Images/frame1.jpg" id="main-product-img">
     <div class="product-img-container">
@@ -41,6 +46,18 @@
             const mainImage = document.getElementById('main-product-img');
             mainImage.src = imageName;
         }
+        function darkMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-light');
+            mainBody.classList.add('bg-dark');
+        }
+
+        function lightMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-dark');
+            mainBody.classList.add('bg-light');
+        }
+
     </script>
 </body>
 </html>
