@@ -1,42 +1,34 @@
 * {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
 }
 
-.header-container {
+.nav-bar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
+    background-color: rgb(241, 240, 240);
+    text-align: center;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
 }
 
 .main-heading {
-    font-size: 30px;
+    margin: 20px auto;
+    margin-left: 400px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    flex: 1;
+    width: 200px;
+    font-size: bolder;
+    color: #0f5858;
 }
 
-.theme-switcher-container {
-    display: flex;
-    gap: 10px;
-    position: absolute;
-    right: 20px;
-}
-
-.theme-selector {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.bg-dark {
-    background-color: #10353e;
-    color: white;
-}
-
-.bg-light {
-    background-color: #d3f1f1;
+.wonder-heading {
+    margin-left: 530px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    font-size: bolder;
+    color: #0f5858;
 }
 
 #main-product-img {
@@ -64,23 +56,55 @@
     justify-content: center;
 }
 
-.info-container {
-    display: block;
-    justify-content: center;
-    font-size: 15px;
-    margin: 20px auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.know-about {
+    margin: 30px auto;
+    margin-left: 450px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: bolder;
+    color: #0f5858;
 }
 
-.btn {
-    display: block;
-    margin: 20px auto;
-    height: 50px;
-    width: 100px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #ff9800;
-    border: none;
-    color: white;
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info {
+    border: solid;
+    border-radius: 10px;
+    margin: 20px;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    height: fit-content;
+    padding:30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0px 0px 10px 0px rgba(18, 143, 141, 0.75);
+   }
+
+.map-container {
+    width: 35%;
+}
+.theme-switcher-container {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.theme-selector {
+    height: 30px;
+    width: 30px;
     cursor: pointer;
 }
+
+.bg-dark {
+    background-color: #10353e;
+    color: white;
+}
+
+.bg-light {
+    background-color: #d3f1f1;
+}
+
