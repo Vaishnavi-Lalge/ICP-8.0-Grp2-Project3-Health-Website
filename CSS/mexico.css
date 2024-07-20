@@ -1,5 +1,37 @@
 h1{
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+}
+iframe{
+    position: absolute;
+    right: 20px;
+}
+.mode-img{
+    height: 40px;
+    width: 40px;
+}
+.mode-btnholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+}
+.darkbg{
+    background-color:#10353e ;
+    color: beige;
+}
+.lightbg{
+    background-color:#d3f1f1;
+    color: black;
+}
+.modebtn{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 8px;
+    cursor: pointer;
 }
 #main-img{
     max-width: 100%; 
@@ -13,8 +45,8 @@ h1{
     border-width: 3px;
  }
  .img{
-    height: 90px;
-    width:100px;
+    height: 100px;
+    width:120px;
     margin: 20px;
     border: 1px solid black;
     object-fit: cover;
@@ -31,6 +63,10 @@ h1{
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
+    width: 75%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
 }
 .icons{
     height: 30px;
@@ -39,6 +75,20 @@ h1{
     border: 1px grey solid;
     border-radius: 50%;
     padding: 3px;
+}
+.quiz-btn{
+    padding: 10px;
+    font-size: larger;
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+    background-color: #50adff;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+
 }
 a{
     cursor: pointer;
