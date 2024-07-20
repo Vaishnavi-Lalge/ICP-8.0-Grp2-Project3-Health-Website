@@ -30,7 +30,41 @@ body{
         align-items: center;
     }
 
-
+    .data-card {
+        background-color: #b8ecec;
+        height: 250px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        display: block;
+        align-items: center;
+        width: 550px;
+        box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+        border: 2px solid #d3f1;
+    
+    }
+    
+    .data-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+    
+    
+    .data {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .data :hover {
+        background-color: #10353e;
+        color: white;
+    }
 
     nav{
         text-align: center;
@@ -98,24 +132,32 @@ body{
 }
 
 #main-product-img {
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
     border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 25);
     display: block;
     margin: 20px auto;
-    margin-bottom: 50px;
+
 }
 
 .product-img {
-    height: 100px;
-    width: 100px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 10px;
     cursor: pointer;
 }
+
+.product-img-container {
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     background-color: #87d7d7;
     height: 130px;
@@ -154,17 +196,130 @@ body{
     font-size: 15px;
     margin: 20px auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}h2 {
+    font-size: 30px;
+    color: #10353e;
+    text-align: center;
+    margin-top: 30px;
+}
+h3 {
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    color: #10353e;
+}
+.btnn {
+    padding: 10px 30px;
+    background-color:#10353e;
+    color: white;
+    margin: 30px 660px;
+    border-radius: 20px;
+    box-shadow: 20px;
+    border: none;
+    cursor: pointer;
+    /* margin-left: 300px;
+    margin-right: 300px; */
+    align-content: center;
+}
+button:hover {
+    background-color: #10353e;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info :hover {
+    background-color: #10353e;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.highlight {
+    font-weight: bold;
+}
+.Other-wonders {
+    font-weight: bold;
+    font-size: 30px;
+    color: #10353e;
+    justify-content: center;
+    text-align: center;
+}
+
+.explore-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 9%;
+}
+
+.explore-card {
+    background-color: #F0F0F0;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 290px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d3f1;
+    text-align: center;
+    box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+#img {
+    height: 190px;
+    width: 100%;
+}
+
+.explore-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.explore-info {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 35px;
+    color: #10353e;
+    margin-top: 5px;
+
+}
+
+.explore-info:hover {
+    color: #d3f1;
 }
 
 .btn {
-    display: block;
-    margin: 20px auto;
-    height: 50px;
-    width: 100px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: #ff9800;
-    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     color: white;
+    background-color: #10353e;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
+    margin-top: 20px;
+
 }
+
+.btn:hover {
+    background-color:rgb(79, 142, 167);
+    color: #10353e;
+}
+
