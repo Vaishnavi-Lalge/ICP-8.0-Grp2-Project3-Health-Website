@@ -45,8 +45,8 @@ iframe{
     border-width: 3px;
  }
  .img{
-    height: 90px;
-    width:100px;
+    height: 100px;
+    width:120px;
     margin: 20px;
     border: 1px solid black;
     object-fit: cover;
