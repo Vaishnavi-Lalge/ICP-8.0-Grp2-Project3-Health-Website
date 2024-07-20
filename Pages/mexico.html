@@ -6,8 +6,12 @@
     <title>Chicken Itza</title>
     <link rel="stylesheet" href="../CSS/mexico.css"/>
 </head>
-<body>
+<body id="body" class="lightbg">
     <h1>Chichén Itzá</h1>
+    <div class="mode-btnholder">
+        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img" ></button>
+        <button onclick="lightmode()" class="modebtn"><img src="../Images/light.png" class="mode-img" ></button>
+    </div>
     <img src="../Images/mex1.jpg" id="main-img">
     <div class="img-container">
         <img src="../Images/mex1.jpg" class="img" onclick="change_img('../Images/mex1.jpg')">
@@ -58,6 +62,17 @@
             main = document.getElementById("main-img")
             main.src = imgn
         }
+        function darkmode(){
+        body = document.getElementById("body")
+        body.classList.remove("lightbg")
+        body.classList.add("darkbg")
+      }
+      function lightmode(){
+        body = document.getElementById("body")
+        body.classList.remove("darkbg")
+        body.classList.add("lightbg")
+
+      }
     </script>
 </body>
 </html>

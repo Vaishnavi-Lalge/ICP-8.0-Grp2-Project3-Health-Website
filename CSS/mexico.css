@@ -1,6 +1,32 @@
 h1{
     text-align: center;
 }
+.mode-img{
+    height: 50px;
+    width: 50px;
+    margin:  0px 2g0px;
+}
+.mode-btnholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 43%;
+}
+.darkbg{
+    background-color: #99004d;
+    color: beige;
+}
+.lightbg{
+    background-color:#ffcce6;
+    color: black;
+}
+.modebtn{
+    border: none;
+    border-radius: 10px;
+    background-color: #ffcce6;
+    padding: 5px 8px;
+    cursor: pointer;
+}
 #main-img{
     max-width: 100%; 
     height: auto;
