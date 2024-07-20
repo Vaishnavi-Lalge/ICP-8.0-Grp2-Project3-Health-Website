@@ -17,7 +17,7 @@ iframe{
     justify-content: start;
     right: 20px;
     top: 20px;
-    position: absolute;
+    position: fixed;
 }
 .darkbg{
     background-color:#10353e ;
