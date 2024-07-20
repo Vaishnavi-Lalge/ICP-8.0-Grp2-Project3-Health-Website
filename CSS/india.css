@@ -16,7 +16,7 @@ body {
 
 #main-product-img {
     width: 1000px;
-    height: 500px;
+    height: 800px;
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -46,16 +46,17 @@ body {
 }
 
 .info {
-    border:none;
-    margin:50px;
+    border: none;
+    margin: 50px;
     font-size: 50px;
     padding: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
 }
 
 .map-container {
     width: 35%;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 
 .theme-switcher-container {
@@ -64,13 +65,15 @@ body {
     position: absolute;
     right: 20px;
 }
-.video-container{
+
+.video-container {
     display: flex;
     justify-content: center;
-    margin: 20px auto; 
+    margin: 20px auto;
 }
+
 .video-container iframe {
-    border: none; 
+    border: none;
     border-radius: 10px;
 }
 
@@ -97,8 +100,8 @@ body {
 }
 
 .cards {
-    height: 400px; 
-    width: 300px;  
+    height: 400px;
+    width: 30%;
     border-radius: 20px;
     border: solid 2px black;
     padding: 20px;
@@ -106,7 +109,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     text-align: center;
     font-size: 18px;
 }
@@ -121,16 +124,56 @@ body {
     color: red;
 }
 
-.btn{
-    margin: 20px auto; 
+.btn {
+    margin: 20px auto;
     height: 50px;
     width: 100px;
-    display: block; 
+    display: block;
     text-align: center;
     color: #10353e;
     background-color: #d3f1f1;
     border: solid 2px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     border-radius: 20px;
+}
 
+.explore-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wonders {
+    height: 400px;
+    width: 30%;
+    border-radius: 20px;
+    border: solid 2px black;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+}
+
+.wonders-img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.btns{
+    margin: 20px auto;
+    height: 50px;
+    width: 150px; 
+    display: block;
+    text-align: center;
+    color: #10353e;
+    background-color: #d3f1f1;
+    border: solid 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
