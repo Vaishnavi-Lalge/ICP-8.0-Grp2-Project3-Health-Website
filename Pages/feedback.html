@@ -73,13 +73,42 @@
     <h3>Our previous users feedbacks</h3>
     <div class="user-feedback">
         <div class="feedback-container">
-            <img src="/Images/left-arrow.png" class="switch-btn">
-            <span class="feedback">A</span>
-            <img src="/Images/right-arrow.png" class="switch-btn">
+            <img src="/Images/left-arrow.png" class="switch-btn" onclick="prev()">
+            <span class="feedback"><img src="/Images/feedback-1.png" class="feed-img" id="feedback-image">
+            </span>
+            <img src="/Images/right-arrow.png" class="switch-btn" onclick="next()">
         </div>
     </div>
 
-    
+    <script>
+        let feedbackImages = [
+            "/Images/feedback-1.png",
+            "/Images/feedback-2.png",
+            "/Images/feedback-3.png"
+        ];
+        let currentIndex=0;
+
+        function prev(){
+            if(currentIndex>0) {
+                currentIndex--;
+            }
+            else{
+                currentIndex = feedbackImages.length - 1; 
+            }
+            document.getElementById("feedback-image").src=feedbackImages[currentIndex];
+        }
+
+        function next(){
+            if(currentIndex < feedbackImages.length -1){
+                currentIndex++;
+            }
+            else{
+                currentIndex = 0;
+            }
+            document.getElementById("feedback-image").src=feedbackImages[currentIndex];
+        }
+
+    </script>
 </body>
 
 </html>
