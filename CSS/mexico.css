@@ -76,19 +76,21 @@ iframe{
     border-radius: 50%;
     padding: 3px;
 }
-.quiz-btn{
+.quiz-btn {
+    background-color: #0f5858;
+    color: #fff;
     padding: 10px;
-    font-size: larger;
-    display: block;
-    margin: 20px auto;
-    text-decoration: none;
-    background-color: #50adff;
-    color: black;
-    border-radius: 8px;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0 20px 0;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
-
+    width: 100%;
+    font-size: 15px;
+}
+.quiz-btn:hover{
+    color:#0f5858;
+    background-color:#fff ;
+    border: #0f5858 solid;
 }
 a{
     cursor: pointer;
