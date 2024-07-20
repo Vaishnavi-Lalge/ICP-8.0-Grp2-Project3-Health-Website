@@ -5,141 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christ the Redeemer</title>
-    <style>
-        body {
-            background-color:#d3f1f1;
-        }
-
-        .heading {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        #main-product-image {
-            width: 400px;
-            height: 400px;
-            object-fit: cover;
-            border: 1px solid black;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 25);
-            display: block;
-            margin: 20px auto;
-
-        }
-
-        .product-image {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border: 1px solid black;
-            border-radius: 5px;
-            margin: 10px;
-            cursor: pointer;
-        }
-
-        .product-images-container {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        marquee {
-            display: block;
-            justify-content: center;
-            align-items: center;
-            margin: 25px;
-            color: #333;
-
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #50adff;
-            color: white;
-            margin: 30px 50px;
-            border-radius: 6px;
-            box-shadow: 20px;
-            border: none;
-            cursor: pointer;  
-
-        }
-
-    button:hover {
-    background-color: #5a3e4a;
-}
-
-button a {
-    color: white;
-    text-decoration: none; 
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-        /*theme-switch*/
-        .theme-select-icon {
-            height: 30px;
-            cursor: pointer;
-        }
-
-        .theme-selector-container {
-            position: fixed;
-            right: 30px;
-
-        }
-
-        .bg-dark {
-            background-color: #1a1a1a;
-            color: #fff;
-        }
-
-        .bg-light {
-            background-color: yello;
-            color: black;
-        }
-
-        /*cards */
-
-        .card {
-            background-color: #d3f1f1;
-            height: 100px;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 10px;
-            display: block;
-            align-items: center;
-            width: 300px;
-            box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
-            justify-content: space-between;
-            border: 2px solid #d3f1;
-
-        }
-   
-
-        .info {
-            display: flex;
-            justify-content: center;
-            margin-left: 20px;
-            flex-wrap: wrap;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        .info :hover{
-            background-color: #F0F0F0;
-            cursor: pointer;
-        }
-
-
-
-        .highlight {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="./../CSS/brazil.css">
+       
 </head>
 
 <body class="main-body">
+    <header>
+        <nav>
+            <div class="logo">
+                
+            <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
+                
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <!-- Your main content here -->
+    </div>
+
     <div class="theme-selector-container">
 
         <img src="./../Images/icon1.png" alt="golden" class="theme-select-icon" onclick="enableLight()" />
@@ -152,10 +35,35 @@ button a {
         <img src="./../Images/Brazil 1.jpg" class="product-image" onclick="changeImage(1)" />
         <img src="./../Images/Brazil 3.jpg" class="product-image" onclick="changeImage(2)" />
         <img src="./../Images/Brazil 4.jpg" class="product-image" onclick="changeImage(3)" />
+        <img src="./../Images/Brazil 2.jpg" class="product-image" onclick="changeImage(3)" />
+        
+
 
     </div>
     <marquee><b>CHRIST THE REDEEMER,BRAZIL</b></marquee>
 
+  
+   <span class="data-container"> Let's Know about Christ the Redeemer</span>
+   <div class="data">
+    <div class="data-card">
+        <p>
+           <b> Wonders Name : </b>Christ The Redeemer<br/>
+           <b> Location : </b> Brazil<br/>
+           <b> Material :</b> Reinforced concrete with soapstone veneer <br/>
+           <b> Place and others :</b> Christ the Redeemer is a world-famous statue in Rio de Janeiro, Brazil.<br/>
+           The statue of Christ the Redeemer has become a symbolic protector of people.
+        </p>
+
+    </div>
+    <div class="map">
+            "<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.9542747622945!2d-43.213062125043734!3d-22.95191103948465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fd5984aa13f%3A0x9dc984d7019502de!2sChrist%20the%20Redeemer!5e0!3m2!1sen!2sin!4v1721389347476!5m2!1sen!2sin" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+           
+        
+    </div>
+
+
+  </div>
+  <h2>Features of Christ The Redeemer</h2>
 
     <div class="info">
         <div class="card">
@@ -164,6 +72,7 @@ button a {
 
             <p>
                 Christ the Redeemer is a world-famous statue in Rio de Janeiro, Brazil.
+                It is 30 meters tall with a 28-meter arm span.
             </p>
         </div>
 
@@ -186,9 +95,60 @@ button a {
             </p>
         </div>
     </div>
-    <button><a href="Brazil-quiz.html">Take a Quiz </a>
+    <h3>Test your knowledge</h3>
+    <button class="bttn"><a href="Brazil-quiz.html">Take a Quiz </a>
 
     </button>
+    
+    <p class="Other-wonders">Explore Other Wonders Too...</p>
+   <div class="explore-container">
+    
+    <div class="explore-card">
+        <img src="./../Images/taj-card3.jpg" alt="Christ the Redeemer, Brazil" id="img">
+        <span class="explore-info">Taj Mahal, India</span>
+        <button class="btn"><a href="india.html">Explore</a></button>
+    </div>
+    <div class="explore-card">
+        <img src="./../Images/italy.jpg" alt="Christ the Redeemer, Brazil" id="img">
+        <span class="explore-info">Colosseum, Italy</span>
+        <button class="btn"><a href="Italy.html">Explore</a></button>
+    </div>
+    <div class="explore-card">
+        <img src="./../Images/mex1.jpg" alt="Christ the Redeemer, Brazil" id="img">
+        <span class="explore-info">Chichen Itza, Mexico</span>
+        <button class="btn"><a href="mexico.html">Explore</a></button>
+    </div><br/>
+
+    <div class="explore-card">
+        <img src="./../Images/gwc.jpg" alt="Christ the Redeemer, Brazil" id="img">
+        <span class="explore-info">Great Wall , China</span>
+        <button class="btn"><a href="china.html">Explore</a></button>
+    </div>
+    <div class="explore-card">
+        <img src="./../Images/petra.jpg" alt="Christ the Redeemer, Brazil" id="img">
+        <span class="explore-info">Petra , Jordan</span>
+        <button class="btn"><a href="jorden.html">Explore</a></button>
+    </div>
+    <div class="explore-card">
+        <img src="./../Images/machu-pichu.jpg" alt="Christ the Redeemer, Brazil" id="img">
+        <span class="explore-info">Machu picchu, Peru</span>
+        <button class="btn"><a href="peru.html">Explore</a></button>
+    </div>
+</div>
+        
+   
+<footer>
+    <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
+    <div class="social-media ">
+    <p class="social-text">Follow Us On</p>
+
+   <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook Account"><img src="./../Images/facebook.png" class="social-icon"></a>
+   <a href="https://youtu.be/fYR5hRdYh9Q?si=Y87MD0xDPETFc6-C" alt="Visit to YouTube Account"><img src="./../Images/youtube (1).png" class="social-icon"></a> 
+   <a href="https://www.instagram.com/seven_wonders_of_world?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" alt="Visit to Instagram Account"><img src="./../Images/instagram.png"  class="social-icon"></a>
+   </div>
+  </footer>
+   
+
 
     <script>
         function changeImage(num) {
@@ -198,13 +158,15 @@ button a {
             } else if (num == 2) {
                 mainImage.src = "./../Images/Brazil 1.jpg";
             } else if (num == 3) {
-                mainImage.src = "./../Images/Brazil 4.jpg"
+                mainImage.src = "./../Images/Brazil 4.jpg";
+            } else if (num == 4) {
+                mainImage.src = "./../Images/Brazil 3.jpg";
             } else if (num == 4) {
                 mainImage.src = "./../Images/Brazil 3.jpg";
             }
 
         }
-        /*Theme switch 8/
+        /*Theme switch /
          /*theme-matched*/
         function enableDark() {
             document.body.classList.add("bg-dark");
