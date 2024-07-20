@@ -64,6 +64,9 @@ iframe{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
     width: 75%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
 }
 .icons{
     height: 30px;
@@ -72,6 +75,20 @@ iframe{
     border: 1px grey solid;
     border-radius: 50%;
     padding: 3px;
+}
+.quiz-btn{
+    padding: 10px;
+    font-size: larger;
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+    background-color: #50adff;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+
 }
 a{
     cursor: pointer;
