@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="../CSS/feedback.css">
 </head>
+
 <body>
     
+        <h2>Your Feedback</h2>
+        <div class="form-container">
+            <h4>It will take only few minutes!!</h4>
+            <form id="feedbackForm">
+                <label for="inputName">Your Name :</label>
+                <input type="text" placeholder="Pratham" id="inputName" required /><br><br>
+
+                <label for="inputEmail">Email Address :</label>
+                <input type="text" placeholder="abc@gmail.com" id="inputEmail" required /><br><br>
+
+                <label>Do you like our platform?</label>
+                <div class="radio-group">
+                    <input type="radio" name="like" id="yes">
+                    <label for="yes" class="radio-condition">Yes</label>
+
+                    <input type="radio" name="like" id="no">
+                    <label for="no" class="radio-condition">No</label>
+                </div>
+
+                <br><br>
+
+                <label for="subject" id="subjectLabel">Subject/Reason: </label>
+                <select id="subject" name="subject">
+                    <option>-Select-</option>
+                    <option>Clarity of questions</option>
+                    <option>Difficulty level</option>
+                    <option>User Interface</option>
+                    <option>Others</option>
+                </select>
+                <br><br>
+
+                <label for="msg">Write your Suggestions:</label>
+                <textarea id="msg" name="msg"></textarea>
+                <br><br>
+                <button type="submit" onclick="submit()">Submit</button>
+        </div>
+
+        <script>
+            const yesRadio = document.getElementById('yes');
+            const noRadio = document.getElementById('no');
+            const subjectLabel = document.getElementById('subjectLabel');
+            const subjectSubmit = document.getElementById('subject');
+
+            function handleRadioClick() {
+                if (noRadio.checked) {
+                    subjectLabel.style.display = 'flex';
+                    subjectSubmit.style.display = 'flex';
+                }
+                else {
+                    subjectLabel.style.display = 'none';
+                    subjectSubmit.style.display = 'none';
+                }
+            }
+
+            yesRadio.addEventListener('change', handleRadioClick);
+            noRadio.addEventListener('change', handleRadioClick);
+
+            handleRadioClick();
+        </script>
+    
 </body>
+
 </html>
