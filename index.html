@@ -24,17 +24,16 @@
 </div>
 <br>
 
-    <div class="container4">
+<div class="user-Scroll">
+  <div class="Scroll-container">
       
-      <img src="./Images/7wonder4.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder2.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder1.jpeg" alt="Wonders World" />
-      <img src="./Images/7wonder5.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder4.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder6.webp" alt="Wonders World" />
-      <img src="./Images/7wonder5.jpg" alt="Wonders World" />
-      
-    </div>
+      <img src="./Images/Left-animation (1).gif" class="switch-btn" onclick="prev()">
+      <span class="Scroll"><img src="./Images/7wonder1.jpeg" class="Scroll-img" id="Scroll-image">
+      </span>
+      <img src="./Images/Right-animation.gif" class="switch-btn" onclick="next()">
+  </div>
+</div>
+
 
     <p class="main-heading"> Let's Explore Wonders ❤️</p>
 
@@ -104,7 +103,37 @@
                 </div><br>
               </div>
 
-
+              <script>
+                let ScrollImages = [
+                    "./Images/7wonder1.jpeg",
+                    "./Images/7wonder2.jpg",
+                    "./Images/7wonder3.jpeg",
+            
+                ];
+                let currentIndex=0;
+        
+                function prev(){
+                    if(currentIndex>0) {
+                        currentIndex--;
+                    }
+                    else{
+                        currentIndex = ScrollImages.length - 1; 
+                    }
+                    document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
+                }
+        
+                function next(){
+                    if(currentIndex < ScrollImages.length -1){
+                        currentIndex++;
+                    }
+                    else{
+                        currentIndex = 0;
+                    }
+                    document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
+                }
+        
+            </script>
+                
 
 
 
