@@ -13,21 +13,27 @@
             <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
         </div>
     </nav>
-</header><br>
-
+</header>
 <br>
 
-    <div class="container4">
+<div>
+<marquee class="blink">"Explore the Marvels of the Ancient World✨" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  "Discover the New Seven Wonders of the World✨" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  "Uncover the Secrets of the Most Iconic Landmarks✨"
+  </marquee>
+</div>
+<br>
+
+<div class="user-Scroll">
+  <div class="Scroll-container">
       
-      <img src="./Images/7wonder4.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder2.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder1.jpeg" alt="Wonders World" />
-      <img src="./Images/7wonder5.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder4.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder6.webp" alt="Wonders World" />
-      <img src="./Images/7wonder5.jpg" alt="Wonders World" />
-      
-    </div>
+      <img src="./Images/Left-animation (1).gif" class="switch-btn" onclick="prev()">
+      <span class="Scroll"><img src="./Images/7wonder1.jpeg" class="Scroll-img" id="Scroll-image">
+      </span>
+      <img src="./Images/Right-animation.gif" class="switch-btn" onclick="next()">
+  </div>
+</div>
+
 
     <p class="main-heading"> Let's Explore Wonders ❤️</p>
 
@@ -35,7 +41,7 @@
 
         <div class="container card">
        <a href="./Pages/india.html"><img  src="./Images/India-wonder1.webp" class="image"><img src="./Images/India-wonder2.jpg" class="image"></a>
-          <div class="overlay">Taj Mahal</div>
+          <div class="overlay">The Taj Mahal</div>
          
 
         
@@ -43,7 +49,7 @@
       
         <div class="container card">
           <a href="./Pages/Italy.html"><img src="./Images/Italy-wonder1.webp" class="image"><img src="./Images/Italy-wonder2.jpg" class="image"></a>
-          <div class="overlay">Great Wall of China</div>
+          <div class="overlay">The Colosseum</div>
            
         </div>
     
@@ -54,7 +60,7 @@
       
          <div class="container card">
           <a href="./Pages/jorden.html"><img src="./Images/Jorden-wonder1.webp"class="image"><img src="./Images/Jorden-wonder2.jpg" class="image"></a> 
-          <div class="overlay">Great Wall of China</div>
+          <div class="overlay">The Petra</div>
           
     
           </div>
@@ -65,7 +71,7 @@
           
          <div class="container card">
           <a href="./Pages/peru.html"><img src="./Images/Peru-wonder1.webp" class="image"><img src="./Images/Peru-wonder2.jpg" class="image"></a>
-          <div class="overlay">Great Wall of China</div>
+          <div class="overlay">The Machu Picchu</div>
        
          </div><br>
         
@@ -74,14 +80,14 @@
         <div class="card-container">
            <div class="container card">
             <a href="./Pages/mexico.html"><img src="./Images/Mexico-wonder1.webp" class="image"><img src="./Images/Mexico-wonder2.jpg" class="image"></a>
-           <div class="overlay">Great Wall of China</div>
+           <div class="overlay">The Chichen Itza</div>
             
             
             </div>
         
             <div class="container card">
               <a href="./Pages/brazil.html"><img src="./Images/Brazil-wonder1.webp" class="image"><img src="./Images/Brazil-wonder2.jpeg" class="image"></a>
-            <div class="overlay">Great Wall of China</div>
+            <div class="overlay">Christ the Redeemer </div>
               
               </div>
       
@@ -97,7 +103,37 @@
                 </div><br>
               </div>
 
-
+              <script>
+                let ScrollImages = [
+                    "./Images/7wonder1.jpeg",
+                    "./Images/7wonder2.jpg",
+                    "./Images/7wonder3.jpeg",
+            
+                ];
+                let currentIndex=0;
+        
+                function prev(){
+                    if(currentIndex>0) {
+                        currentIndex--;
+                    }
+                    else{
+                        currentIndex = ScrollImages.length - 1; 
+                    }
+                    document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
+                }
+        
+                function next(){
+                    if(currentIndex < ScrollImages.length -1){
+                        currentIndex++;
+                    }
+                    else{
+                        currentIndex = 0;
+                    }
+                    document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
+                }
+        
+            </script>
+                
 
 
 
