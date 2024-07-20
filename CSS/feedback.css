@@ -90,3 +90,17 @@ button:hover{
     background-color:#fff ;
     border: #0f5858 solid;
 }
+
+.user-feedback{
+    border: solid;
+}
+
+.feedback-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switch-btn{
+    height: 50px;
+    cursor: pointer;
+}
