@@ -90,3 +90,31 @@ button:hover{
     background-color:#fff ;
     border: #0f5858 solid;
 }
+
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0f5858;
+    font-size: 29px;
+}
+.user-feedback{
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.feedback-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.switch-btn{
+    height: 50px;
+    cursor: pointer;
+}
+
+.feed-img{
+    height: 100px;
+}
