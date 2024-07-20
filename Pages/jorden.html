@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI calculator page</title>
+    <title>The Petra Jorden</title>
+    <link rel="stylesheet" href="../CSS/jorden.css">
 </head>
-<body>
-    
+<body class="bg-light" id="main-body">
+    <header>
+        <nav>
+            <div class="logo">
+                <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-container">
+        <h1 class="main-heading">Petra In Jorden</h1>
+        <div class="theme-switcher-container">
+            <img src="../Images/light.png" class="theme-selector" onclick="lightMode()">
+            <img src="../Images/dark.png" class="theme-selector" onclick="darkMode()">
+        </div>
+    </div>
+    <img src="../Images/petra2.jpeg" id="main-product-img">
+    <div class="product-img-container">
+        <img src="../Images/petra1.png" class="product-img" onclick="changeImage('../Images/petra1.png')">
+        <img src="../Images/petra3.jpeg" class="product-img" onclick="changeImage('../Images/petra3.jpeg')">
+        <img src="../Images/petra4.png" class="product-img" onclick="changeImage('../Images/petra4.png')">
+        <img src="../Images/petra5.png" class="product-img" onclick="changeImage('../Images/petra5.png')">
+    </div>
+    <div class="info">
+        <div class="card">
+            <img src="./../Images/petra.png" alt="img" height="20px">
+            <span class="highlight">Famous For</span>
+
+            <p>
+                Famous for its rock-cut architecture, the city is an important archeologic site and Jordan's biggest tourist attraction. 
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="./../Images/tape.png" alt="img" height="20px">
+            <span class="highlight">Height & Dimensions</span>
+
+            <p>
+                The structure measures 28 meters (84 feet) east-west, and it is some 42 meters (128 feet) in length. The sandstone porch columns measure 1.5 meters (4.5 feet) in diameter.
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="./../Images/helmet.png" alt="img" height="20px">
+            <span class="highlight">Constructions</span>
+
+            <p>
+                The spectacular sandstone city of Petra was built in the 3rd century BC by the Nabataeans, who carved palaces, temples, tombs, storerooms and stables from the soft stone cliffs.
+
+            </p>
+        </div>
+    </div>
+    <button class="btn"><a href="petra-jorden-quiz.html">Take a Quiz </a>
+
+    </button>
+    <script>
+        function changeImage(imageName){
+            const mainImage = document.getElementById('main-product-img');
+            mainImage.src = imageName;
+        }
+
+        function darkMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-light');
+            mainBody.classList.add('bg-dark');
+        }
+
+        function lightMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-dark');
+            mainBody.classList.add('bg-light');
+        }
+    </script>
+     <footer>
+        <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+        <div class="social-media">
+            <p class="social-text">Follow Us On</p>
+        
+           <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img src="../Images/facebook.png" class="social-icon"></a>
+        
+           <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img src="../Images/youtube (1).png" class="social-icon"></a>
+        
+            <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+            <img src="../Images/instagram.png" class="social-icon"></a>
+            
+        </div>
+        
+    </footer>
 </body>
 </html>
