@@ -4,72 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taj Mahal Quiz</title>
-    <style>
-        body {
-            font-family:Georgia, 'Times New Roman', Times, serif
-            margin: 20px;
-            background-color: rgb(170, 224, 245);
-        }
-        .main-heading{
-            font-size: 30px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: center;
-            flex: 1;
-        }
-        .theme-switcher-container {
-        display: flex;
-        gap: 10px;
-        position: absolute;
-        right: 20px;
-        }
-        .theme-selector {
-        height: 30px;
-        width: 30px;
-        cursor: pointer;
-        }
-
-        .question {
-            margin-bottom: 20px;
-            font-size: 15px;
-
-        }
-        .question h2 {
-            font-size: 20px;
-        }
-        .results {
-            margin-top: 20px;
-        }
-        .submit-btn{
-            display: block;
-            margin: 20px auto;
-            height: 50px;
-            width: 100px;
-            font-size: 15px;
-            font-weight: bold;
-            background-color: #ff9800;
-            border: none;
-            color: white;
-            cursor: pointer;
-        }
-        .bg-dark {
-        background-color: #10353e;
-        color: white;
-        }
-
-        .bg-light {
-         background-color: #d3f1f1;
-        }
-        .quizForm{
-            border: solid #10353e;
-            border-radius: 20px;
-            height: fit-content;
-            width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/taj-quiz.css">
 </head>
 <body class="bg-light" id="main-body">
+    <header>
+        <nav>
+            <div class="logo">
+                <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
+            </div>
+        </nav>
+    </header><br>
+    
     <div class="header-container">
         <h1 class="main-heading">Taj Mahal Quiz</h1>
         <div class="theme-switcher-container">
@@ -189,5 +135,22 @@
             mainBody.classList.add('bg-light');
         }
     </script>
+
+<footer>
+    <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
+    <div class="socia-media">
+        <p class="social-text">Follow Us On</p>
+    
+       <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to facebook account"><img src="../Images/facebook.png" class="social-icon"></a>
+    
+       <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img src="../Images/youtube (1).png" class="social-icon"></a>
+    
+        <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to instagram account">
+        <img src="../Images/instagram.png" class="social-icon"></a>
+        
+    </div>
+    
+    </footer>
+    
 </body>
 </html>
