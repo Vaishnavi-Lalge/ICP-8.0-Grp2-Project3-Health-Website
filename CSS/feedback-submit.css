@@ -1,0 +1,36 @@
+.envelope-img {
+    height: 500px;
+    display: block;
+    margin:auto ;
+}
+
+hr {
+    margin: 0 50px;
+    border: solid;
+    color:#0d4f4f ;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0f5858;
+    font-size: 50px;
+    text-align: center;
+    margin:10px 0;
+}
+.Thank-box{
+    border: #0d4f4f solid;
+    width: 50%;
+    border-radius: 8px;
+    background-color: ;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.Thank-txt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0f5858;
+    font-size: 40px;
+    text-align: center;
+    margin:10px 0;
+}
