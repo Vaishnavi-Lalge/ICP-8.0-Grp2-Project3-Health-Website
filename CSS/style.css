@@ -81,6 +81,7 @@ footer {
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   font-weight: bold;
+ color: #10353e;
 }
 
 .btn-content {
@@ -256,6 +257,7 @@ button a {
   gap: 10px;
   position: absolute;
   right: 20px;
+  position: fixed;
 }
 
 .theme-selector {
