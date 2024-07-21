@@ -9,20 +9,21 @@
 </head>
 <body class="bg-light" id="main-body">
     <header>
-        <nav>
-            <div class="logo">
-                <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
-            </div>
-        </nav>
-    </header>
-    <div>
-        <h1 class="wonder-heading">Macchu Picchu</h1>
-        <div class="theme-switcher-container">
-            <img src="../Images/light.png" class="theme-selector" onclick="lightMode()">
-            <img src="../Images/dark.png" class="theme-selector" onclick="darkMode()">
-        </div>
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
+        
+        <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
 
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
     </div>
+</nav>
+</header>
+<div class="theme-selector-container">
+
+    <img src="./../Images/light.png" class="theme-select-icon" onclick="lightMode()" />
+    <img src="./../Images/dark.png" class="theme-select-icon" onclick=" darkMode()" />
+</div>
+    
+        <h1 class="wonder-heading">Macchu Picchu</h1>
     <img src="../Images/peru1.jpg" id="main-product-img">
     <div class="product-img-container">
         <img src="../Images/peru2.jpg" class="product-img" onclick="changeImage('../Images/peru2.jpg')">
@@ -86,27 +87,27 @@
     <h1 class="know-about">Explore Other Wonders Too...</h>
     <div class="explore-container">
         <div class="wonders">
-            <img src="../Images/christ.jpg" class="wonders-img">
+            <img src="../Images/Brazil-wonder1.webp" class="wonders-img">
             <h3>Christ the Redeemer, Brazil</h3>
             <button class="btns" onclick="window.location.href='../Pages/brazil.html'">Explore</button>
         </div>
         <div class="wonders">
-            <img src="../Images/italy.jpg" class="wonders-img">
+            <img src="../Images/Italy-wonder1.webp" class="wonders-img">
             <h3>Colosseum, Italy</h3>
             <button class="btns" onclick="window.location.href='../Pages/Italy.html'">Explore</button>
         </div>
         <div class="wonders">
-            <img src="../Images/itza.jpg" class="wonders-img">
+            <img src="../Images/Mexico-wonder1.webp" class="wonders-img">
             <h3>Chichén Itza, Mexico</h3>
             <button class="btns" onclick="window.location.href='../Pages/mexico.html'">Explore</button>
         </div>
         <div class="wonders">
-            <img src="../Images/gwc.jpg" class="wonders-img">
+            <img src="../Images/China-wonder2.jpeg" class="wonders-img">
             <h3>Great Wall of China, China</h3>
             <button class="btns" onclick="window.location.href='../Pages/china.html'">Explore</button>
         </div>
         <div class="wonders">
-            <img src="../Images/petra.jpg" class="wonders-img">
+            <img src="../Images/Jorden-wonder2.jpg" class="wonders-img">
             <h3>Petra, Jordan</h3>
             <button class="btns" onclick="window.location.href='../Pages/jorden.html'">Explore</button>
         </div>
@@ -117,6 +118,21 @@
         </div>
 
     </div>
+
+    <div class="buttons-container">
+        <div class="home-img">
+            <a href="../index.html">
+                <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+            </a>
+        </div>
+    
+        <div class="feed-img">
+            <a href="../Pages/feedback.html">
+                <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+            </a>
+        </div>
+    </div>
+   
 
     <script>
          function changeImage(imageName){
@@ -136,6 +152,12 @@
         }
 
     </script>
+
+<div class="home-img">
+    <a href="../index.html">
+    <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+    </a>
+</div>
     <footer>
         <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
         <div class="social-media">
