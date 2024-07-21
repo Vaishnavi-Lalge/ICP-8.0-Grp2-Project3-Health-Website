@@ -8,8 +8,8 @@
 3. Feedback: A feedback form where users can provide suggestions and comments.
 4. Responsive Design: Optimized for various screen sizes and devices.
 5. Technologies Used:
-  <ul>
-<li>HTML5</li>
-<li>CSS</li>
-<li>JavaScript</li>
-</ul></li>
+HTML5
+CSS
+JavaScript
+---
+## 
