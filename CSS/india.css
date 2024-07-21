@@ -94,6 +94,7 @@ header {
 .theme-selector-container {
     position: fixed;
     right: 30px;
+    top: 200px;
 
 }
 
@@ -237,12 +238,16 @@ header {
     border: 1px solid #10353e;
 }
 
-
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .home-img{
     cursor: pointer;
     position: fixed;
     left: 10px;
-    top: 120px;
+    top: 200px;
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
     border-radius: 40%;
@@ -254,20 +259,23 @@ header {
     padding:5px 5px 1px;
 }
 
-.back-img{
+.feed-img{
     cursor: pointer;
-    margin-right:auto;
-    margin-left: 10px;
+    position: fixed;
+    left: 10px;
+    bottom: 250px;
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
     border-radius: 40%;
     background-color: #fff;
 }
 
-.back-icon{
+.feed-icon{
     height: 40px;
     padding:5px 5px 1px;
 }
+
+
 
 /* Responsive Media Queries */
 
@@ -356,7 +364,7 @@ header {
         width: 80%;
         display: block;
         text-align: center;
-        padding:10px;
+        padding: 10px;
         color: #10353e;
         background-color: #d3f1f1;
         border: solid 2px;
