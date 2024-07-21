@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taj Mahal Quiz</title>
+    <title>Petra Jorden Quiz</title>
     <style>
         body {
             font-family:Georgia, 'Times New Roman', Times, serif;
@@ -29,12 +29,12 @@
         }
 
         .question {
-            margin-bottom: 15px;
-            font-size: 13px;
+            margin-bottom: 20px;
+            font-size: 15px;
 
         }
         .question h2 {
-            font-size: 18px;
+            font-size: 20px;
         }
         .results {
             margin-top: 20px;
@@ -58,86 +58,102 @@
 
         .bg-light {
          background-color: #d3f1f1;
+         color: black;
+        }
+        .quizForm{
+            border: solid #10353e;
+            border-radius: 20px;
+            height: fit-content;
+            width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            color: black;
+            background-color: white;
         }
     </style>
 </head>
 <body class="bg-light" id="main-body">
     <div class="header-container">
-        <h1 class="main-heading">The Petra Jorden Quiz</h1>
+        <h1 class="main-heading">Petra Jorden Quiz</h1>
         <div class="theme-switcher-container">
             <img src="../Images/light.png" class="theme-selector" onclick="lightMode()">
             <img src="../Images/dark.png" class="theme-selector" onclick="darkMode()">
         </div>
     </div>
-    <form id="quizForm">
-        <div class="question">
-            <h3>1. Where is the Petra located?</h3>
-            <label><input type="radio" name="q1" value="A"> A) Jorden</label><br>
-            <label><input type="radio" name="q1" value="B"> B) Brazil</label><br>
-            <label><input type="radio" name="q1" value="C"> C) china</label><br>
-            <label><input type="radio" name="q1" value="D"> D) India</label>
-        </div>
-
-        <div class="question">
-            <h3>2. What is the height of the Treasury Hall?</h3>
-            <label><input type="radio" name="q2" value="A"> A) 49 meters</label><br>
-            <label><input type="radio" name="q2" value="B"> B) 30 meters</label><br>
-            <label><input type="radio" name="q2" value="C"> C) 39 meters</label><br>
-            <label><input type="radio" name="q2" value="D"> D) 10 meters</label>
-        </div>
-
-        <div class="question">
-            <h3>3. What is Petra?</h3>
-            <label><input type="radio" name="q3" value="A"> A) Building</label><br>
-            <label><input type="radio" name="q3" value="B"> B) City</label><br>
-            <label><input type="radio" name="q3" value="C"> C) Village</label><br>
-            <label><input type="radio" name="q3" value="D"> D) Kingdom</label>
-        </div>
-
-        <div class="question">
-            <h3>4. Petra is surrounded by...</h3>
-            <label><input type="radio" name="q4" value="A"> A) Mountains</label><br>
-            <label><input type="radio" name="q4" value="B"> B) Water</label><br>
-            <label><input type="radio" name="q4" value="C"> C) clouds</label><br>
-            <label><input type="radio" name="q4" value="D"> D) Wild,Dangerous animals</label>
-        </div>
-
-        <div class="question">
-            <h3>5. Who was the first Western explorer to reach Petra?</h3>
-            <label><input type="radio" name="q5" value="A"> A) Johann Ludwig Burckhardt</label><br>
-            <label><input type="radio" name="q5" value="B"> B) Gaston Maspero</label><br>
-            <label><input type="radio" name="q5" value="C"> C) Howard Carter</label><br>
-            <label><input type="radio" name="q5" value="D"> D) Giovanni Battista Belzoni</label>
-        </div>
-
-        <div class="question">
-            <h3>6. In which modern-day country is Petra?</h3>
-            <label><input type="radio" name="q6" value="A"> A) Israel</label><br>
-            <label><input type="radio" name="q6" value="B"> B) Jorden</label><br>
-            <label><input type="radio" name="q6" value="C"> C) Egypt</label><br>
-            <label><input type="radio" name="q6" value="D"> D) Lebanon</label>
-        </div>
-
-        <div class="question">
-            <h3>7. The Roman Emperor_____made Petra a part of the new Roman province of Arabia.</h3>
-            <label><input type="radio" name="q7" value="A"> A) Ceaser</label><br>
-            <label><input type="radio" name="q7" value="B"> B) Nero</label><br>
-            <label><input type="radio" name="q7" value="C"> C) Hadrian</label><br>
-            <label><input type="radio" name="q7" value="D"> D) Trajan</label>
-        </div>
-
-        <div class="question">
-            <h3>8. What were the people who founded Petra called?</h3>
+    <div class="quizForm">
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. Where is the Petra located?</h3>
+                <label><input type="radio" name="q1" value="A"> A) Jorden</label><br>
+                <label><input type="radio" name="q1" value="B"> B) Brazil</label><br>
+                <label><input type="radio" name="q1" value="C"> C) china</label><br>
+                <label><input type="radio" name="q1" value="D"> D) India</label>
+            </div>
+    
+            <div class="question">
+                <h3>2. What is the height of the Treasury Hall?</h3>
+                <label><input type="radio" name="q2" value="A"> A) 49 meters</label><br>
+                <label><input type="radio" name="q2" value="B"> B) 30 meters</label><br>
+                <label><input type="radio" name="q2" value="C"> C) 39 meters</label><br>
+                <label><input type="radio" name="q2" value="D"> D) 10 meters</label>
+            </div>
+    
+            <div class="question">
+                <h3>3. What is Petra?</h3>
+                <label><input type="radio" name="q3" value="A"> A) Building</label><br>
+                <label><input type="radio" name="q3" value="B"> B) City</label><br>
+                <label><input type="radio" name="q3" value="C"> C) Village</label><br>
+                <label><input type="radio" name="q3" value="D"> D) Kingdom</label>
+    
+            </div>
+    
+            <div class="question">
+                <h3>4. Petra is surrounded by...</h3>
+                <label><input type="radio" name="q4" value="A"> A) Mountains</label><br>
+                <label><input type="radio" name="q4" value="B"> B) Water</label><br>
+                <label><input type="radio" name="q4" value="C"> C) clouds</label><br>
+                <label><input type="radio" name="q4" value="D"> D) Wild,Dangerous animals</label>
+            </div>
+    
+            <div class="question">
+                <h3>5. Who was the first Western explorer to reach Petra?</h3>
+                <label><input type="radio" name="q5" value="A"> A) Johann Ludwig Burckhardt</label><br>
+                <label><input type="radio" name="q5" value="B"> B) Gaston Maspero</label><br>
+                <label><input type="radio" name="q5" value="C"> C) Howard Carter</label><br>
+                <label><input type="radio" name="q5" value="D"> D) Giovanni Battista Belzoni</label>
+            </div>
+    
+            <div class="question">
+                <h3>6. In which modern-day country is Petra?</h3>
+                <label><input type="radio" name="q6" value="A"> A) Israel</label><br>
+                <label><input type="radio" name="q6" value="B"> B) Jorden</label><br>
+                <label><input type="radio" name="q6" value="C"> C) Egypt</label><br>
+                <label><input type="radio" name="q6" value="D"> D) Lebanon</label>
+            </div>
+    
+            <div class="question">
+                <h3>7. The Roman Emperor_____made Petra a part of the new Roman province of Arabia.</h3>
+                <label><input type="radio" name="q7" value="A"> A) Ceaser</label><br>
+                <label><input type="radio" name="q7" value="B"> B) Nero</label><br>
+                <label><input type="radio" name="q7" value="C"> C) Hadrian</label><br>
+                <label><input type="radio" name="q7" value="D"> D) Trajan</label>
+    
+            </div>
+    
+            <div class="question">
+                <h3>8. What were the people who founded Petra called?</h3>
             <label><input type="radio" name="q8" value="A"> A) The Phonecians</label><br>
             <label><input type="radio" name="q8" value="B"> B) The Hittites</label><br>
             <label><input type="radio" name="q8" value="C"> C) The Nabateans</label><br>
             <label><input type="radio" name="q8" value="D"> D) The Persians</label>
-        </div>
-
-        <button type="button" class ="submit-btn" onclick="checkAnswers()">Submit</button>
-    </form>
-
-    <div id="results" class="results"></div>
+            </div>
+    
+            <button type="button" class ="submit-btn" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="results" class="results"></div>
+    
+    </div>
+    
 
     <script>
         function checkAnswers() {
