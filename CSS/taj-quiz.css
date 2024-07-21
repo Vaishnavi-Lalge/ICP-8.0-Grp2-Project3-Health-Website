@@ -23,11 +23,16 @@ width: 30px;
 cursor: pointer;
 }
 
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .home-img{
     cursor: pointer;
     position: fixed;
     left: 10px;
-    top: 120px;
+    top: 200px;
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
     border-radius: 40%;
@@ -39,10 +44,29 @@ cursor: pointer;
     padding:5px 5px 1px;
 }
 
+.feed-img{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom:120px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.feed-icon{
+    height: 40px;
+    padding:5px 5px 1px;
+}
+
+
+
 .back-img{
     cursor: pointer;
-    margin-right:auto;
-    margin-left: 10px;
+    position: fixed;
+    left: 10px;
+    bottom:120px;
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
     border-radius: 40%;
