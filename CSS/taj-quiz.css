@@ -135,6 +135,15 @@ color:white;
     color: black;
 }
 
+
+    #results {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+
 /* Responsive Media Queries */
 
 /* For devices with max-width 1200px */
