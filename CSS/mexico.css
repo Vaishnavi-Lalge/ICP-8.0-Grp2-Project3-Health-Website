@@ -64,6 +64,11 @@ iframe:hover{
     width: 350px;
     border-radius: 5px;
 }
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .mcard{
     height: 350px;
     width: 350px;
@@ -73,6 +78,7 @@ iframe:hover{
     font-size: 16px;
     padding: 8px;
     background-color: white;
+    margin-right: 20px;
 }
 .data-card {
     
