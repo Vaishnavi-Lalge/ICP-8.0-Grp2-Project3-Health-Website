@@ -8,7 +8,8 @@ body {
     background-color: #d3f1f1;
     font-family: 'Poppins', sans-serif;
 }
-.home-img{
+
+.home-img {
     cursor: pointer;
     position: fixed;
     left: 10px;
@@ -19,14 +20,14 @@ body {
     background-color: #fff;
 }
 
-.home-icon{
+.home-icon {
     height: 40px;
-    padding:5px 5px 1px;
+    padding: 5px 5px 1px;
 }
 
-.back-img{
+.back-img {
     cursor: pointer;
-    margin-right:auto;
+    margin-right: auto;
     margin-left: 10px;
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
@@ -34,10 +35,11 @@ body {
     background-color: #fff;
 }
 
-.back-icon{
+.back-icon {
     height: 40px;
-    padding:5px 5px 1px;
+    padding: 5px 5px 1px;
 }
+
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #0f5858;
@@ -89,7 +91,8 @@ input[type="radio"] {
     margin-right: 0px;
     cursor: pointer;
 }
-.radio-condition{
+
+.radio-condition {
     margin-right: 100px;
 }
 
@@ -114,18 +117,20 @@ button {
     width: 100%;
     font-size: 15px;
 }
-button:hover{
-    color:#0f5858;
-    background-color:#fff ;
+
+button:hover {
+    color: #0f5858;
+    background-color: #fff;
     border: #0f5858 solid;
 }
 
-h3{
+h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #0f5858;
     font-size: 29px;
 }
-.user-feedback{
+
+.user-feedback {
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
     background-color: #fff;
@@ -133,34 +138,42 @@ h3{
     margin-bottom: 50px;
 }
 
-.feedback-container{
+.feedback-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 30px;
 }
-.switch-btn{
+
+.switch-btn {
     height: 50px;
     cursor: pointer;
 }
 
-.feed-img{
+.feed-img {
     height: 100px;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     flex-direction: row;
 }
-.contact{
+
+.contact {
     border-right: solid;
     padding-right: 100px;
     padding-top: 10px;
-    
+
 }
-.pages{
+
+.pages {
     border-left: solid;
     padding-left: 100px;
     padding-top: 10px;
     text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
