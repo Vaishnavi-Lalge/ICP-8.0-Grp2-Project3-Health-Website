@@ -72,14 +72,7 @@ body{
     box-shadow: 0px 0px 40px 0px #10353e;
   transition-duration: 0.9s;
     }
-
-    
-
-       
-      
-
-
-    .main-heading{
+  .main-heading{
         font-size: 50px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
@@ -290,10 +283,6 @@ button a {
 
 .bg-light {
   background-color: #d3f1f1;
-}
-
-.bg-dark .moving-text{
-  color: white;
 }
 
 
