@@ -10,6 +10,59 @@
             margin: 20px;
             background-color: rgb(170, 224, 245);
         }
+        header {
+  background-color: #007a86;
+  color: #fff;
+  padding: 0 15px; /* Adjust padding as needed */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height:150px; /* Matches the header height */
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin-left: 15px; /* Adds space between the logo and the text */
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.social-media {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-items: center;
+}
+
+nav {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+footer {
+  background-color: #007a86;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 4px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 2px auto;
+}
+
+.foot-text {
+  text-align: center;
+  font-size: 20px;
+}
         .main-heading{
             font-size: 30px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -46,11 +99,16 @@
             width: 100px;
             font-size: 15px;
             font-weight: bold;
-            background-color: #ff9800;
-            border: none;
+            background-color: #10353e;
+            border-radius: 5px;
             color: white;
             cursor: pointer;
         }
+       .btn:hover{
+        background-color: white;
+        color: #10353e;
+        border: 1px solid #10353e;
+       }
         .bg-dark {
         background-color: #10353e;
         color: white;
@@ -70,9 +128,17 @@
             color: black;
             background-color: white;
         }
+      
     </style>
 </head>
 <body class="bg-light" id="main-body">
+    <header>
+        <nav>
+            <div class="logo">
+                <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
+            </div>
+        </nav>
+    </header>
     <div class="header-container">
         <h1 class="main-heading">Petra Jorden Quiz</h1>
         <div class="theme-switcher-container">
@@ -194,5 +260,22 @@
             mainBody.classList.add('bg-light');
         }
     </script>
+      <footer>
+        <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+        <div class="social-media">
+            <p class="social-text">Follow Us On</p>
+
+            <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                    src="../Images/facebook.png" class="social-icon"></a>
+
+            <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                    src="../Images/youtube (1).png" class="social-icon"></a>
+
+            <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                <img src="../Images/instagram.png" class="social-icon"></a>
+
+        </div>
+
+    </footer>
 </body>
 </html>

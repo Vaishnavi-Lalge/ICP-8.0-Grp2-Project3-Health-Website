@@ -106,6 +106,19 @@ body{
     width: 30px;
     cursor: pointer;
 }
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.video-container iframe {
+    border: none;
+    border-radius: 10px;
+}
+.know-about{
+    text-align: center;
+}
 
 .bg-dark {
     background-color: #10353e;
