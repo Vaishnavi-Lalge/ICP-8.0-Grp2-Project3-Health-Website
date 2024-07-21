@@ -26,8 +26,8 @@ body {
 }
 
 .product-img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
@@ -107,10 +107,10 @@ body {
 }
 
 .cards {
-    height: 400px;
-    width: 30%;
+    height:fit-content;
+    width: 50%;
     border-radius: 20px;
-    border: solid 2px black;
+    border:none;
     padding: 20px;
     margin: 20px;
     display: flex;
@@ -119,17 +119,26 @@ body {
     box-sizing: border-box;
     text-align: center;
     font-size: 18px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
 }
 
 .card-img {
     height: 200px;
     width: 100%;
     margin-bottom: 10px;
-}
+    border-radius: 10px;}
 
 .love {
     color: red;
 }
+.cards:hover{
+    background-color: #10353e;
+    color: white;
+    cursor: pointer;
+}
+
 
 .btn {
     margin: 20px auto;
@@ -146,6 +155,12 @@ body {
     font-weight: bold;
 }
 
+.btn:hover{
+    background-color: white;
+    color: #10353e;
+    border: 1px solid #10353e;
+}
+
 .explore-container {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +168,7 @@ body {
 }
 
 .wonders {
-    height: 400px;
+    height:fit-content;
     width: 30%;
     border-radius: 20px;
     border:none;

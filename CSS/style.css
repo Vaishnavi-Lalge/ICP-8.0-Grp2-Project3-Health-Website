@@ -72,14 +72,7 @@ body{
     box-shadow: 0px 0px 40px 0px #10353e;
   transition-duration: 0.9s;
     }
-
-    
-
-       
-      
-
-
-    .main-heading{
+  .main-heading{
         font-size: 50px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
@@ -292,10 +285,13 @@ button a {
   background-color: #d3f1f1;
 }
 
+<<<<<<< HEAD
 .bg-dark .blink {
   color: white;
 }
 
+=======
+>>>>>>> b009f1fed0ce64f66eb512e0a9230d9ed37a08d8
 
 
 
