@@ -6,15 +6,18 @@
     <title>Home page</title>
     <link href="./CSS/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light" id="main-body">
 <header>
     <nav>
         <div class="logo">
             <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
         </div>
     </nav>
-</header>
-<br>
+</header><br>
+<div class="theme-switcher-container">
+    <img src="./Images/light.png" class="theme-selector" onclick="lightMode()">
+    <img src="./Images/dark.png" class="theme-selector" onclick="darkMode()">
+</div><br><br>
 
 <div>
 <marquee class="blink">"Explore the Marvels of the Ancient World✨" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
@@ -24,108 +27,108 @@
 </div>
 <br>
 
-    <div class="container4">
+<div class="user-Scroll">
+  <div class="Scroll-container">
       
-      <img src="./Images/7wonder4.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder2.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder1.jpeg" alt="Wonders World" />
-      <img src="./Images/7wonder5.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder4.jpg" alt="Wonders World" />
-      <img src="./Images/7wonder6.webp" alt="Wonders World" />
-      <img src="./Images/7wonder5.jpg" alt="Wonders World" />
-      
-    </div>
+      <img src="./Images/Left-animation (1).gif" class="switch-btn" onclick="prev()">
+      <span class="Scroll"><img src="./Images/7wonder1.jpeg" class="Scroll-img" id="Scroll-image">
+      </span>
+      <img src="./Images/Right-animation.gif" class="switch-btn" onclick="next()">
+  </div>
+</div>
+
 
     <p class="main-heading"> Let's Explore Wonders ❤️</p>
 
-    <div class="card-container">
-
-        <div class="container card">
-       <a href="./Pages/india.html"><img  src="./Images/India-wonder1.webp" class="image"><img src="./Images/India-wonder2.jpg" class="image"></a>
-          <div class="overlay">The Taj Mahal</div>
-         
-
-        
-        </div>
-      
-        <div class="container card">
-          <a href="./Pages/Italy.html"><img src="./Images/Italy-wonder1.webp" class="image"><img src="./Images/Italy-wonder2.jpg" class="image"></a>
-          <div class="overlay">The Colosseum</div>
-           
-        </div>
-    
-
-
-
-        
-      
-         <div class="container card">
-          <a href="./Pages/jorden.html"><img src="./Images/Jorden-wonder1.webp"class="image"><img src="./Images/Jorden-wonder2.jpg" class="image"></a> 
-          <div class="overlay">The Petra</div>
-          
-    
-          </div>
-
-        
-          
-      
-          
-         <div class="container card">
-          <a href="./Pages/peru.html"><img src="./Images/Peru-wonder1.webp" class="image"><img src="./Images/Peru-wonder2.jpg" class="image"></a>
-          <div class="overlay">The Machu Picchu</div>
-       
-         </div><br>
-        
-        </div>
-        
-        <div class="card-container">
-           <div class="container card">
-            <a href="./Pages/mexico.html"><img src="./Images/Mexico-wonder1.webp" class="image"><img src="./Images/Mexico-wonder2.jpg" class="image"></a>
-           <div class="overlay">The Chichen Itza</div>
-            
-            
+       <div class="explore-container">
+        <div class="explore-card " >
+             <img src="./Images/India-wonder1.webp" alt="Wonders World" id="img">
+             <span class="explore-info">Taj Mahal,India</span><br>
+             <button class="btn"><a href="./Pages/india.html">Explore⚡</a></button>
             </div>
+      <div class="explore-card">
+          <img src="./Images/Brazil-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Christ Redeemer,Brazil</span><br>
+          <button class="btn"><a href="./Pages/brazil.html">Explore⚡</a></button>
+      </div>
+      <div class="explore-card">
+          <img src="./Images/Jorden-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Petra,Jorden</span><br>
+          <button class="btn"><a href="./Pages/jorden.html">Explore⚡</a></button>
+      </div>
+      <div class="explore-card">
+          <img src="./Images/Mexico-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Chichen Itza, Mexico</span><br>
+          <button class="btn"><a href="./Pages/mexico.html">Explore⚡</a></button>
+      </div>
+     </div>
+      <div class="explore-container">
+      <div class="explore-card">
+          <img src="./Images/Peru-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Machu pichu,Peru</span><br>
+          <button class="btn"><a href="./Pages/peru.html">Explore⚡</a></button>
+      </div>
+      <div class="explore-card">
+          <img src="./Images/Italy-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Colosseum,Italy</span><br>
+          <button class="btn"><a href="./Pages/Italy.html">Explore⚡</a></button>
+      </div>
+      <div class="explore-card">
+          <img src="./Images/China-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Great Wall , China</span><br>
+          <button class="btn"><a href="./Pages/china.html">Explore⚡</a></button>
+      </div>
+  </div>
+
+              <script>
+                let ScrollImages = [
+                    "./Images/7wonder1.jpeg",
+                    "./Images/7wonder2.jpg",
+                    "./Images/7wonder3.jpeg",
+            
+                ];
+                let currentIndex=0;
         
-            <div class="container card">
-              <a href="./Pages/brazil.html"><img src="./Images/Brazil-wonder1.webp" class="image"><img src="./Images/Brazil-wonder2.jpeg" class="image"></a>
-            <div class="overlay">Christ the Redeemer </div>
-              
-              </div>
-      
-           <div class="container card">
-            
-            
-      <a href="./Pages/china.html"><img src="./Images/China-wonder1.webp" class="image"><img src="./Images/China-wonder2.jpeg" class="image"></a>  
-             <div class="overlay">Great Wall of China</div>
-              
-               
-              </div>
-          
-                </div><br>
-              </div>
+                function prev(){
+                    if(currentIndex>0) {
+                        currentIndex--;
+                    }
+                    else{
+                        currentIndex = ScrollImages.length - 1; 
+                    }
+                    document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
+                }
+        
+                function next(){
+                    if(currentIndex < ScrollImages.length -1){
+                        currentIndex++;
+                    }
+                    else{
+                        currentIndex = 0;
+                    }
+                    document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
+                }
+        
+
+                function darkMode(){
+    const mainBody = document.getElementById('main-body');
+    mainBody.classList.remove('bg-light');
+    mainBody.classList.add('bg-dark');
+}
+
+function lightMode(){
+    const mainBody = document.getElementById('main-body');
+    mainBody.classList.remove('bg-dark');
+    mainBody.classList.add('bg-light');
+}
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </script>
+                
 <footer>
 <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
 <div class="socia-media">
