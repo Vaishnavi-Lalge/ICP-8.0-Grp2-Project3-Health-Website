@@ -147,3 +147,17 @@ h3{
 .feed-img{
     height: 100px;
 }
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+}
+.contact{
+    border-right: solid;
+    padding-right: 100px;
+    
+}
+.pages{
+    border-left: solid;
+    padding-left: 100px;
+}
