@@ -106,6 +106,53 @@ span{
     font-size: 18px;
     margin-left: 100px;
 }
+.explore-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wonders {
+    width: 30%;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.wonders-img {
+    height: 200px;
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btns {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #10353e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btns:hover {
+    background-color: white;
+    color: #10353e;
+    border: 1px solid #10353e;
+}
 
  footer{
     background-color: #007a86;
