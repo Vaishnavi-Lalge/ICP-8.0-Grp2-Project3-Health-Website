@@ -1,92 +1,88 @@
-body{
-    background-color: #d3f1f1;
-    margin: 0;
-    padding: 0;
-    }
+body {
+  background-color: #d3f1f1;
+  margin: 0;
+  padding: 0;
+}
 
-    header{
-        background-color: #007a86;
-        color: #fff;
-        padding: 1px 0px;
-        width: 100%;
-    }
+header {
+  background-color: #007a86;
+  color: #fff;
+  padding: 0 15px; /* Adjust padding as needed */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 
-    .logo-text{
-        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-        font-size: 30px;
-    }
+.logo-img {
+  height:150px; /* Matches the header height */
+  width: auto;
+}
 
-    .social-icon{
-        height: 50px;
-        width: 50px;
-    }
+.logo-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin-left: 15px; /* Adds space between the logo and the text */
+}
 
-    .social-media{
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        align-items: center;
-    }
+.social-icon {
+  height: 50px;
+  width: 50px;
+}
 
+.social-media {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-items: center;
+}
 
+nav {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
-    nav{
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
+footer {
+  background-color: #007a86;
+  color: #fff;
+  align-items: center;
+  text-align: center;
+  padding: 4px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 2px auto;
+}
 
-     footer{
-        background-color: #007a86;
-        color: #fff;
-        align-items: center;
-        text-align: center;
-        padding: 4px 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 2px auto;
-     }
+.foot-text {
+  text-align: center;
+  font-size: 20px;
+}
 
-     .foot-text{
-        text-align: center;
-        font-size: 20px;
-     }
+.social-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
 
-     .social-text{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 25px;
-     }
+.heading2 {
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #50adff;
+}
 
-
-     .heading2{
-        font-size: 50px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: #50adff;
-    }
-    
-  
-    
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border: 2px solid dashed;
-    box-shadow: 0px 0px 40px 0px #10353e;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border: 2px solid dashed;
+  box-shadow: 0px 0px 40px 0px #10353e;
   transition-duration: 0.9s;
     }
-
-    
-
-       
-      
-
-
-    .main-heading{
+  .main-heading{
         font-size: 50px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         text-align: center;
         font-weight: bold;
       }
 
-.btn-content{
+.btn-content {
   border: none;
   background-color: #50adff;
   color: #fff;
@@ -94,13 +90,10 @@ body{
   border-radius: 4px;
   padding: 0px 150px;
   margin: auto;
-font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
-  
-
-
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
 }
 
-.main-class{
+.main-class {
   align-items: center;
   margin: 2px auto;
 }
@@ -120,32 +113,28 @@ font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   display: none;
 }
 
-
-.moving-text{
+.moving-text {
   font-size: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
-  
-  }
-
-
-  .blink{
-    animation: blinker 1.5s linear infinite;
-    color: #10353e;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    justify-content: space-around;
-    font-weight: bold;
 }
 
-@keyframes blinker{
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: #10353e;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+@keyframes blinker {
   50% {
-    opacity: 0;
+      opacity: 0;
   }
 }
 
-.user-Scroll{
-  border:none;
+.user-Scroll {
+  border: none;
   box-shadow: 0 0 6px rgba(36, 67, 40, 0.8);
   background-color: #fff;
   border-radius: 10px;
@@ -154,25 +143,23 @@ font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   padding: 10px;
 }
 
-.Scroll-container{
+.Scroll-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.switch-btn{
+
+.switch-btn {
   height: 80px;
   width: 100px;
   cursor: pointer;
 }
 
-.Scroll-img{
+.Scroll-img {
   border-radius: 20px;
   height: 600px;
   width: 800px;
-
 }
-
 
 .bttn {
   padding: 10px 30px;
@@ -198,7 +185,7 @@ button a {
   text-align: center;
 }
 
-/*Explore-cerd */
+/*Explore-card */
 .Wonders {
   font-weight: bold;
   font-size: 30px;
@@ -211,9 +198,9 @@ button a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-      }
-  
-  .explore-card {
+}
+
+.explore-card {
   background-color: #F0F0F0;
   margin: 20px;
   transition: transform 400ms ease-in;
@@ -223,15 +210,14 @@ button a {
   text-align: center;
   box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.2);
 }
+
 #img {
   height: 400px;
   width: 100%;
   border-radius: 0px 0px 10px 10px;
-  
 }
 
 .explore-card img {
-  
   width: 180px;
   height: 400px;
 }
@@ -243,8 +229,6 @@ button a {
   color: #10353e;
   margin-top: 5px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
-
 }
 
 .btn {
@@ -258,23 +242,20 @@ button a {
   margin-top: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-
 }
 
 .explore-card:hover {
-  
-    transform: scale(1.1);
-  
-    border: 2px solid dashed;
-    box-shadow: 0px 0px 20px 0px #10353e;
+  transform: scale(1.1);
+  border: 2px solid dashed;
+  box-shadow: 0px 0px 20px 0px #10353e;
 }
-
 
 .theme-switcher-container {
   display: flex;
   gap: 10px;
   position: absolute;
   right: 20px;
+  position: fixed;
 }
 
 .theme-selector {
@@ -283,7 +264,7 @@ button a {
   cursor: pointer;
 }
 
-.bg-dark  {
+.bg-dark {
   background-color: #10353e;
   color: white;
 }
@@ -292,10 +273,9 @@ button a {
   background-color: #d3f1f1;
 }
 
-.bg-dark .moving-text{
+.bg-dark .blink {
   color: white;
 }
-
 
 
 
