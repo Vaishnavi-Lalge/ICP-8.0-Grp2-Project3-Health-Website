@@ -6,15 +6,18 @@
     <title>Home page</title>
     <link href="./CSS/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light" id="main-body">
 <header>
     <nav>
         <div class="logo">
             <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
         </div>
     </nav>
-</header>
-<br>
+</header><br>
+<div class="theme-switcher-container">
+    <img src="./Images/light.png" class="theme-selector" onclick="lightMode()">
+    <img src="./Images/dark.png" class="theme-selector" onclick="darkMode()">
+</div><br><br>
 
 <div>
 <marquee class="blink">"Explore the Marvels of the Ancient World✨" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
@@ -106,6 +109,24 @@
                     document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
                 }
         
+
+                function darkMode(){
+    const mainBody = document.getElementById('main-body');
+    mainBody.classList.remove('bg-light');
+    mainBody.classList.add('bg-dark');
+}
+
+function lightMode(){
+    const mainBody = document.getElementById('main-body');
+    mainBody.classList.remove('bg-dark');
+    mainBody.classList.add('bg-light');
+}
+
+
+
+
+
+
             </script>
                 
 <footer>
