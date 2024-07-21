@@ -52,8 +52,15 @@ iframe:hover{
     background-color: #10353e;
     box-shadow: 2px 2px 4px 4px  ;
 }
-.data-card {
+.light-card{
     background-color: #b8ecec;
+}
+.dark-card{
+    background-color: white;  
+    color: #000;
+}
+.data-card {
+    
     height: 250px;
     margin: 10px;
     padding: 10px;
