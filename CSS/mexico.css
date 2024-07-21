@@ -239,6 +239,44 @@ span{
     border-radius: 20px;
     padding: 5px;
 }
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.home-img{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 120px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.home-icon{
+    height: 40px;
+    padding:5px 5px 1px;
+}
+
+.feed-img{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom: 350px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.feed-icon{
+    height: 40px;
+    padding:5px 5px 1px;
+}
+
+
 .icons{
     height: 30px;
     width: 40px;
