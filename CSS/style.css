@@ -276,20 +276,21 @@ button a {
   cursor: pointer;
 }
 
-.bg-dark   {
+.bg-dark {
   background-color: #10353e;
   color: white;
 }
 
-.bg-light  {
-  background-color: #d3f1f1;
+.bg-dark h1, .bg-dark h3 {
+  color: white;
 }
 
+.bg-dark h3 {
+  color: #10353e;
+}
 
-
-.bg-dark .blink  {
-
-  color: white;
+.bg-light {
+  background-color: #d3f1f1;
 }
 
 

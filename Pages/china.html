@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Great Wall of China</title>
-   
+
     <link rel="stylesheet" href="./../CSS/china.css">
     <link rel="stylesheet" href="./../CSS/style.css">
     <link rel="stylesheet" href="./../CSS/india.css">
-       
+    
+
 </head>
 
-<body class="main-body">
+<body class="bg_light" class="main_body" id="main-body">
     <header>
         <nav>
             <div class="logo">
-                
-            <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
-                
+
+                <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
+
             </div>
         </nav>
     </header>
@@ -26,11 +27,11 @@
         <!-- Your main content here -->
     </div>
     <h1 class="heading">The Great Wall of China </h1>
-    <div class="theme-select-container">
-        <img src="../Images/light.png" class="theme-select-icon" onclick="enableLight()">
-        <img src="../Images/dark.png" class="theme-select-icon" onclick="enableDark()">
+    <div class="theme-chg">
+        <img src="./../Images/sun_.png" class="theme_btn" id="light_theme_btn" onclick="lightThemeAction()">
+        <img src="./../Images/dark.png" class="theme_btn" id="dark_theme_btn" onclick="darkThemeAction()">
     </div>
-    
+
     <img src="./../Images/China_Wall_Images/china_wall_img3.jpg" alt="mobile" id="main-product-img" />
 
     <div class="product-img-container">
@@ -45,49 +46,52 @@
                 onclick="showImage('./../Images/China_Wall_Images/china_wall_img4.jpg')" />
 
         </div>
-        
+
 
 
     </div>
-    <br/>
-   
-  
-   <span class="data-container">
-  Let's Know about Great Wall of China</span><br/>
+    <br />
 
- 
 
-   <div class="data">
-    <div class="data-card">
-        <span class="bold">Wonder's Name : </span>&nbsp;&nbsp;The Great Wall of China<br /><br />
-        <span class="bold">Location: </span> &nbsp;&nbsp;Huairou District, China<br /><br />
-        <span class="bold">Length: </span>&nbsp;&nbsp;The Great Wall is 21,196.18 km long.<br /><br />
-        <span class="bold">Construction: </span>&nbsp;&nbsp;The wall began construction during the Western Zhou
-        Dynasty (1046–771 BC) and took over 2,000 years to build.<br /><br />
-      
+    <span class="data-container">
+        Let's Know about Great Wall of China</span><br />
+
+
+
+    <div class="data">
+        <div class="data-card">
+            <span class="bold">Wonder's Name : </span>&nbsp;&nbsp;The Great Wall of China<br /><br />
+            <span class="bold">Location: </span> &nbsp;&nbsp;Huairou District, China<br /><br />
+            <span class="bold">Length: </span>&nbsp;&nbsp;The Great Wall is 21,196.18 km long.<br /><br />
+            <span class="bold">Construction: </span>&nbsp;&nbsp;The wall began construction during the Western Zhou
+            Dynasty (1046–771 BC) and took over 2,000 years to build.<br /><br />
+
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59926.639099215064!2d116.02852360681362!3d40.43190733889945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f19b2c3ecb2db7%3A0x240ddbbda1d1807!2sGreat%20Wall%20of%20China!5e0!3m2!1sen!2s!4v1623840502826!5m2!1sen!2s"
+                width="440" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+
+        </div>
+
+
+
     </div>
-    <div class="map-container">
-        <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59926.639099215064!2d116.02852360681362!3d40.43190733889945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f19b2c3ecb2db7%3A0x240ddbbda1d1807!2sGreat%20Wall%20of%20China!5e0!3m2!1sen!2s!4v1623840502826!5m2!1sen!2s"
-        width="440" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
-           
-        
-    </div>
-   
-
-
-  </div>
-  <br/>
-  <iframe width="600" height="315" src="https://www.youtube.com/embed/NOKvj7hQbB4?si=eAqvKqyKVl9Ea1fi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="video_style" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <br/>
-  <h2>Features of Great Wall in China</h2>
+    <br />
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/NOKvj7hQbB4?si=eAqvKqyKVl9Ea1fi"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        class="video_style" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br />
+    <h2>Features of Great Wall in China</h2>
 
     <div class="info1">
         <div class="card1">
             <img src="./../Images/China_Wall_Images/wall_tower.jpg" alt="img" height="40px">
             <span class="highlight">China Wall Tower</span>
-           <ul>
+            <ul>
                 <li>Watchtowers, also known as abutments, could be square, rectangular, or round.</li>
                 <li>These ancient buildings were used to communicate the military situation and other information.</li>
             </ul>
@@ -99,7 +103,8 @@
 
             <ul>
                 <li>The Great Wall is not a single-structured wall.</li>
-                <li>It includes beacon towers, barriers, barracks, garrison stations, and fortresses along the walls</li>
+                <li>It includes beacon towers, barriers, barracks, garrison stations, and fortresses along the walls
+                </li>
                 <li>Together forming an integrated defense system. </li>
             </ul>
         </div>
@@ -115,18 +120,18 @@
         </div>
     </div>
 
-   
-    
-    
+
+
+
 
     <h2 class="heading">Test your knowledge</h2>
 
-    <br/>
-    <a href="./../Pages/china-wall-quiz.html"  class="btn_q" >Take a Quiz </a><br/><br/><br/>
-    <a href="./../Pages/feedback.html"  class="btn_f" >Give FeedBack </a>
+    <br />
+    <a href="./../Pages/china-wall-quiz.html" class="btn_q">Take a Quiz </a><br /><br /><br />
+    <a href="./../Pages/feedback.html" class="btn_f">Give FeedBack </a>
 
-    
-    
+
+
     <h1 class="know-about">Explore Other Wonders Too...</h>
         <div class="explore-container">
             <div class="wonders">
@@ -159,46 +164,49 @@
                 <h3>Machu Picchu, Peru</h3>
                 <button class="btns" onclick="window.location.href='../Pages/peru.html'">Explore</button>
             </div>
-    
+
         </div>
-    
-
-        
-   
-<footer>
-    <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
-    <div class="social-media ">
-    <p class="social-text">Follow Us On</p>
-
-   <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook Account"><img src="./../Images/facebook.png" class="social-icon"></a>
-   <a href="https://youtu.be/fYR5hRdYh9Q?si=Y87MD0xDPETFc6-C" alt="Visit to YouTube Account"><img src="./../Images/youtube (1).png" class="social-icon"></a> 
-   <a href="https://www.instagram.com/seven_wonders_of_world?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" alt="Visit to Instagram Account"><img src="./../Images/instagram.png"  class="social-icon"></a>
-   </div>
-  </footer>
-   
 
 
-    <script>
-        function showImage(imgName) {
-            const imgval = document.getElementById("main-product-img");
-            imgval.src = imgName;
 
-        }
-        /*Theme switch /
-         /*theme-matched*/
-         function darkMode(){
-            const mainBody = document.getElementById('main-body');
-            mainBody.classList.remove('bg-light');
-            mainBody.classList.add('bg-dark');
-        }
 
-        function lightMode(){
-            const mainBody = document.getElementById('main-body');
-            mainBody.classList.remove('bg-dark');
-            mainBody.classList.add('bg-light');
-        }
+        <footer>
+            <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
+            <div class="social-media ">
+                <p class="social-text">Follow Us On</p>
 
-    </script>
+                <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook Account"><img
+                        src="./../Images/facebook.png" class="social-icon"></a>
+                <a href="https://youtu.be/fYR5hRdYh9Q?si=Y87MD0xDPETFc6-C" alt="Visit to YouTube Account"><img
+                        src="./../Images/youtube (1).png" class="social-icon"></a>
+                <a href="https://www.instagram.com/seven_wonders_of_world?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw"
+                    alt="Visit to Instagram Account"><img src="./../Images/instagram.png" class="social-icon"></a>
+            </div>
+        </footer>
+
+
+
+        <script>
+            function showImage(imgName) {
+                const imgval = document.getElementById("main-product-img");
+                imgval.src = imgName;
+
+            }
+            function lightThemeAction() {
+                const themeBtn = document.getElementById("main-body");
+                themeBtn.classList.remove("bg_dark");
+                themeBtn.classList.add("bg_light");
+            }
+            function darkThemeAction() {
+
+                const themeBtn = document.getElementById("main-body");
+                console.log("dark themeenter");
+                themeBtn.classList.remove("bg_light");
+                themeBtn.classList.add("bg_dark");
+                console.log("dark theme close");
+            }
+
+        </script>
 </body>
 
 </html>
