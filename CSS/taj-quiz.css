@@ -3,6 +3,8 @@ body {
     margin: 20px;
     background-color: rgb(170, 224, 245);
 }
+
+
 .main-heading{
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -12,7 +14,7 @@ body {
 .theme-switcher-container {
 display: flex;
 gap: 10px;
-position: absolute;
+position:fixed;
 right: 20px;
 }
 .theme-selector {
@@ -26,7 +28,7 @@ cursor: pointer;
     font-size: 15px;
 
 }
-.question h2 {
+.question h3 {
     font-size: 20px;
 }
 .results {
@@ -39,18 +41,29 @@ cursor: pointer;
     width: 100px;
     font-size: 15px;
     font-weight: bold;
-    background-color: #ff9800;
-    border: none;
+    background-color:#10353e;
     color: white;
     cursor: pointer;
+    border-radius: 20px;
+    border: none;
+}
+
+.submit-btn:hover{
+    background-color: white;
+    color: #10353e;
+    border: 1px solid #10353e;
 }
 .bg-dark {
 background-color: #10353e;
-color: white;
+color:white;
 }
 
 .bg-light {
  background-color: #d3f1f1;
+}
+
+.bg-dark .question h3{
+    color:#10353e;
 }
 .quizForm{
     border: solid #10353e;
@@ -59,4 +72,96 @@ color: white;
     width: 800px;
     margin: 20px auto;
     padding: 20px;
+    background-color: white;
+}
+
+.bg-dark .quizForm{
+    background-color: #d3f1f1;
+    color: black;
+}
+
+/* Responsive Media Queries */
+
+/* For devices with max-width 1200px */
+@media (max-width: 1200px) {
+    .quizForm {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .submit-btn {
+        width: 150px;
+    }
+}
+
+/* For devices with max-width 768px */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 25px;
+    }
+
+    .theme-switcher-container {
+        right: 10px;
+        top: 10px;
+    }
+
+    .theme-selector {
+        height: 25px;
+        width: 25px;
+    }
+
+    .question {
+        font-size: 14px;
+    }
+
+    .question h3 {
+        font-size: 18px;
+    }
+
+    .quizForm {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .submit-btn {
+        width: 120px;
+    }
+}
+
+/* For devices with max-width 480px */
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    .main-heading {
+        font-size: 20px;
+    }
+
+    .theme-switcher-container {
+        right: 5px;
+        top: 5px;
+    }
+
+    .theme-selector {
+        height: 20px;
+        width: 20px;
+    }
+
+    .question {
+        font-size: 12px;
+    }
+
+    .question h3 {
+        font-size: 16px;
+    }
+
+    .quizForm {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .submit-btn {
+        width: 100px;
+    }
 }
