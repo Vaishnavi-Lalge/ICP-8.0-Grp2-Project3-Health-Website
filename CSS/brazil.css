@@ -174,7 +174,7 @@ button a {
     color: white;
 }
 .bg-dark .highlight , p{
-    color: black;
+    color: #10353e;
 }
 
 .bg-dark h3  {
@@ -183,6 +183,9 @@ button a {
 
 .bg-light {
     background-color: #d3f1f1;
+}
+.bg-dark .data-card{
+    color: #10353e;
 }
 
 /*Data card */
@@ -387,7 +390,29 @@ h1 {
 
 
 /*Footer */
+.footer-container {
+    display: flex;
+    flex-direction: row;
+}
 
+.contact {
+    border-right: solid;
+    padding-right: 100px;
+    padding-top: 10px;
+
+}
+
+.pages {
+    border-left: solid;
+    padding-left: 100px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
 footer {
     background-color: #007a86;
     color: #fff;
