@@ -76,14 +76,51 @@
                 <input type="radio" name="q5" value="C"> C.22,000-25,000 <br>
                 <input type="radio" name="q5" value="D"> D.100,000-125,000
             </div>
-            <button type="button" onclick="checkAnswers()">Submit</button>
+            <div class="question">
+                <p>6. The amphitheater (Colosseum) is a vast _____ with tiers of seating and a central arena.</p>
+                <input type="radio" name="q5" value="A"> A.ellipse
+                <br>
+                <input type="radio" name="q5" value="B"> B.rectangle <br>
+                <input type="radio" name="q5" value="C"> C.square<br>
+                <input type="radio" name="q5" value="D"> D.triangle
+            </div>
+            <div class="question">
+                <p>7. The seating arrangements in the Colosseum reflected the stratification of Roman society. Thus which of the following statements is true?</p>
+                <input type="radio" name="q5" value="A"> A.emperors sat with women<br>
+                <input type="radio" name="q5" value="B"> B.boys sat with their tutors<br>
+                <input type="radio" name="q5" value="C"> C.women sat with their spouses <br>
+                <input type="radio" name="q5" value="D"> D.priests sat with women
+            </div>
+            <div class="question">
+                <p>8.Where is the Colosseum located in Rome?</p>
+                <input type="radio" name="q5" value="A"> A.between the Palatine and Aventine hills<br>
+                <input type="radio" name="q5" value="B"> B.between the Esquiline and Caelian hills <br>
+                <input type="radio" name="q5" value="C"> C.between the Capitoline and Palatine hills <br>
+                <input type="radio" name="q5" value="D"> D.between the Aventine and Quirinal hills
+            </div>
+            <div class="question">
+                <p>9. What is the name of the structure that accomodated gladiatorial games and even mock sea battles in Rome?</p>
+                <input type="radio" name="q5" value="A"> A.the Pantheon<br>
+                <input type="radio" name="q5" value="B"> B.the Forum <br>
+                <input type="radio" name="q5" value="C"> C.the Circus Maximus <br>
+                <input type="radio" name="q5" value="D"> D.the Colosseum
+            </div>
+            <div class="question">
+                <p>10. What could the Romans keep below the wooden arena floor of the Colosseum?</p>
+                <input type="radio" name="q5" value="A"> A.wild beasts<br>
+                <input type="radio" name="q5" value="B"> B.slaves <br>
+                <input type="radio" name="q5" value="C"> C.machinery <br>
+                <input type="radio" name="q5" value="D"> D.all of the above
+            </div>
+            <button 
+            type="button" onclick="checkAnswers()">Submit</button>
         </form>
         <div id="result" class="result"></div>
     </div>
 
     <script>
         function checkAnswers() {
-            var correctAnswers = ['C', 'A', 'A', 'D', 'B'];
+            var correctAnswers = ['C', 'A', 'A', 'D', 'B','A','B','B','D','D'];
             var userAnswers = [];
             for (var i = 1; i <= 5; i++) {
                 var answer = document.querySelector('input[name="q' + i + '"]:checked');

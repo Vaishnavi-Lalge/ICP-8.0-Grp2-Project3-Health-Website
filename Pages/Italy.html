@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christ the Redeemer</title>
+    <title>italy Colosseum</title>
     <link rel="stylesheet" href="./../CSS/italy.css">
        
 </head>
@@ -28,20 +28,13 @@
         <img src="./../Images\light.png" alt="golden" class="theme-select-icon" onclick="enableLight()" />
         <img src="./../Images\dark.png" alt="black" class="theme-select-icon" onclick="enableDark()" />
     </div>
-    <h1 class="heading">Christ Redeemer</h1>
-    <img src="./../Images\italy.jpg" alt="mobile" id="main-product-image" />
-
-    <div class="product-images-container">
-        <img src="./../Images\it5.jpeg" class="product-image" onclick="changeImage(1)" />
-        <img src="./../Images\Italy-wonder1.webp" class="product-image" onclick="changeImage(2)" />
-        <img src="./../Images\Italy-wonder2.jpg" class="product-image" onclick="changeImage(3)" />
-        <img src="./../Images\italy.jpg" class="product-image" onclick="changeImage(3)" />
-        
-
-
+    <img src="../Images\italy.jpg" id="main-product-img">
+    <div class="product-img-container">
+        <img src="../Images\Italy-wonder1.webp" class="product-img" onclick="changeImage('../Images\Italy-wonder1.webp.jpg')">
+        <img src="../Images\Italy-wonder2.jpg" class="product-img" onclick="changeImage('../Images\Italy-wonder2.jpg')">
+        <img src="../Images\it5.jpeg" class="product-img" onclick="changeImage('../Images\it5.jpeg')">
+        <img src="../Images\italy.jpg" class="product-img" onclick="changeImage('../Images\italy.jpg')">
     </div>
-   
-
   
    <span class="data-container"> Let's Know about italy Colosseum</span>
    <div class="data">
@@ -54,7 +47,9 @@
         </p>
 
     </div>
-   
+    <div class="map">
+        <iframe src="" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
   </div>
   <h2>Features of italy Colosseum</h2>
   <div class="info">
@@ -143,36 +138,23 @@
 
 
     <script>
-        function changeImage(num) {
-            const mainImage = document.getElementById('main-product-image');
-            if (num == 1) {
-                mainImage.src = "./../Images\italy.jpg";
-            } else if (num == 2) {
-                mainImage.src = "./../Images\it5.jpeg";
-            } else if (num == 3) {
-                mainImage.src = "./../Images\Italy-wonder1.webp";
-            } else if (num == 4) {
-                mainImage.src = "./../Images\Italy-wonder2.webp";
-            } else if (num == 4) {
-                mainImage.src = "./../Images\italy.jpg";
-            }
-
+        function changeImage(imageName){
+            const mainImage = document.getElementById('main-product-img');
+            mainImage.src = imageName;
         }
-        /*Theme switch /
-         /*theme-matched*/
-        function enableDark() {
-            document.body.classList.add("bg-dark");
-            document.body.classList.remove("bg-light");
+       
+        function darkMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-light');
+            mainBody.classList.add('bg-dark');
         }
 
-        function enableLight() {
-            document.body.classList.add("bg-light");
-            document.body.classList.remove("bg-dark");
+        function lightMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-dark');
+            mainBody.classList.add('bg-light');
         }
     </script>
-</body>
-
-</html>
 </body>
 
 </html>
