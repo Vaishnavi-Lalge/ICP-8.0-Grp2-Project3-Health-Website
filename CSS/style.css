@@ -74,15 +74,13 @@ footer {
   border: 2px solid dashed;
   box-shadow: 0px 0px 40px 0px #10353e;
   transition-duration: 0.9s;
-}
-
-.main-heading {
-  font-size: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-align: center;
-  font-weight: bold;
- color: #10353e;
-}
+    }
+  .main-heading{
+        font-size: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-weight: bold;
+      }
 
 .btn-content {
   border: none;
@@ -278,3 +276,10 @@ button a {
 .bg-dark .blink {
   color: white;
 }
+
+
+
+
+
+
+
