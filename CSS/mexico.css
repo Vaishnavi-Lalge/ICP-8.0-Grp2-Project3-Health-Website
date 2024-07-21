@@ -1,7 +1,11 @@
+#body{
+    margin: 0px;
+    padding: 0px;
+}
 h1{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 10px;
 }
 header {
@@ -106,6 +110,52 @@ span{
     font-size: 18px;
     margin-left: 100px;
 }
+.explore-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wonders {
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: #000;
+}
+.wonders-img {
+    height: 180px;
+    width:90%;
+    border-radius: 10px;
+}
+
+.btns {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #10353e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btns:hover {
+    background-color: white;
+    color: #10353e;
+    border: 1px solid #10353e;
+}
 
  footer{
     background-color: #007a86;
@@ -116,7 +166,7 @@ span{
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    margin: 2px auto;
+    margin: 0px;
  }
 
  .foot-text{
@@ -156,18 +206,16 @@ span{
     padding: 5px 8px;
     cursor: pointer;
 }
-#main-img{
-    max-width: 100%; 
-    height: auto;
-    min-height: 200px;
-    display: block;
-    margin: 30px auto;
-    border-color: black;
-    border-style: solid;
-    border-width: 3px;
+#main-img {
+    width: 700px;
+    height: 500px;
+    border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 25);
- }
+    box-shadow: 0px 0px 10px 0px rgba(12, 12, 12, 0.25);
+    display: block;
+    margin: 20px auto;
+}
+
  .img{
     width: 150px;
     height: 150px;

@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz</title>
     <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
         h1 {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center;
         }
-    
         .mode-img {
             height: 30px;
             width: 30px;
@@ -22,6 +25,11 @@
             right: 20px;
             top: 20px;
             position: fixed;
+        }
+        nav{
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 15px;
         }
     
         .darkbg {
@@ -67,10 +75,99 @@
             border-radius: 10px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             box-shadow : 10px 10px 10px 10px #cbe4ea;
+        }header {
+            background-color: #007a86;
+            color: #fff;
+            padding: 1px 0px;
+            width: 100%;
+            height: 60px;
+
         }
-    </style>
+
+        .logo-text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            margin-top: 5px;
+        }
+
+        .social-icon{
+            height: 50px;
+            width: 50px;
+        }
+
+        .social-media{
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            align-items: center;
+        }
+        footer{
+            background-color: #007a86;
+            color: #fff;
+            align-items: center;
+            text-align: center;
+            padding: 4px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 0px;
+            margin-top: 20px;
+        }
+
+        .foot-text{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .social-text{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+        }
+        .results{
+            text-align: center;
+        }
+        .buttons-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .home-img{
+            cursor: pointer;
+            position: fixed;
+            left: 10px;
+            top: 200px;
+            border: none;
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+            border-radius: 40%;
+            background-color: #fff;
+        }
+
+        .home-icon{
+            height: 40px;
+            padding:5px 5px 1px;
+        }
+        .back-icon{
+            position: fixed;
+            bottom: 50px;
+            height: 40px;
+            width: 40px;
+            border: none;
+            left: 10px;
+            border-radius: 40%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+
+        }
+
+</style>
 </head>
 <body  >
+    <header>
+        <nav>
+            <div class="logo">
+                <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
+            </div>
+        </nav>
+    </header>
     <h1>Quiz on Chichén Itzá </h1>
     <div class="mode-btnholder">
         <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
@@ -167,6 +264,35 @@
         <div id="results" class="results"></div>
     
     </div>
+    <footer>
+        <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
+        <div class="socia-media">
+            <p class="social-text">Follow Us On</p>
+        
+           <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to facebook account"><img src="../Images/facebook.png" class="social-icon"></a>
+        
+           <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img src="../Images/youtube (1).png" class="social-icon"></a>
+        
+            <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to instagram account">
+            <img src="../Images/instagram.png" class="social-icon"></a>
+            
+        </div>
+
+        
+        </footer>
+        <div class="buttons-container">
+            <div class="home-img">
+                <a href="../index.html">
+                    <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+                </a>
+            </div>
+        </div>
+       
+        <div class="back-img">
+            <a href="../Pages/mexico.html">
+            <img src="./../Images/back.png" alt="back-png" class="back-icon" />
+            </a>
+        </div>
    
     <script>
         function checkAnswers() {
