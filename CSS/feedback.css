@@ -9,6 +9,23 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.theme-select-icon{
+    height: 50px;
+    cursor: pointer;
+}
+.theme-sector-container{
+    position: fixed;
+    right: 5px;
+    top: 120px;
+}
+.bg-dark{
+    background-color: #10353e;
+    color: white;
+}
+.bg-dark h2, .bg-dark h3 {
+    color: white;
+}
+
 .home-img {
     cursor: pointer;
     position: fixed;
