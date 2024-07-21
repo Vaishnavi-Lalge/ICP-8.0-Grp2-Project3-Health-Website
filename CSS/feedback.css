@@ -155,9 +155,11 @@ h3{
 .contact{
     border-right: solid;
     padding-right: 100px;
+    padding-top: 10px;
     
 }
 .pages{
     border-left: solid;
     padding-left: 100px;
+    padding-top: 10px;
 }
