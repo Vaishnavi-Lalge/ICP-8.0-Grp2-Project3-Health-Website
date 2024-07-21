@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Christ the Redeemer Quiz</title>
+    
     <style>
         body {
         background-color: #d3f1f1;
@@ -43,6 +44,62 @@
     margin: 0 auto;
     padding: 0 15px;
   }
+
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.home-img{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 200px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.home-icon{
+    height: 40px;
+    padding:5px 5px 1px;
+}
+
+.feed-img{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom:120px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.feed-icon{
+    height: 40px;
+    padding:5px 5px 1px;
+}
+
+
+
+.back-img{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom:120px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.back-icon{
+    height: 40px;
+    padding:5px 5px 1px;
+}
+
 
         h2{
             justify-content: center;
@@ -207,6 +264,27 @@ footer {
     <div class="content">
         <!-- Your main content here -->
     </div>
+
+    <div class="buttons-container">
+        <div class="home-img">
+            <a href="../index.html">
+                <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+            </a>
+        </div>
+        <div class="feed-img">
+            <a href="./../Pages/feedback.html">
+                <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+            </a>
+        </div>
+    </div>
+   
+    <div class="back-img">
+        <a href="../Pages/india.html">
+        <img src="./../Images/back.png" alt="back-png" class="back-icon" />
+        </a>
+    </div>
+
+
     <div class="quiz-container">
         <h2>CHRIST THE REDEEMER QUIZ</h2>
         <form id="quizForm">
