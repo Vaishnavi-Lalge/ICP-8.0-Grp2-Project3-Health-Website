@@ -360,10 +360,6 @@ h3 {
     display: none;
 }
 
-h3 {
-    display: none;
-}
-
 .switch-btn {
     height: 50px;
     cursor: pointer;
@@ -372,6 +368,10 @@ h3 {
 
 .feed-img {
     height: 100px;
+    display: none;
+}
+
+h3 {
     display: none;
 }
 
@@ -400,6 +400,7 @@ h3 {
         flex-direction: row;
         margin: auto;
     }
+    
 }
 
 /* Large Devices  */
@@ -423,4 +424,28 @@ h3 {
         margin: 0 10px 0 10px;
         border: none;
     }
+
+    .feedback-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        size: 2px;
+    }
+    
+    .switch-btn {
+        height: 50px;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .feed-img {
+        height: 100px;
+        display: block;
+    }
+    h3 {
+        display: block;
+    }
+    
+   
 }
