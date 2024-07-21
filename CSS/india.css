@@ -3,13 +3,40 @@
     padding: 0;
 }
 
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+header {
+    background-color: #007a86;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 150px; 
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 30px; 
+}
+
 .main-heading, .wonder-heading, .know-about {
     text-align: center;
-    font-size: bolder;
+    font-weight: bolder;
     color: #0f5858;
     margin: 20px 0;
 }
@@ -20,7 +47,7 @@ body {
     object-fit: cover;
     border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 25);
+    box-shadow: 0px 0px 10px 0px rgba(12, 12, 12, 0.25);
     display: block;
     margin: 20px auto;
 }
@@ -48,7 +75,7 @@ body {
 .info {
     border: none;
     margin: 50px;
-    font-size: 50px;
+    font-size: 30px;
     padding: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -62,10 +89,15 @@ body {
 .theme-switcher-container {
     display: flex;
     gap: 10px;
-    position: absolute;
+    position:fixed;
     right: 20px;
-}
-
+    }
+    .theme-selector {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    }
+    
 .video-container {
     display: flex;
     justify-content: center;
@@ -77,11 +109,7 @@ body {
     border-radius: 10px;
 }
 
-.theme-selector {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-}
+
 
 .bg-dark {
     background-color: #10353e;
@@ -91,6 +119,7 @@ body {
 .bg-dark h1, .bg-dark h3 {
     color: white;
 }
+
 .bg-dark h3 {
     color: #10353e;
 }
@@ -107,10 +136,9 @@ body {
 }
 
 .cards {
-    height:fit-content;
     width: 50%;
     border-radius: 20px;
-    border:none;
+    border: none;
     padding: 20px;
     margin: 20px;
     display: flex;
@@ -121,29 +149,32 @@ body {
     font-size: 18px;
     box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
-
 }
 
 .card-img {
     height: 200px;
     width: 100%;
     margin-bottom: 10px;
-    border-radius: 10px;}
+    border-radius: 10px;
+}
 
 .love {
     color: red;
 }
-.cards:hover{
-    background-color: #10353e;
-    color: white;
-    cursor: pointer;
+
+.bg-dark .cards {
+    color:#10353e;
 }
 
+.bg-dark .btn {
+    background-color:#d3f1f1;
+    color: #10353e;
+}
 
 .btn {
     margin: 20px auto;
     height: 50px;
-    width: 25%; 
+    width: 25%;
     display: block;
     text-align: center;
     color: #10353e;
@@ -155,7 +186,7 @@ body {
     font-weight: bold;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white;
     color: #10353e;
     border: 1px solid #10353e;
@@ -168,10 +199,9 @@ body {
 }
 
 .wonders {
-    height:fit-content;
     width: 30%;
     border-radius: 20px;
-    border:none;
+    border: none;
     padding: 20px;
     margin: 20px;
     display: flex;
@@ -186,12 +216,12 @@ body {
 
 .wonders-img {
     height: 200px;
-    width: 100%;
+    width:100%;
     margin-bottom: 10px;
     border-radius: 10px;
 }
 
-.btns{
+.btns {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
@@ -200,8 +230,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 20px;
-    text-decoration: none; 
-    display: inline-block; 
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btns:hover {
@@ -211,6 +241,8 @@ body {
 }
 
 /* Responsive Media Queries */
+
+/* For devices with max-width 1200px */
 @media (max-width: 1200px) {
     .info-container {
         flex-direction: column;
@@ -250,10 +282,11 @@ body {
     }
 }
 
+/* For devices with max-width 768px */
 @media (max-width: 768px) {
     .product-img {
         height: 150px;
-        max-width: 100px;
+        width: 150px;
     }
 
     .product-img-container {
@@ -287,8 +320,24 @@ body {
         width: 100%;
         height: 200px;
     }
+
+    .btn {
+        margin: 20px auto;
+        height: 50px;
+        width: 80%;
+        display: block;
+        text-align: center;
+        padding:10px;
+        color: #10353e;
+        background-color: #d3f1f1;
+        border: solid 2px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 20px;
+        font-size: 5px;
+    }
 }
 
+/* For devices with max-width 480px */
 @media (max-width: 480px) {
     .main-heading, .wonder-heading, .know-about {
         font-size: 1.5rem;
