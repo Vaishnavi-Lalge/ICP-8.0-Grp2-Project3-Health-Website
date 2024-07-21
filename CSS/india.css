@@ -86,18 +86,17 @@ header {
     border-radius: 5px;
 }
 
-.theme-switcher-container {
-    display: flex;
-    gap: 10px;
-    position:fixed;
-    right: 20px;
-    }
-    .theme-selector {
+.theme-select-icon {
     height: 30px;
-    width: 30px;
     cursor: pointer;
-    }
-    
+}
+
+.theme-selector-container {
+    position: fixed;
+    right: 30px;
+
+}
+
 .video-container {
     display: flex;
     justify-content: center;
@@ -108,8 +107,6 @@ header {
     border: none;
     border-radius: 10px;
 }
-
-
 
 .bg-dark {
     background-color: #10353e;
@@ -238,6 +235,38 @@ header {
     background-color: white;
     color: #10353e;
     border: 1px solid #10353e;
+}
+
+
+.home-img{
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 120px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.home-icon{
+    height: 40px;
+    padding:5px 5px 1px;
+}
+
+.back-img{
+    cursor: pointer;
+    margin-right:auto;
+    margin-left: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.back-icon{
+    height: 40px;
+    padding:5px 5px 1px;
 }
 
 /* Responsive Media Queries */
