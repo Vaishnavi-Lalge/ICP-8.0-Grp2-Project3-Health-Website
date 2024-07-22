@@ -141,5 +141,45 @@
            <img src="back.png" alt="back-png" class="back-icon" />
            </a>
     </div>
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'C',
+                q2: 'B',
+                q3: 'C',
+                q4: 'C',
+                q5: 'B',
+                q6: 'B',
+                q7: 'B',
+                q8: 'A',
+                
+            };
+
+            const form = document.forms['mexico-quizForm'];
+            let score = 0;
+            for (let i = 1; i <= 8; i++) {
+                const q = 'q' + i;
+                const selected = form[q].value;
+                if (selected === answers[q]) {
+                    score++;
+                }
+            } 
+            const resultDiv = document.getElementById('results');
+            resultDiv.innerHTML = `<h2>You got ${score} out of 10 questions right!</h2>`;
+
+        }
+        function darkmode(){
+        body = document.getElementById("body")
+        body.classList.remove("lightbg")
+        body.classList.add("darkbg")
+      }
+      function lightmode(){
+        body = document.getElementById("body")
+        body.classList.remove("darkbg")
+        body.classList.add("lightbg")
+
+      }
+</script>
+
 </body>
 </html>
