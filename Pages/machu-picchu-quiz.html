@@ -1,12 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machu Picchu Quiz</title>
-</head>
-<style>
-     body{
+    <title>Machu Picchu Quiz </title>
+    <style>
+        body{
             margin: 0px;
             padding: 0px;
         }
@@ -18,6 +18,7 @@
             height: 30px;
             width: 30px;
         }
+    
         .mode-btnholder {
             display: flex;
             flex-direction: row;
@@ -31,6 +32,7 @@
             margin: 0 auto;
             padding: 0 15px;
         }
+    
         .darkbg {
             background-color: #10353e;
             color: beige;
@@ -40,6 +42,7 @@
             background-color: #d3f1f1;
             color: black;
         }
+    
         .modebtn {
             border: none;
             border-radius: 10px;
@@ -87,7 +90,8 @@
         height:150px; /* Matches the header height */
         width: auto;
 }
-.logo-text {
+
+        .logo-text {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 30px;
             margin-top: 5px;
@@ -116,6 +120,7 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
         }
+
         .pages {
         font-size: 18px;
         margin-top: 5px;
@@ -142,11 +147,14 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         align-items: center;
         }
+
         nav {
         text-align: center;
         margin: 0 auto;
         padding: 0 15px;
-        } footer {
+        }
+
+        footer {
         background-color: #007a86;
         color: #fff;
         align-items: center;
@@ -163,6 +171,7 @@
         text-align: center;
         font-size: 20px;
         }
+
         .social-text {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 20px;
@@ -203,9 +212,10 @@
 
         }
 
-        
+
 </style>
-<body>
+</head>
+<body  >
     <header>
         <nav>
             <div class="logo">
@@ -216,6 +226,7 @@
     
                 <img src="logo.png" alt="Logo" class="logo-img">
             </div>
+        </nav>
     </header><br>
     <h1>Machu Picchu Quiz </h1>
     <div class="mode-btnholder">
@@ -231,6 +242,7 @@
                 <label><input type="radio" name="q1" value="C"> C) Peru</label><br>
                 <label><input type="radio" name="q1" value="D"> D) Brazil</label>
             </div>
+    
             <div class="question">
                 <h3>2. Around how many people lived in Machu Picchu?</h3>
                 <label><input type="radio" name="q2" value="A"> A) 100</label><br>
@@ -238,6 +250,7 @@
                 <label><input type="radio" name="q2" value="C"> C) 50000</label><br>
                 <label><input type="radio" name="q2" value="D"> D) 20000</label>
             </div>
+    
             <div class="question">
                 <h3>3.  Which of the following best describes the geography of where Machu Picchu is located?</h3>
                 <label><input type="radio" name="q3" value="A"> A) On an island</label><br>
@@ -245,6 +258,7 @@
                 <label><input type="radio" name="q3" value="C"> C) High in Mountains</label><br>
                 <label><input type="radio" name="q3" value="D"> D) Rain Forest</label>
             </div>
+    
             <div class="question">
                 <h3>4. Machu Picchu was part of what empire?</h3>
                 <label><input type="radio" name="q4" value="A"> A) Aztec Empire</label><br>
@@ -252,6 +266,7 @@
                 <label><input type="radio" name="q4" value="C"> C) Inca Empire</label><br>
                 <label><input type="radio" name="q4" value="D"> D) Assyrian Empire</label>
             </div>
+    
             <div class="question">
                 <h3>5.  When do archeologists estimate that Machu Picchu was built?</h3>
                 <label><input type="radio" name="q5" value="A"> A) 200 AD</label><br>
@@ -259,6 +274,7 @@
                 <label><input type="radio" name="q5" value="C"> C) 800 AD</label><br>
                 <label><input type="radio" name="q5" value="D"> D) 1800 AD</label>
             </div>
+    
             <div class="question">
                 <h3>6.  What is Machu Picchu's nickname?</h3>
                 <label><input type="radio" name="q6" value="A"> A) Could City</label><br>
@@ -266,6 +282,7 @@
                 <label><input type="radio" name="q6" value="C"> C) Cliff City</label><br>
                 <label><input type="radio" name="q6" value="D"> D) City of Air</label>
             </div>
+    
             <div class="question">
                 <h3>7.What was the purpose of the Intihuatana?</h3>
                 <label><input type="radio" name="q7" value="A"> A) It was the area where the commoners lived</label><br>
@@ -273,6 +290,7 @@
                 <label><input type="radio" name="q7" value="C"> C) It was a palace for the king to spend the cold winters</label><br>
                 <label><input type="radio" name="q7" value="D"> D) It prevented the god of the sky from sending lightning against the city</label>
             </div>
+    
             <div class="question">
                 <h3>8. Which of the city districts was where the commoners lived and supplies ?</h3>
                 <label><input type="radio" name="q8" value="A"> A)Popular district </label><br>
@@ -280,12 +298,17 @@
                 <label><input type="radio" name="q8" value="C"> C) Sacred district</label><br>
                 <label><input type="radio" name="q8" value="D"> D)All of the above </label>
             </div>
+    
+      
             <button type="button" class ="submit-btn" onclick="checkAnswers()">Submit your quiz</button>
         </form>
     
         <div id="results" class="results"></div>
+    
+    </div>
     <footer>
         <div class="footer-container">
+    
             <div class="pages">
                 <b><u>QUICK LINKS</u></b>
                 <ul>
@@ -300,47 +323,47 @@
                     <li><a href="../Pages/feedback.html">Feedback</a></li>
                 </ul>
             </div>
-            <div>
+          <div>
                 <div class="social-media">
                     <p class="social-text"><b><u>FOLLOW US</u></b></p>
+    
                     <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
-                        src="facebook.png" class="social-icon"></a>
-
-                        <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
-                            src="youtube (1).png" class="social-icon"></a>
-
-                            <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
-                                <img src="instagram.png" class="social-icon"></a><br><br>
-
-             <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
-          </div>
+                      src="facebook.png" class="social-icon"></a>
+    
+                    <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                           src="youtube (1).png" class="social-icon"></a>
+    
+                    <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                        <img src="instagram.png" class="social-icon"></a><br><br>
+                        <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+    
+                </div>
+            </div>
+            <div class="contact">
+            
+                <b><u>CONTACT US</u></b>
+                <br><br>
+                Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
+                <br><br>
+                Tell no<br><a href="tel: Number"> +91 9981123451 </a>
+                
+            </div>
+        </div>
+    </footer>
+        <div class="buttons-container">
+            <div class="home-img">
+                <a href="     ">
+                    <img src="home.png" alt="home-png" class="home-icon" />
+                </a>
+            </div>
         </div>
        
-        <div class="contact">
-            
-            <b><u>CONTACT US</u></b>
-            <br><br>
-            Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
-            <br><br>
-            Tell no<br><a href="tel: Number"> +91 9981123451 </a>
-
-        </div>
-    </div>
-</footer>
-        <div class="buttons-container">
-           <div class="home-img">
-            <a href="     ">
-            <img src="home.png" alt="home-png" class="home-icon" />
-             </a>
-        </div>
-    </div>
-
-
         <div class="back-img">
-           <a href="    ">
-           <img src="back.png" alt="back-png" class="back-icon" />
-           </a>
-    </div>
+            <a href="    ">
+            <img src="back.png" alt="back-png" class="back-icon" />
+            </a>
+        </div>
+   
     <script>
         function checkAnswers() {
             const answers = {
