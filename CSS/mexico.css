@@ -418,7 +418,21 @@ a{
     
     
   }
-  @media screen and (min-width: 300px) and (max-width: 797.60px){
-    
+  @media screen and (min-width: 644px) and (max-width: 797.60px){
+    .div1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    .explore-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
 
   }
