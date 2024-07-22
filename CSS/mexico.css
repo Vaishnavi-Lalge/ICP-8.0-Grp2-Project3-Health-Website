@@ -11,11 +11,17 @@ h1{
 header {
     background-color: #007a86;
     color: #fff;
-    padding: 1px 0px;
+    padding: 0 15px; /* Adjust padding as needed */
     width: 100%;
-    height: 50px;
+    display: flex;
+    align-items: center;
+    
+    }
+.logo-img {
+    height:150px; /* Matches the header height */
+    width: auto;
+  }
 
-}
 
 .logo-text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -100,6 +106,10 @@ h2{
 ul{
     padding-left: 0px;
 }
+.video{
+    display: block;
+    margin: 10px auto;
+}
 .data-card {
     
     height: 250px;
@@ -168,27 +178,75 @@ h3{
     border: 1px solid #10353e;
 }
 
- footer{
+.footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .contact {
+    margin-top: 40px;
+    padding-left: 260px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+  
+  .pages {
+    font-size: 18px;
+    margin-top: 5px;
+    padding-right: 270px;
+    padding-top: 10px;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  
+  .social-icon {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .social-media {
+    margin-top: 70px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+  }
+  
+  nav {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  footer {
     background-color: #007a86;
     color: #fff;
     align-items: center;
     text-align: center;
-    padding: 4px 0;
+    padding: 6px 0;
     width: 100%;
     display: flex;
-    flex-direction: column-reverse;
-    margin: 0px;
- }
-
- .foot-text{
+    flex-direction: column;
+    margin: 6px auto;
+    justify-content: space-around;
+  }
+  
+  .foot-text {
     text-align: center;
     font-size: 20px;
- }
-
- .social-text{
+  }
+  
+  .social-text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
- }
+    font-size: 20px;
+  }
 
 .mode-img{
     height: 30px;
@@ -320,3 +378,96 @@ a{
     cursor: pointer;
     color: black;
 }
+@media screen and (min-width: 1009.60px) and (max-width: 1192.59px) {
+  .container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+
+  @media screen and (min-width: 1192.60px) and (max-width: 1285.60px) {
+    .div1{
+        align-items: end;
+        justify-content: space-evenly;
+    }
+    .mcard{
+        margin: 10px;
+        padding: 15px;
+        font-size: 15px;
+        
+    }
+    .container{
+        justify-content: space-evenly;
+    }
+
+  }
+
+
+  @media screen and (min-width: 797.61px) and (max-width: 1009.59px) {
+    .div1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+    
+  }
+  @media screen and (min-width: 688px) and (max-width: 797.60px){
+    .div1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    .explore-container{
+        flex-direction: column;
+        align-items: center;
+    }}
+    @media screen and (max-width: 687px) {
+        #main-img{
+            width: 500px;
+            height: 300px;
+            border-radius: 15px;
+            margin: 10px auto;
+        }
+        .img{
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+
+        }
+        .div1{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .container{
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          }
+        .explore-container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .data-card{
+            font-size: 16px;
+            width: 350px;
+            height: 200px;
+        }
+        .mapiframe{
+            height: 200px;
+            width: 350px;
+        }
+    }
+  

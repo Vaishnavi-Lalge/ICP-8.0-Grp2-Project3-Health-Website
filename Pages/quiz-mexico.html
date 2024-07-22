@@ -75,14 +75,20 @@
             border-radius: 10px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             box-shadow : 10px 10px 10px 10px #cbe4ea;
-        }header {
-            background-color: #007a86;
-            color: #fff;
-            padding: 1px 0px;
-            width: 100%;
-            height: 60px;
-
         }
+        header {
+        background-color: #007a86;
+        color: #fff;
+        padding: 0 15px; /* Adjust padding as needed */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+        }
+        .logo-img {
+        height:150px; /* Matches the header height */
+        width: auto;
+}
 
         .logo-text {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -100,27 +106,74 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             align-items: center;
         }
-        footer{
-            background-color: #007a86;
-            color: #fff;
-            align-items: center;
-            text-align: center;
-            padding: 4px 0;
-            width: 100%;
-            display: flex;
-            flex-direction: column-reverse;
-            margin: 0px;
-            margin-top: 20px;
+        .footer-container {
+        display: flex;
+        flex-direction: row;
         }
 
-        .foot-text{
-            text-align: center;
-            font-size: 20px;
+        .contact {
+        margin-top: 40px;
+        padding-left: 260px;
+        padding-top: 10px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
         }
 
-        .social-text{
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 25px;
+        .pages {
+        font-size: 18px;
+        margin-top: 5px;
+        padding-right: 270px;
+        padding-top: 10px;
+        text-align: left;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a {
+        text-decoration: none;
+        color: #fff;
+        }
+
+
+        .social-icon {
+        height: 50px;
+        width: 50px;
+        }
+
+        .social-media {
+        margin-top: 70px;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        align-items: center;
+        }
+
+        nav {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 15px;
+        }
+
+        footer {
+        background-color: #007a86;
+        color: #fff;
+        align-items: center;
+        text-align: center;
+        padding: 6px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 6px auto;
+        justify-content: space-around;
+        }
+
+        .foot-text {
+        text-align: center;
+        font-size: 20px;
+        }
+
+        .social-text {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
         }
         .results{
             text-align: center;
@@ -164,10 +217,15 @@
     <header>
         <nav>
             <div class="logo">
-                <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
+                <header>
+                <img src="../Images/logo.png" alt="Logo" class="logo-img">
+                
+                <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
+    
+                <img src="../Images/logo.png" alt="Logo" class="logo-img">
             </div>
         </nav>
-    </header>
+    </header><br>
     <h1>Quiz on Chichén Itzá </h1>
     <div class="mode-btnholder">
         <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
@@ -265,21 +323,49 @@
     
     </div>
     <footer>
-        <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
-        <div class="socia-media">
-            <p class="social-text">Follow Us On</p>
-        
-           <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to facebook account"><img src="../Images/facebook.png" class="social-icon"></a>
-        
-           <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img src="../Images/youtube (1).png" class="social-icon"></a>
-        
-            <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to instagram account">
-            <img src="../Images/instagram.png" class="social-icon"></a>
+        <div class="footer-container">
+    
+            <div class="pages">
+                <b><u>QUICK LINKS</u></b>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Pages/india.html">Taj Mahal</a></li>
+                    <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
+                    <li><a href="../Pages/china.html">The Great Wall</a></li>
+                    <li><a href="../Pages/Italy.html">Colosseum</a></li>
+                    <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
+                    <li><a href="../Pages/jorden.html">Petra</a></li>
+                    <li><a href="../Pages/peru.html">Machu pichu</a></li>
+                    <li><a href="../Pages/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+          <div>
+                <div class="social-media">
+                    <p class="social-text"><b><u>FOLLOW US</u></b></p>
+    
+                    <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                      src="../Images/facebook.png" class="social-icon"></a>
+    
+                    <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                           src="../Images/youtube (1).png" class="social-icon"></a>
+    
+                    <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                        <img src="../Images/instagram.png" class="social-icon"></a><br><br>
+                        <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+    
+                </div>
+            </div>
+            <div class="contact">
             
+                <b><u>CONTACT US</u></b>
+                <br><br>
+                Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
+                <br><br>
+                Tell no<br><a href="tel: Number"> +91 9981123451 </a>
+                
+            </div>
         </div>
-
-        
-        </footer>
+    </footer>
         <div class="buttons-container">
             <div class="home-img">
                 <a href="../index.html">
