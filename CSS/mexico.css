@@ -378,11 +378,15 @@ a{
     cursor: pointer;
     color: black;
 }
-@media screen and (min-width: 600px) and (max-width: 768px) {
-  
+@media screen and (min-width: 1009.60px) and (max-width: 1192.59px) {
+  .container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   }
 
-  @media screen and (min-width: 1157.60px) and (max-width: 1285.60px) {
+  @media screen and (min-width: 1192.60px) and (max-width: 1285.60px) {
     .div1{
         align-items: end;
         justify-content: space-evenly;
@@ -391,6 +395,9 @@ a{
         margin: 10px;
         padding: 15px;
         font-size: 15px;
+        
+    }
+    .container{
         justify-content: space-evenly;
     }
 
