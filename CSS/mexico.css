@@ -404,6 +404,21 @@ a{
   }
 
 
-  @media screen and (min-width: 1283.20px) and (max-width: 1280px) {
+  @media screen and (min-width: 797.61px) and (max-width: 1009.59px) {
+    .div1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
     
+    
+  }
+  @media screen and (min-width: 300px) and (max-width: 797.60px){
+    
+
   }
