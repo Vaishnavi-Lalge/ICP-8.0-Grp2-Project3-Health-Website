@@ -168,9 +168,10 @@ button a {
 .bg-dark {
     background-color: #10353e;
     color: white;
+
 }
 
-.bg-dark h1, .bg-dark h3 {
+.bg-dark h1 {
     color: white;
 }
 .bg-dark .highlight , p{
@@ -181,11 +182,16 @@ button a {
     color: #10353e;
 }
 
-.bg-light {
-    background-color: #d3f1f1;
-}
+
 .bg-dark .data-card{
     color: #10353e;
+=======
+}
+
+.bg-light {
+    background-color: 
+    color: black;
+
 }
 
 /*Data card */

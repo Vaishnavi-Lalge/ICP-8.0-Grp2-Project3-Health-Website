@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="../CSS/mexico.css"/>
 </head>
 <body id="body" class="lightbg">
-<header>
-    <nav>
-        <div class="logo">
-            <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
-        </div>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <div class="logo">
+                <header>
+                <img src="../Images/logo.png" alt="Logo" class="logo-img">
+                
+                <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
+    
+                <img src="../Images/logo.png" alt="Logo" class="logo-img">
+            </div>
+        </nav>
+    </header><br>
     <br/>
     <h1>Chichén Itzá</h1>
     <div class="mode-btnholder">
         <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
-        <button onclick="lightmode()" class="modebtn"><img src="../Images/light.png" class="mode-img" ></button>
+        <button onclick="lightmode()" class="modebtn"><img src="../Images/sun_.png" class="mode-img" ></button>
     </div>
-    <img src="../Images/mex1.jpg" id="main-img">
+    <img src="../Images/mex5.avif" id="main-img">
     <div class="img-container">
-        <img src="../Images/mex1.jpg" class="img" onclick="change_img('../Images/mex1.jpg')">
-        <img src="../Images/mex2.jpg" class="img" onclick="change_img('../Images/mex2.jpg')">
-        <img src="../Images/mex3.jpg" class="img" onclick="change_img('../Images/mex3.jpg')">
+        <img src="../Images/mex1.avif" class="img" onclick="change_img('../Images/mex1.avif')">
+        <img src="../Images/mex2.avif" class="img" onclick="change_img('../Images/mex2.avif')">
+        <img src="../Images/mex3.avif" class="img" onclick="change_img('../Images/mex3.avif')">
         <img src="../Images/mex4.webp" class="img" onclick="change_img('../Images/mex4.webp')">
-        <img src="../Images/mex5.webp" class="img" onclick="change_img('../Images/mex5.webp')">
-
     </div>
     <div class="div1">
         <div class="data-card light-card" id="data-card">
@@ -40,7 +43,8 @@
                4 square miles (10 square km) in south-central Yucatán state, Mexico.
             </p>
         </div>
-        <iframe src=
+        <iframe class="mapiframe"
+        src=
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.7737525677703!2d-88.5684769!3d20.678781649999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5138b9a098f833%3A0xf70a67530750d45!2s97751%20Chich%C3%A9n-Itz%C3%A1%2C%20Yucatan%2C%20Mexico!5e0!3m2!1sen!2sin!4v1721456472363!5m2!1sen!2sin" 
         width="450" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -48,50 +52,146 @@
     <div class="container">
         <div class="mcard">
             <img src="../Images/suneffect.jpg"  class="card-img">
-            <br/><br/>
-            <span>The equinox effect</span><br/><br/>
-            On every equinox, the sun of the late afternoon creates the illusion of a snake 
-            creeping slowly down the northern staircase. Symbolically, the feathered serpent joins the heavens, earth and the underworld, day and 
-            night.
+            <h3 class="heading">The equinox effect</h3>
+            <ul>
+             <li>
+                On every equinox, the sun of the late afternoon creates the illusion of a snake 
+                creeping slowly down the northern staircase.
+             </li>
+             <li>
+                Symbolically, the feathered serpent joins the heavens, earth and the underworld, day and 
+                night.
+             </li>
+            </ul>
         </div>
         <div class="mcard">
             <img src="../Images/maya.jpg"  class="card-img">
-            <br/><br/>
-            <span>People behind it</span><br/><br/>
-            It was founded by the Maya, an ancient people inhabiting the Yucatan peninsula.
-            Historians believe that Chichen Itza was founded and rose
-            to prominence due to its proximity to the Xtoloc cenote, an underground source of fresh water.
+            <h3 class="heading">People behind it</h3>
+            <ul>
+                <li>
+                    It was founded by the Maya, an ancient people inhabiting the Yucatan peninsula.
+                </li>
+                <li>
+                Historians believe that Chichen Itza was founded and rose
+                to prominence due to its proximity to the Xtoloc cenote, an underground source of fresh water.
+                </li>
+            </ul>
+           
         </div>
         <div class="mcard">
             <img src="../Images/suneffect.jpg"  class="card-img">
-            <br/><br/>
-            <span>The Pyramid of Kukulkan</span><br/><br/>
-            The tallest structure in Chichen Itza is the ancient pyramid, El Castillo, otherwise known as The Pyramid of Kukulkan which means
-            Feathered Serpent in Spanish.
+            <h3 class="heading">The Pyramid of Kukulkan</h3>
+            <ul>
+                <li>
+                    The tallest structure in Chichen Itza is the ancient pyramid, El Castillo, otherwise known as The Pyramid of Kukulkan which means
+                    Feathered Serpent in Spanish.
+                </li>
+            </ul>
+          
         </div>
-
     </div>
+    <br/>
+    <h2>Want to know more about Chichen Itza?</h2>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zJCrrTk-dLQ?si=QPrRAIWyD6qh1uYd" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media;gyroscope; picture-in-picture; web-share"
+     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="buttons-container">
+        <div class="home-img">
+            <a href="../index.html">
+                <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+            </a>
+        </div>
     
-    
-   
+        <div class="feed-img">
+            <a href="../Pages/feedback.html">
+                <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+            </a>
+        </div>
+    </div>
     <a href="./quiz-mexico.html" target="_blank">
         <button class="quiz-btn">Take a quiz </button>
     </a>
-    <footer>
-        <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
-        <div class="socia-media">
-            <p class="social-text">Follow Us On</p>
-        
-           <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to facebook account"><img src="../Images/facebook.png" class="social-icon"></a>
-        
-           <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img src="../Images/youtube (1).png" class="social-icon"></a>
-        
-            <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to instagram account">
-            <img src="../Images/instagram.png" class="social-icon"></a>
-            
+    <h2 class="know-about">Explore Other Wonders Too...</h2>
+        <div class="explore-container">
+            <div class="wonders">
+                <img src="../Images/Brazil-wonder1.webp" class="wonders-img">
+                <h3>Christ the Redeemer, Brazil</h3>
+                <button class="btns" onclick="window.location.href='../Pages/brazil.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/Italy-wonder1.webp" class="wonders-img">
+                <h3>Colosseum, Italy</h3>
+                <button class="btns" onclick="window.location.href='../Pages/Italy.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/taj.jpg" class="wonders-img taj">
+                <h3>Taj Mahal, India</h3>
+                <button class="btns" onclick="window.location.href='../Pages/india.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/China-wonder1.webp" class="wonders-img">
+                <h3>Great Wall of China, China</h3>
+                <button class="btns" onclick="window.location.href='../Pages/china.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/Jorden-wonder1.webp" class="wonders-img">
+                <h3>Petra, Jordan</h3>
+                <button class="btns" onclick="window.location.href='../Pages/jorden.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/Peru-wonder1.webp" class="wonders-img">
+                <h3>Machu Picchu, Peru</h3>
+                <button class="btns" onclick="window.location.href='../Pages/peru.html'">Explore</button>
+            </div>
+    
         </div>
+    
+        <footer>
+            <div class="footer-container">
         
+                <div class="pages">
+                    <b><u>QUICK LINKS</u></b>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../Pages/india.html">Taj Mahal</a></li>
+                        <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
+                        <li><a href="../Pages/china.html">The Great Wall</a></li>
+                        <li><a href="../Pages/Italy.html">Colosseum</a></li>
+                        <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
+                        <li><a href="../Pages/jorden.html">Petra</a></li>
+                        <li><a href="../Pages/peru.html">Machu pichu</a></li>
+                        <li><a href="../Pages/feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+              <div>
+                    <div class="social-media">
+                        <p class="social-text"><b><u>FOLLOW US</u></b></p>
+        
+                        <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                          src="../Images/facebook.png" class="social-icon"></a>
+        
+                        <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                               src="../Images/youtube (1).png" class="social-icon"></a>
+        
+                        <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                            <img src="../Images/instagram.png" class="social-icon"></a><br><br>
+                            <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+        
+                    </div>
+                </div>
+                <div class="contact">
+                
+                    <b><u>CONTACT US</u></b>
+                    <br><br>
+                    Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
+                    <br><br>
+                    Tell no<br><a href="tel: Number"> +91 9981123451 </a>
+                    
+                </div>
+            </div>
         </footer>
+        
 
 
     <script>
