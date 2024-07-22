@@ -252,16 +252,15 @@ h3{
 
 .mode-img{
     height: 30px;
-    width: 30px;
+    cursor: pointer;
+    
 }
 .mode-btnholder{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    right: 20px;
-    top:60px;
     position: fixed;
-    margin: 10px;
+    right: 30px;
 }
 .darkbg{
     background-color:#10353e ;
@@ -273,9 +272,9 @@ h3{
 }
 .modebtn{
     border: none;
-    border-radius: 10px;
-    padding: 5px 8px;
     cursor: pointer;
+    background-color: transparent;
+    
 }
 #main-img {
     width: 700px;
