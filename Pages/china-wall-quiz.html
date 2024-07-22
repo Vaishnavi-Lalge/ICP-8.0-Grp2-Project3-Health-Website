@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/taj-quiz.css">
     <link rel="stylesheet" href="../CSS/india.css">
+    <style>
+        .results{
+            text-align: center;
+            font-weight: bold;
+            font-size: larger;
+        }
+    </style>
 </head>
 <body class="bg-light" id="main-body">
     <header>
@@ -104,7 +111,7 @@
             </div>
 
             <div class="question">
-                <h3>2.How long is the Great Wall of China?
+                <h3>10.How long is the Great Wall of China?
                 </h3>
                 <label><input type="radio" name="q10" value="A"> A] 1,000 km</label><br>
                 <label><input type="radio" name="q10" value="B"> B] 3,000 km </label><br>
@@ -114,7 +121,7 @@
     
             <button type="button" class ="submit-btn" onclick="checkAnswers()">Submit</button>
         </form>
-        <div id="results" class="results"></div>
+        <div id="result" class="results"></div>
     
     </div>
     <div class="buttons-container">
@@ -139,31 +146,24 @@
 
     <script>
         function checkAnswers() {
-            const answers = {
-                q1: 'A',
-                q2: 'D',
-                q3: 'B',
-                q4: 'B',
-                q5: 'D',
-                q6: 'B',
-                q7: 'D',
-                q8: 'A',
-                q9: 'D',
-                q10:'D'
-            };
-
-            const form = document.forms['quizForm'];
+            console.log("in func checkans")
+            const correctAnswers = ['D', 'B', 'B', 'D', 'B', 'B', 'D', 'A', 'D', 'D'];
+            const userAnswers = [];
+            for (let i = 1; i <= 10; i++) {
+                const answer = document.querySelector('input[name="q' + i + '"]:checked');
+                if (answer) {
+                    userAnswers.push(answer.value);
+                } else {
+                    userAnswers.push(null);
+                }
+            }
             let score = 0;
-            for (let i = 1; i <= 8; i++) {
-                const q = 'q' + i;
-                const selected = form[q].value;
-                if (selected === answers[q]) {
+            for (let i = 0; i < correctAnswers.length; i++) {
+                if (userAnswers[i] === correctAnswers[i]) {
                     score++;
                 }
-            } 
-            const resultDiv = document.getElementById('results');
-            resultDiv.innerHTML = `<h2>You got ${score} out of 8 questions right!</h2>`;
-
+            }
+            document.getElementById('result').innerText = 'You scored ' + score + ' out of 10.';
         }
 
         function darkMode(){
