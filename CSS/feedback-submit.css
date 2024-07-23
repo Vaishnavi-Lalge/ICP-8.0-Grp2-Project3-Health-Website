@@ -1,3 +1,16 @@
+.logo-img {
+    height: 150px; 
+    width: auto;
+    margin: 0 auto; 
+}
+
+.logo-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin: 0 auto; 
+    align-items: center;
+}
+
 .home-img{
     cursor: pointer;
     position: fixed;
