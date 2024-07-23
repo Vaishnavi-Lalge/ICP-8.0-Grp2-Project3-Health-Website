@@ -22,6 +22,7 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 30px;
     margin-left: 15px;
+    color: white;
 }
 
 .social-icon {
@@ -169,7 +170,9 @@ button a {
 
 .bg-dark h1 {
     color: white;
+  
 }
+
 
 .bg-dark .highlight,
 p {
@@ -190,6 +193,10 @@ p {
     background-color:
         color:black;
 
+}
+.bg-dark .btn-quiz{
+    background-color: #d3f1f1;
+    color: #10353e;
 }
 
 /*Data card */
