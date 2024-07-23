@@ -4,132 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Great Wall of China Fun Facts</title>
-    <style>
-        h1 {
-            text-align: center;
-            color:#201E43;
-            
-            
-        }
-        .sub-heading{
-            margin-top: 0px;
-            background-color: #23527c;
-            object-fit: cover;
-            font-size: large;
-            border-radius: 3px;
-            box-shadow: 0 0 2px 2px #23527c ;
-            padding:10px 20px;
-            color:whitesmoke;
-            text-align: center;
-        }
-
-        .page_container {
-            display: flex;
-            background-color: #EEEEEE;
-        }
-
-        .wall_preview_container {
-            margin-left: 10px;
-            flex-direction: column;
-        }
-
-        .img_container {
-            display: flex;
-            justify-content: flex-start;
-            margin: 20px;
-        }
-
-        #img_main {
-            display: block;
-            object-fit: cover;
-            margin: 16px;
-            padding: 5px;
-            height: 400px;
-            width: 400px;
-            border-radius: 15px;
-            box-shadow: 0 0  2px 2px #677D6A;
-            border: 1px solid grey;
-
-        }
-
-        .img_table {
-            display: flex;
-            object-fit: cover;
-            border: 1px solid black;
-            padding: 5px;
-            height: 80px;
-            width: 80px;
-
-            border-radius: 5px;
-            margin-right: 10px;
-            cursor: pointer;
-        }
-
-        .video_style {
-            margin-left: 13px;
-            margin-top: 20px;
-        }
-        .page_info_container{
-            width:700px;
-            background-color: whitesmoke;
-            color:black;
-            font-family: 'Times New Roman', Times, serif;
-            margin: 20px 40px;
-            padding:20px 40px;
-            text-align: justify;
-        }
-    </style>
-
-
+    <title>Great Wall of China</title>
+            <link rel="stylesheet" href="../CSS/india.css">
+            <link rel="stylesheet" href="../CSS/style.css">
+            <link rel="stylesheet" href="../CSS/china.css">
 </head>
 
-<body>
-    <h1>Great Wall of China Fun Facts</h1>
-    <div class="page_container">
-        <!-- <img src="./../Images/greatwall.jpg"/>-->
+<body class="bg-light" id="main-body">
+    <header>
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
 
-        <div class="wall_preview_container">
-            <img src="./../Images/china_Wall_map.jpg" id="img_main" />
+        <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
 
-            <div class="img_container">
-                <img src="./../Images/china_Wall_map.jpg" class="img_table"
-                    onclick="showImage('./../Images/china_Wall_map.jpg')" />
-                <img src="./../Images/wall_real_img.jpg" class="img_table"
-                    onclick="showImage('./../Images/wall_real_img.jpg')" />
-                <img src="./../Images/wall_tower.jpg" class="img_table"
-                    onclick="showImage('./../Images/wall_tower.jpg')" />
-                <img src="./../Images/wall_yan_mountain.jpg" class="img_table"
-                    onclick="showImage('./../Images/wall_yan_mountain.jpg')" />
-
-            </div>
-         
-            <h2 class="sub-heading">Watch Out Video</h2>
-            <iframe width="420" height="300" class="video_style" src="https://www.youtube.com/embed/6_4VFRQzuyY"
-                title="The Great Wall of China for kids |Seven wonders for kids| history &amp; facts" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
         </div>
-        <div class="page_info_container">
-           <h2 class="sub-heading"> Did You Know ?</h2>
-           <span>The Great Wall of China is one of the biggest structures ever made by humans. The ancient Chinese built the wall to protect against invading armies. Today it is a tourist attraction and a symbol of China.
-            <br/><br/>
-            Workers constructed several different walls in northern China and southern Mongolia beginning in the 600s bce. Some of the walls run parallel to each other. In the 200s bce the Chinese joined some of the sections together to make one long wall. Since that time the wall has been extended and rebuilt many times. The main wall that exists today winds across the Chinese countryside for some 5,500 miles (8,850 kilometers).
-            <br/><br/>
-            Different sections of the wall were built of dirt, stone, or brick. Its height ranges from 15 to 30 feet (5 to 9 meters), and its width is 15 to 25 feet (5 to 8 meters). Many watchtowers rise above the wall, and a roadway runs along the top. The main wall has openings at positions that were important in ancient times, such as places where the wall crossed trade routes. Each opening had a gate with a watchtower on top.
-            <br/><br/>
-            The Chinese stopped using the wall for protection in the mid-1600s. The wall fell into ruin, but in the 1900s parts of it were rebuilt. The Great Wall was designated a UNESCO World Heritage site in 1987.</span>
+        </nav>
+    </header>
+    <div class="theme-selector-container">
+
+        <img src="./../Images/sun_.png" class="theme-select-icon" onclick="lightMode()" />
+        <img src="./../Images/dark.png" class="theme-select-icon" onclick=" darkMode()" />
+    </div>
+
+    <h1 class="wonder-heading">The Great Wall of China</h1>
+    <img src="./../Images/China_Wall_Images/china_wall_img3.jpg" id="main-product-img">
+    <div class="product-img-container">
+        <img src="./../Images/China_Wall_Images/china_wall_img1.jpg" class="product-img"
+            onclick="changeImage('./../Images/China_Wall_Images/china_wall_img1.jpg')">
+        <img src="./../Images/China_Wall_Images/china_wall_img2.jpg" class="product-img"
+            onclick="changeImage('./../Images/China_Wall_Images/china_wall_img2.jpg')">
+        <img src="./../Images/China_Wall_Images/china_wall_img3.jpg" class="product-img"
+            onclick="changeImage('./../Images/China_Wall_Images/china_wall_img3.jpg')">
+        <img src="./../Images/China_Wall_Images/china_wall_img4.jpg" class="product-img"
+            onclick="changeImage('./../Images/China_Wall_Images/china_wall_img4.jpg')">
+    </div>
+    <h1 class="know-about"> Let's Know about Great Wall of China</h1>
+    <div class="info-container">
+        <div class="info">
+            <ul>
+                <li><strong>Wonder's Name</strong>&nbsp;The Great Wall of China</li>
+                <li><strong>Location</strong> &nbsp;Huairou District, China</li>
+                <li><strong>Length: </strong>&nbsp;The Great Wall is 21,196.18 km long.</li>
+                <li><strong>Construction: </strong>&nbsp;The wall began construction during the Western Zhou Dynasty
+                    (1046–771 BC) and took over 2,000 years to build.</li>
+
+            </ul>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59926.639099215064!2d116.02852360681362!3d40.43190733889945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f19b2c3ecb2db7%3A0x240ddbbda1d1807!2sGreat%20Wall%20of%20China!5e0!3m2!1sen!2s!4v1623840502826!5m2!1sen!2s"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
-    <script>
-        function showImage(imgName){
-		       const imgval = document.getElementById("img_main");
-			   imgval.src=imgName;
-			   
-		  }
-    </script>
+    <h1 class="know-about">Features of Great Wall in China</h1>
+    <div class="feature-card">
+        <div class="cards">
+            <img src="./../Images/China_Wall_Images/wall_tower.jpg" class="card-img">
+            <h3>China Wall Tower</h3>
+            <ul>
+                <li>Watchtowers, also known as abutments, could be square, rectangular, or round.</li>
+                <li>These ancient buildings were used to communicate the military situation and other information.</li>
+            </ul>
+        </div>
+        <div class="cards">
+            <img src="./../Images/China_Wall_Images/feature2_china.jpg" class="card-img">
+            <h3>Constructions</h3>
+            <ul>
+                <li>The Great Wall is not a single-structured wall.</li>
+                <li>It includes beacon towers, barriers, barracks, garrison stations, and fortresses along the walls
+                </li>
+                <li>Together forming an integrated defense system. </li>
+            </ul>
+        </div>
+        <div class="cards">
+            <img src="./../Images/China_Wall_Images/wall_yan_mountain.jpg" class="card-img">
+            <h3>Speciality</h3>
+            <ul>
+                <li>The Great Long Wall of China became a UNESCO World Heritage Site in December 1987.</li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="know-about">Want to Know more about China Wall?</h1>
+    <div class="video-container">
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/NOKvj7hQbB4?si=eAqvKqyKVl9Ea1fi" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <h1 class="know-about">Test your Knowledge</h1>
+    <button class="btn" onclick="window.location.href='../Pages/china-wall-quiz.html'">Take a Quiz</button>
+    <h1 class="know-about">Explore Other Wonders Too...</h>
+        <div class="explore-container">
+            <div class="wonders">
+                <img src="../Images/Brazil-wonder1.webp" class="wonders-img">
+                <h3>Christ the Redeemer, Brazil</h3>
+                <button class="btns" onclick="window.location.href='../Pages/brazil.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/Italy-wonder1.webp" class="wonders-img">
+                <h3>Colosseum, Italy</h3>
+                <button class="btns" onclick="window.location.href='../Pages/Italy.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/Mexico-wonder1.webp" class="wonders-img">
+                <h3>Chichén Itza, Mexico</h3>
+                <button class="btns" onclick="window.location.href='../Pages/mexico.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img  src="../Images/taj-card3.jpg" class="wonders-img">
+                <h3>Taj Mahal,India</h3>
+                <button class="btns" onclick="window.location.href='../Pages/india.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/Jorden-wonder1.webp" class="wonders-img">
+                <h3>Petra, Jordan</h3>
+                <button class="btns" onclick="window.location.href='../Pages/jorden.html'">Explore</button>
+            </div>
+            <div class="wonders">
+                <img src="../Images/Peru-wonder1.webp" class="wonders-img">
+                <h3>Machu Picchu, Peru</h3>
+                <button class="btns" onclick="window.location.href='../Pages/peru.html'">Explore</button>
+            </div>
 
+        </div>
+
+        <div class="buttons-container">
+            <div class="home-img">
+                <a href="../index.html">
+                    <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+                </a>
+            </div>
+
+            <div class="feed-img">
+                <a href="../Pages/feedback.html">
+                    <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            function changeImage(imageName) {
+                const mainImage = document.getElementById('main-product-img');
+                mainImage.src = imageName;
+            }
+            function darkMode() {
+                const mainBody = document.getElementById('main-body');
+                mainBody.classList.remove('bg-light');
+                mainBody.classList.add('bg-dark');
+            }
+
+            function lightMode() {
+                const mainBody = document.getElementById('main-body');
+                mainBody.classList.remove('bg-dark');
+                mainBody.classList.add('bg-light');
+            }
+
+        </script>
+        <footer>
+            <div class="footer-container">
+                <div class="contact">
+                    <b><u>CONTACT US</u></b>
+                    <br><br>
+                    Email:<br><a href="mailto: Mail"> wondersworld@gamil.com </a>
+                    <br><br>
+                    Tel no. :<br><a href="tel: Number"> 9981123451 </a>
+
+                </div>
+                <div>
+                    <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+                    <div class="social-media">
+                        <p class="social-text">Follow Us On</p>
+
+                        <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                                src="../Images/facebook.png" class="social-icon"></a>
+
+                        <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                                src="../Images/youtube (1).png" class="social-icon"></a>
+
+                        <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                            <img src="../Images/instagram.png" class="social-icon"></a>
+
+                    </div>
+                </div>
+                <div class="pages">
+                    <b><u>QUICK LINKS</u></b>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../Pages/india.html">Taj Mahal</a></li>
+                        <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
+                        <li><a href="../Pages/china.html">The Great Wall of China</a></li>
+                        <li><a href="../Pages/Italy.html">Colosseum</a></li>
+                        <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
+                        <li><a href="../Pages/jorden.html">Petra</a></li>
+                        <li><a href="../Pages/peru.html">Macchu Picchu</a></li>
+                        <li><a href="../Pages/feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
 </body>
 
 </html>

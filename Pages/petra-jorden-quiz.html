@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Petra Jorden Quiz</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/taj-quiz.css">
+    <link rel="stylesheet" href="../CSS/india.css">
+</head>
+<body class="bg-light" id="main-body">
+    <header>
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
+        
+        <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
+
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
+    </div>
+</nav>
+</header>
+    
+    <div class="header-container">
+        <h1 class="main-heading">The Petra Jorden Quiz</h1>
+        <div class="theme-switcher-container">
+            <img src="../Images/sun_.png" class="theme-selector" onclick="lightMode()">
+            <img src="../Images/dark.png" class="theme-selector" onclick="darkMode()">
+        </div>
+    </div>
+    <div class="quizForm">
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. Where is the Petra located?</h3>
+                <label><input type="radio" name="q1" value="A"> A) Jorden</label><br>
+                <label><input type="radio" name="q1" value="B"> B) Brazil</label><br>
+                <label><input type="radio" name="q1" value="C"> C) china</label><br>
+                <label><input type="radio" name="q1" value="D"> D) India</label>
+            </div>
+    
+            <div class="question">
+                <h3>2. What is the height of the Treasury Hall?</h3>
+                <label><input type="radio" name="q2" value="A"> A) 49 meters</label><br>
+                <label><input type="radio" name="q2" value="B"> B) 30 meters</label><br>
+                <label><input type="radio" name="q2" value="C"> C) 39 meters</label><br>
+                <label><input type="radio" name="q2" value="D"> D) 10 meters</label>
+            </div>
+    
+            <div class="question">
+                <h3>3. What is Petra?</h3>
+                <label><input type="radio" name="q3" value="A"> A) Building</label><br>
+                <label><input type="radio" name="q3" value="B"> B) City</label><br>
+                <label><input type="radio" name="q3" value="C"> C) Village</label><br>
+                <label><input type="radio" name="q3" value="D"> D) Kingdom</label>
+    
+            </div>
+    
+            <div class="question">
+                <h3>4. Petra is surrounded by...</h3>
+                <label><input type="radio" name="q4" value="A"> A) Mountains</label><br>
+                <label><input type="radio" name="q4" value="B"> B) Water</label><br>
+                <label><input type="radio" name="q4" value="C"> C) clouds</label><br>
+                <label><input type="radio" name="q4" value="D"> D) Wild,Dangerous animals</label>
+            </div>
+    
+            <div class="question">
+                <h3>5. Who was the first Western explorer to reach Petra?</h3>
+                <label><input type="radio" name="q5" value="A"> A) Johann Ludwig Burckhardt</label><br>
+                <label><input type="radio" name="q5" value="B"> B) Gaston Maspero</label><br>
+                <label><input type="radio" name="q5" value="C"> C) Howard Carter</label><br>
+                <label><input type="radio" name="q5" value="D"> D) Giovanni Battista Belzoni</label>
+            </div>
+    
+            <div class="question">
+                <h3>6. In which modern-day country is Petra?</h3>
+                <label><input type="radio" name="q6" value="A"> A) Israel</label><br>
+                <label><input type="radio" name="q6" value="B"> B) Jorden</label><br>
+                <label><input type="radio" name="q6" value="C"> C) Egypt</label><br>
+                <label><input type="radio" name="q6" value="D"> D) Lebanon</label>
+            </div>
+    
+            <div class="question">
+                <h3>7. The Roman Emperor_____made Petra a part of the new Roman province of Arabia.</h3>
+                <label><input type="radio" name="q7" value="A"> A) Ceaser</label><br>
+                <label><input type="radio" name="q7" value="B"> B) Nero</label><br>
+                <label><input type="radio" name="q7" value="C"> C) Hadrian</label><br>
+                <label><input type="radio" name="q7" value="D"> D) Trajan</label>
+    
+            </div>
+    
+            <div class="question">
+                <h3>8. What were the people who founded Petra called?</h3>
+            <label><input type="radio" name="q8" value="A"> A) The Phonecians</label><br>
+            <label><input type="radio" name="q8" value="B"> B) The Hittites</label><br>
+            <label><input type="radio" name="q8" value="C"> C) The Nabateans</label><br>
+            <label><input type="radio" name="q8" value="D"> D) The Persians</label>
+            </div>
+    
+            <button type="button" class ="submit-btn" onclick="checkAnswers()">Submit</button>
+        </form>
+        <div id="results" class="results"></div>
+    
+    </div>
+    <div class="buttons-container">
+        <div class="home-img">
+            <a href="../index.html">
+                <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+            </a>
+        </div>
+    
+        <div class="feed-img">
+            <a href="../Pages/feedback.html">
+                <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+            </a>
+        </div>
+    </div>
+   
+    <div class="back-img">
+        <a href="../Pages/jorden.html">
+        <img src="./../Images/back.png" alt="back-png" class="back-icon" />
+        </a>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'A',
+                q2: 'C',
+                q3: 'B',
+                q4: 'A',
+                q5: 'A',
+                q6: 'B',
+                q7: 'D',
+                q8: 'C'
+            };
+
+            const form = document.forms['quizForm'];
+            let score = 0;
+            for (let i = 1; i <= 8; i++) {
+                const q = 'q' + i;
+                const selected = form[q].value;
+                if (selected === answers[q]) {
+                    score++;
+                }
+            } 
+            const resultDiv = document.getElementById('results');
+            resultDiv.innerHTML = `<h2>You got ${score} out of 8 questions right!</h2>`;
+
+        }
+
+        function darkMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-light');
+            mainBody.classList.add('bg-dark');
+        }
+
+        function lightMode(){
+            const mainBody = document.getElementById('main-body');
+            mainBody.classList.remove('bg-dark');
+            mainBody.classList.add('bg-light');
+        }
+    </script>
+
+<footer>
+    <div class="footer-container">
+
+        <div class="pages">
+            <b><u>QUICK LINKS</u></b>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Pages/india.html">Taj Mahal</a></li>
+                <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
+                <li><a href="../Pages/china.html">The Great Wall</a></li>
+                <li><a href="../Pages/Italy.html">Colosseum</a></li>
+                <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
+                <li><a href="../Pages/jorden.html">Petra</a></li>
+                <li><a href="../Pages/peru.html">Machu pichu</a></li>
+                <li><a href="../Pages/feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+      <div>
+            <div class="social-media">
+                <p class="social-text"><b><u>FOLLOW US</u></b></p>
+
+                <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                  src="./../Images/facebook.png" class="social-icon"></a>
+
+                <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                       src="./../Images/youtube (1).png" class="social-icon"></a>
+
+                <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                    <img src="./../Images/instagram.png" class="social-icon"></a><br><br>
+                    <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+
+            </div>
+        </div>
+        <div class="contact">
+        
+            <b><u>CONTACT US</u></b>
+            <br><br>
+            Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
+            <br><br>
+            Tell no<br><a href="tel: Number"> +91 9981123451 </a>
+            
+        </div>
+    </div>
+</footer>
+</body>
+</html>

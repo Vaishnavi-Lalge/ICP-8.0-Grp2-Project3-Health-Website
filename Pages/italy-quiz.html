@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+        .mode-img {
+            height: 30px;
+            width: 30px;
+        }
+    
+        .mode-btnholder {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            right: 20px;
+            top: 70px;
+            position: fixed;
+        }
+        nav{
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+    
+        .darkbg {
+            background-color: #10353e;
+            color: white;
+        }
+    
+        .lightbg {
+            background-color: #d3f1f1;
+            
+        }
+    
+        .modebtn {
+            border: none;
+            border-radius: 10px;
+            padding: 5px 8px;
+            cursor: pointer;
+        }
+        .submit-btn{
+            background-color: #0f5858;
+            color: #fff;
+            padding: 15px;
+            display: block;
+            margin: 20px auto;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .submit-btn:hover{
+            color:#0f5858;
+            background-color:#fff ;
+            border: #0f5858 solid;
+        }
+        .question{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .quiz-container{
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-shadow : 10px 10px 10px 10px #cbe4ea;
+        }
+        header {
+        background-color: #007a86;
+        color: #fff;
+        padding: 0 15px; /* Adjust padding as needed */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+        }
+        .logo-img {
+        height:150px; /* Matches the header height */
+        width: auto;
+}
+
+        .logo-text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            margin-top: 5px;
+        }
+
+        .social-icon{
+            height: 50px;
+            width: 50px;
+        }
+
+        .social-media{
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            align-items: center;
+        }
+        .footer-container {
+        display: flex;
+        flex-direction: row;
+        }
+
+        .contact {
+        margin-top: 40px;
+        padding-left: 260px;
+        padding-top: 10px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .pages {
+        font-size: 18px;
+        margin-top: 5px;
+        padding-right: 270px;
+        padding-top: 10px;
+        text-align: left;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a {
+        text-decoration: none;
+        color: #fff;
+        }
+
+
+        .social-icon {
+        height: 50px;
+        width: 50px;
+        }
+
+        .social-media {
+        margin-top: 70px;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        align-items: center;
+        }
+
+        nav {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 15px;
+        }
+
+        footer {
+        background-color: #007a86;
+        color: #fff;
+        align-items: center;
+        text-align: center;
+        padding: 6px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 6px auto;
+        justify-content: space-around;
+        }
+
+        .foot-text {
+        text-align: center;
+        font-size: 20px;
+        }
+
+        .social-text {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        }
+        .results{
+            text-align: center;
+        }
+        .buttons-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .home-img{
+            cursor: pointer;
+            position: fixed;
+            left: 10px;
+            top: 200px;
+            border: none;
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+            border-radius: 40%;
+            background-color: #fff;
+        }
+
+        .home-icon{
+            height: 40px;
+            padding:5px 5px 1px;
+        }
+        .back-icon{
+            position: fixed;
+            bottom: 50px;
+            height: 40px;
+            width: 40px;
+            border: none;
+            left: 10px;
+            border-radius: 40%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+
+        }
+
+</style>
+</head>
+<body  >
+    <header>
+        <nav>
+            <div class="logo">
+                <header>
+                <img src="../Images/logo.png" alt="Logo" class="logo-img">
+                
+                <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
+    
+                <img src="../Images/logo.png" alt="Logo" class="logo-img">
+            </div>
+        </nav>
+    </header><br>
+    <h1>Quiz on italy colosseum </h1>
+    <div class="mode-btnholder">
+        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
+        <button onclick="lightmode()" class="modebtn"><img src="../Images/sun_.png" class="mode-img" ></button>
+    </div>
+    <div class="quiz-container lightbg" id="body">
+        <form id="italy-quizForm">
+            <div class="question">
+                <h3>1. When was the Colosseum built?</h3>
+                <label><input type="radio" name="q1" value="A"> A) 72 AD</label><br>
+                <label><input type="radio" name="q1" value="B"> B) 80 AD</label><br>
+                <label><input type="radio" name="q1" value="C"> C) 100 AD</label><br>
+                <label><input type="radio" name="q1" value="D"> D) 120 AD</label>
+            </div>
+            
+            <div class="question">
+                <h3>2. How many spectators could the Colosseum hold?</h3>
+                <label><input type="radio" name="q2" value="A"> A) 50,000</label><br>
+                <label><input type="radio" name="q2" value="B"> B) 75,000</label><br>
+                <label><input type="radio" name="q2" value="C"> C) 100,000</label><br>
+                <label><input type="radio" name="q2" value="D"> D) 150,000</label>
+            </div>
+            
+            <div class="question">
+                <h3>3. What is the original name of the Colosseum?</h3>
+                <label><input type="radio" name="q3" value="A"> A) Flavian Amphitheatre</label><br>
+                <label><input type="radio" name="q3" value="B"> B) Augustus Arena</label><br>
+                <label><input type="radio" name="q3" value="C"> C) Trajan Stadium</label><br>
+                <label><input type="radio" name="q3" value="D"> D) Hadrian Coliseum</label>
+            </div>
+            
+            <div class="question">
+                <h3>4. Which Roman emperor commissioned the construction of the Colosseum?</h3>
+                <label><input type="radio" name="q4" value="A"> A) Nero</label><br>
+                <label><input type="radio" name="q4" value="B"> B) Augustus</label><br>
+                <label><input type="radio" name="q4" value="C"> C) Vespasian</label><br>
+                <label><input type="radio" name="q4" value="D"> D) Constantine</label>
+            </div>
+            
+            <div class="question">
+                <h3>5. The Colosseum was primarily used for:</h3>
+                <label><input type="radio" name="q5" value="A"> A) Gladiator contests</label><br>
+                <label><input type="radio" name="q5" value="B"> B) Theatrical performances</label><br>
+                <label><input type="radio" name="q5" value="C"> C) Political rallies</label><br>
+                <label><input type="radio" name="q5" value="D"> D) All of the above</label>
+            </div>
+            
+            <div class="question">
+                <h3>6. How many levels did the Colosseum originally have?</h3>
+                <label><input type="radio" name="q6" value="A"> A) 3</label><br>
+                <label><input type="radio" name="q6" value="B"> B) 4</label><br>
+                <label><input type="radio" name="q6" value="C"> C) 5</label><br>
+                <label><input type="radio" name="q6" value="D"> D) 6</label>
+            </div>
+            
+            <div class="question">
+                <h3>7. What caused significant damage to the Colosseum over the centuries?</h3>
+                <label><input type="radio" name="q7" value="A"> A) Earthquakes</label><br>
+                <label><input type="radio" name="q7" value="B"> B) Fire</label><br>
+                <label><input type="radio" name="q7" value="C"> C) Vandalism</label><br>
+                <label><input type="radio" name="q7" value="D"> D) All of the above</label>
+            </div>
+            
+            <div class="question">
+                <h3>8. What material was used to build the Colosseum?</h3>
+                <label><input type="radio" name="q8" value="A"> A) Marble</label><br>
+                <label><input type="radio" name="q8" value="B"> B) Limestone</label><br>
+                <label><input type="radio" name="q8" value="C"> C) Granite</label><br>
+                <label><input type="radio" name="q8" value="D"> D) Travertine</label>
+            </div>
+            
+            <div class="question">
+                <h3>9. Which part of the Colosseum was used for the best seats (for senators and VIPs)?</h3>
+                <label><input type="radio" name="q9" value="A"> A) Podium</label><br>
+                <label><input type="radio" name="q9" value="B"> B) Cavea</label><br>
+                <label><input type="radio" name="q9" value="C"> C) Arena</label><br>
+                <label><input type="radio" name="q9" value="D"> D) Hypogeum</label>
+            </div>
+            
+            <div class="question">
+                <h3>10. In what year did the last recorded games take place in the Colosseum?</h3>
+                <label><input type="radio" name="q10" value="A"> A) 523 AD</label><br>
+                <label><input type="radio" name="q10" value="B"> B) 615 AD</label><br>
+                <label><input type="radio" name="q10" value="C"> C) 735 AD</label><br>
+                <label><input type="radio" name="q10" value="D"> D) 887 AD</label>
+            </div>
+            
+            <button type="button" class ="submit-btn" onclick="checkAnswers()">Submit your quiz</button>
+        </form>
+    
+        <div id="results" class="results"></div>
+    
+    </div>
+    <footer>
+        <div class="footer-container">
+    
+            <div class="pages">
+                <b><u>QUICK LINKS</u></b>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Pages/india.html">Taj Mahal</a></li>
+                    <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
+                    <li><a href="../Pages/china.html">The Great Wall</a></li>
+                    <li><a href="../Pages/Italy.html">Colosseum</a></li>
+                    <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
+                    <li><a href="../Pages/jorden.html">Petra</a></li>
+                    <li><a href="../Pages/peru.html">Machu pichu</a></li>
+                    <li><a href="../Pages/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+          <div>
+                <div class="social-media">
+                    <p class="social-text"><b><u>FOLLOW US</u></b></p>
+    
+                    <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                      src="../Images/facebook.png" class="social-icon"></a>
+    
+                    <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                           src="../Images/youtube (1).png" class="social-icon"></a>
+    
+                    <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                        <img src="../Images/instagram.png" class="social-icon"></a><br><br>
+                        <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+    
+                </div>
+            </div>
+            <div class="contact">
+            
+                <b><u>CONTACT US</u></b>
+                <br><br>
+                Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
+                <br><br>
+                Tell no<br><a href="tel: Number"> +91 9981123451 </a>
+                
+            </div>
+        </div>
+    </footer>
+        <div class="buttons-container">
+            <div class="home-img">
+                <a href="../index.html">
+                    <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+                </a>
+            </div>
+        </div>
+       
+        <div class="back-img">
+            <a href="../Pages/mexico.html">
+            <img src="./../Images/back.png" alt="back-png" class="back-icon" />
+            </a>
+        </div>
+   
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'B',
+                q2: 'C',
+                q3: 'A',
+                q4: 'C',
+                q5: 'D',
+                q6: 'B',
+                q7: 'D',
+                q8: 'D',
+                q9: 'A',
+                q10: 'A',
+            };
+
+            const form = document.forms['mexico-quizForm'];
+            let score = 0;
+            for (let i = 1; i <= 10; i++) {
+                const q = 'q' + i;
+                const selected = form[q].value;
+                if (selected === answers[q]) {
+                    score++;
+                }
+            } 
+            const resultDiv = document.getElementById('results');
+            resultDiv.innerHTML = `<h2>You got ${score} out of 10 questions right!</h2>`;
+
+        }
+        function darkmode(){
+        body = document.getElementById("body")
+        body.classList.remove("lightbg")
+        body.classList.add("darkbg")
+      }
+      function lightmode(){
+        body = document.getElementById("body")
+        body.classList.remove("darkbg")
+        body.classList.add("lightbg")
+
+      }
+</script>
+</body>
+</html>

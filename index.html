@@ -4,9 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="./CSS/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light" id="main-body">
+<header>
+    <nav>
+        <div class="logo">
+            <header>
+            <img src="Images/logo.png" alt="Logo" class="logo-img">
+            
+            <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
+
+            <img src="Images/logo.png" alt="Logo" class="logo-img">
+        </div>
+    </nav>
+</header><br>
+<div class="theme-switcher-container">
+    <img src="./Images/sun_.png" class="theme-selector" onclick="lightMode()">
+    <img src="./Images/dark.png" class="theme-selector" onclick="darkMode()">
+</div><br><br>
+
+<div>
+<marquee class="blink">"Explore the Marvels of the Ancient World✨" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  "Discover the New Seven Wonders of the World✨" &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  "Uncover the Secrets of the Most Iconic Landmarks✨"
+  </marquee>
+</div>
+<br>
+
+<div class="user-Scroll">
+  <div class="Scroll-container">
+      
+      <img src="./Images/Left-animation (1).gif" class="switch-btn" onclick="prev()">
+      <span class="Scroll"><img src="./Images/7wonder1.jpeg" class="Scroll-img" id="Scroll-image">
+      </span>
+      <img src="./Images/Right-animation.gif" class="switch-btn" onclick="next()">
+  </div>
+</div>
+
+
+    <p class="main-heading"> Let's Explore Wonders 💙</p>
+
+       <div class="explore-container">
+        <div class="explore-card " >
+             <img src="./Images/India-wonder1.webp" alt="Wonders World" id="img">
+             <span class="explore-info">Taj Mahal,India</span><br>
+             <button class="btn"><a href="./Pages/india.html">Explore⚡</a></button>
+            </div>
+      <div class="explore-card">
+          <img src="./Images/Brazil-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Christ Redeemer,Brazil</span><br>
+          <button class="btn"><a href="./Pages/brazil.html">Explore⚡</a></button>
+      </div>
+      <div class="explore-card">
+          <img src="./Images/Jorden-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Petra,Jorden</span><br>
+          <button class="btn"><a href="./Pages/jorden.html">Explore⚡</a></button>
+      </div>
+      <div class="explore-card">
+          <img src="./Images/Mexico-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Chichen Itza, Mexico</span><br>
+          <button class="btn"><a href="./Pages/mexico.html">Explore⚡</a></button>
+      </div>
+     </div><br>
+
+      <div class="explore-container">
+      <div class="explore-card">
+          <img src="./Images/Peru-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Machu pichu,Peru</span><br>
+          <button class="btn"><a href="./Pages/peru.html">Explore⚡</a></button>
+      </div>
+      <div class="explore-card">
+          <img src="./Images/Italy-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Colosseum,Italy</span><br>
+          <button class="btn"><a href="./Pages/Italy.html">Explore⚡</a></button>
+      </div>
+      <div class="explore-card">
+          <img src="./Images/China-wonder1.webp" alt="Wonders World" id="img">
+          <span class="explore-info">Great Wall , China</span><br>
+          <button class="btn"><a href="./Pages/china.html">Explore⚡</a></button>
+      </div>
+  </div><br>
+
+              <script>
+                let ScrollImages = [
+                    "./Images/7wonder1.jpeg",
+                    "./Images/7wonder2.jpg",
+                    "./Images/7wonder3.jpeg",
+            
+                ];
+                let currentIndex=0;
+        
+                function prev(){
+                    if(currentIndex>0) {
+                        currentIndex--;
+                    }
+                    else{
+                        currentIndex = ScrollImages.length - 1; 
+                    }
+                    document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
+                }
+        
+                function next(){
+                    if(currentIndex < ScrollImages.length -1){
+                        currentIndex++;
+                    }
+                    else{
+                        currentIndex = 0;
+                    }
+                    document.getElementById("Scroll-image").src=ScrollImages[currentIndex];
+                }
+        
+
+                function darkMode(){
+    const mainBody = document.getElementById('main-body');
+    mainBody.classList.remove('bg-light');
+    mainBody.classList.add('bg-dark');
+}
+
+function lightMode(){
+    const mainBody = document.getElementById('main-body');
+    mainBody.classList.remove('bg-dark');
+    mainBody.classList.add('bg-light');
+}
+
+
+
+
+
+
+            </script>
+                
+                <footer>
+                    <div class="footer-container">
+                
+                        <div class="pages">
+                            <b><u>QUICK LINKS</u></b>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../Pages/india.html">Taj Mahal</a></li>
+                                <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
+                                <li><a href="../Pages/china.html">The Great Wall</a></li>
+                                <li><a href="../Pages/Italy.html">Colosseum</a></li>
+                                <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
+                                <li><a href="../Pages/jorden.html">Petra</a></li>
+                                <li><a href="../Pages/peru.html">Machu pichu</a></li>
+                                <li><a href="../Pages/feedback.html">Feedback</a></li>
+                            </ul>
+                        </div>
+                      <div>
+                            <div class="social-media">
+                                <p class="social-text"><b><u>FOLLOW US</u></b></p>
+                
+                                <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                                  src="./Images/facebook.png" class="social-icon"></a>
+                
+                                <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                                       src="./Images/youtube (1).png" class="social-icon"></a>
+                
+                                <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                                    <img src="./Images/instagram.png" class="social-icon"></a><br><br>
+                                    <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+                
+                            </div>
+                        </div>
+                        <div class="contact">
+                        
+                            <b><u>CONTACT US</u></b>
+                            <br><br>
+                            Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
+                            <br><br>
+                            Tell no<br><a href="tel: Number"> +91 9981123451 </a>
+                            
+                        </div>
+                    </div>
+                </footer>
+                
+                
+                
+                
+                
+                
+
+
+
+
+
     
 </body>
 </html>

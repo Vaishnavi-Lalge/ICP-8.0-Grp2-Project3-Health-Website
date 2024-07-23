@@ -5,45 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taj Mahal</title>
     <link rel="stylesheet" href="../CSS/india.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body class="bg-light" id="main-body">
-    <div class="header-container">
-        <h1 class="main-heading">Taj Mahal</h1>
-        <div class="theme-switcher-container">
-            <img src="../Images/light.png" class="theme-selector" onclick="lightMode()">
-            <img src="../Images/dark.png" class="theme-selector" onclick="darkMode()">
-        </div>
+    <header>
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
+        
+        <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
+
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
     </div>
-    <img src="../Images/frame1.jpg" id="main-product-img">
+</nav>
+</header>
+<div class="theme-selector-container">
+
+    <img src="./../Images/sun_.png" class="theme-select-icon" onclick="lightMode()" />
+    <img src="./../Images/dark.png" class="theme-select-icon" onclick=" darkMode()" />
+</div>
+    
+        <h1 class="wonder-heading">Taj Mahal</h1>
+    <img src="../Images/frame0.jpg" id="main-product-img">
     <div class="product-img-container">
-        <img src="../Images/frame2.jpg" class="product-img" onclick="changeImage('../Images/frame2.jpg')">
+        <img src="../Images/India-wonder1.webp" class="product-img" onclick="changeImage('../Images/India-wonder1.webp')">
         <img src="../Images/frame3.jpg" class="product-img" onclick="changeImage('../Images/frame3.jpg')">
         <img src="../Images/frame4.jpg" class="product-img" onclick="changeImage('../Images/frame4.jpg')">
         <img src="../Images/frame1.jpg" class="product-img" onclick="changeImage('../Images/frame1.jpg')">
     </div>
+    <h1 class="know-about">Let's Know about Taj Mahal</h1>
     <div class="info-container">
-        <ul>
-            <li>The Taj Mahal in Agra, India, is a white marble mausoleum built by Emperor Shah Jahan for his wife Mumtaz Mahal.</li>
-            <li>Finished in 1653, it symbolizes eternal love and is an architectural masterpiece.</li>
-            <li>It features a large central dome, four minarets, and intricate inlay work with semi-precious stones.</li>
-            <li>The site includes beautiful gardens, fountains, and reflecting pools, enhancing its beauty.</li>
-            <li>As a UNESCO World Heritage Site, it is a top example of Mughal architecture and attracts millions of visitors annually.</li>
-        </ul>
-        <h3>Why it's included in Seven Wonders?</h3>
-        <ul>
-            <li><strong>Architectural Marvel</strong>: Exemplifies Mughal architecture with influences from Islamic, Persian, Ottoman Turkish, and Indian styles.</li>
-            <li><strong>Symbol of Love</strong>: Built by Shah Jahan in memory of his wife Mumtaz Mahal, symbolizing eternal love.</li>
-            <li><strong>Intricate Craftsmanship</strong>: Features exquisite marble work and inlay with semi-precious stones, showcasing high craftsmanship.</li>
-            <li><strong>Enduring Beauty</strong>: The white marble façade changes color with light, enhancing its timeless allure.</li>
-        </ul>
-        <button class="btn" onclick="window.location.href='../Pages/taj-mahal-quiz.html'">Take a Quiz</button>
+        <div class="info">
+            <ul>
+                <li><strong>Wonder's Name</strong>: Taj Mahal</li>
+                <li><strong>Location</strong>: India</li>
+                <li><strong>Material</strong>:White marble</li>
+                <li><strong>Place and Others</strong>:The Taj Mahal, a world-renowned mausoleum in Agra, India, was commissioned by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. Known for its architectural beauty and symbol of eternal love, its intricate carvings, stunning symmetry, and beautiful gardens make it one of the most admired monuments globally.</li>
+
+
+            </ul>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14291.682633444075!2d78.03785050000001!3d27.175015600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747185d3e85e3b%3A0x6f72ad22aeb8c52!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1623246340918!5m2!1sen!2sin" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </div>
+    <h1 class="know-about">Features of Taj Mahal</h1>
+    <div class="feature-card">
+        <div class="cards">
+            <img src="../Images/taj-card1.jpg" class="card-img">
+            <h3>Taj Mahal- Symbol Of Love</h3>
+            <ul>
+                <li>Built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal in 1653</li>
+                <li>The Taj Mahal is often called the <span class="love">Epitiom of Love</span></li>
+            </ul>
+        </div>
+        <div class="cards">
+            <img src="../Images/India-wonder2.jpg" class="card-img">
+            <h3>Taj Mahal- Marble Masterpiece</h3>
+            <ul>
+                <li>Constructed with white marble that changes the color with the light</li>
+                <li>The Taj Mahal looks different at different times of the day</li>
+            </ul>
+        </div>
+        <div class="cards">
+            <img src="../Images/taj-card3.jpg" class="card-img">
+            <h3>Taj Mahal- Architectural Wonder</h3>
+            <ul>
+                <li>Its perfect symmetry, including the iconic central dome and four minarets, is a marvel of Mughal architecture</li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="know-about">Want to Know more about Taj Mahal?</h1>
+    <div class="video-container">
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/IbK0T-FYraE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h1 class="know-about">Test your Knowledge</h1>
+    <button class="btn" onclick="window.location.href='../Pages/taj-mahal-quiz.html'">Take a Quiz</button>
+    <h1 class="know-about">Explore Other Wonders Too...</h>
+    <div class="explore-container">
+        <div class="wonders">
+            <img src="../Images/Brazil-wonder1.webp" class="wonders-img">
+            <h3>Christ the Redeemer, Brazil</h3>
+            <button class="btns" onclick="window.location.href='../Pages/brazil.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/Italy-wonder1.webp" class="wonders-img">
+            <h3>Colosseum, Italy</h3>
+            <button class="btns" onclick="window.location.href='../Pages/Italy.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/Mexico-wonder1.webp" class="wonders-img">
+            <h3>Chichén Itza, Mexico</h3>
+            <button class="btns" onclick="window.location.href='../Pages/mexico.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/China-wonder1.webp" class="wonders-img">
+            <h3>Great Wall of China, China</h3>
+            <button class="btns" onclick="window.location.href='../Pages/china.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/Jorden-wonder1.webp" class="wonders-img">
+            <h3>Petra, Jordan</h3>
+            <button class="btns" onclick="window.location.href='../Pages/jorden.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/Peru-wonder1.webp" class="wonders-img">
+            <h3>Machu Picchu, Peru</h3>
+            <button class="btns" onclick="window.location.href='../Pages/peru.html'">Explore</button>
+        </div>
+
+    </div>
+
+    <div class="buttons-container">
+        <div class="home-img">
+            <a href="../index.html">
+                <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+            </a>
+        </div>
+    
+        <div class="feed-img">
+            <a href="../Pages/feedback.html">
+                <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+            </a>
+        </div>
+    </div>
+    
+
+    
+
     <script>
-        function changeImage(imageName){
+         function changeImage(imageName){
             const mainImage = document.getElementById('main-product-img');
             mainImage.src = imageName;
         }
-
         function darkMode(){
             const mainBody = document.getElementById('main-body');
             mainBody.classList.remove('bg-light');
@@ -55,6 +148,53 @@
             mainBody.classList.remove('bg-dark');
             mainBody.classList.add('bg-light');
         }
+
     </script>
+    <footer>
+        <div class="footer-container">
+    
+            <div class="pages">
+                <b><u>QUICK LINKS</u></b>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Pages/india.html">Taj Mahal</a></li>
+                    <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
+                    <li><a href="../Pages/china.html">The Great Wall</a></li>
+                    <li><a href="../Pages/Italy.html">Colosseum</a></li>
+                    <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
+                    <li><a href="../Pages/jorden.html">Petra</a></li>
+                    <li><a href="../Pages/peru.html">Machu pichu</a></li>
+                    <li><a href="../Pages/feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+          <div>
+                <div class="social-media">
+                    <p class="social-text"><b><u>FOLLOW US</u></b></p>
+    
+                    <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                      src="../Images/facebook.png" class="social-icon"></a>
+    
+                    <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                           src="../Images/youtube (1).png" class="social-icon"></a>
+    
+                    <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                        <img src="../Images/instagram.png" class="social-icon"></a><br><br>
+                        <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+    
+                </div>
+            </div>
+            <div class="contact">
+            
+                <b><u>CONTACT US</u></b>
+                <br><br>
+                Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
+                <br><br>
+                Tel no<br><a href="tel: Number"> +91 9981123451 </a>
+                
+            </div>
+        </div>
+    </footer>
+    
+    
 </body>
 </html>

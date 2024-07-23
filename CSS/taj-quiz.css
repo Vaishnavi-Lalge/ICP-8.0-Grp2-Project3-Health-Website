@@ -1,0 +1,345 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header, footer {
+    margin: 0;
+    padding: 0;
+    background-color: #007a86;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-img {
+    height: 150px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.theme-select-icon {
+    height: 30px;
+    cursor: pointer;
+}
+
+.theme-selector-container {
+    position: fixed;
+    right: 30px;
+    top: 200px;
+}
+
+.main-heading {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    flex: 1;
+}
+
+.wonder-heading {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    color: #10353e;
+}
+
+.bg-dark .wonder-heading {
+    color: white;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-img {
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 200px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.home-icon {
+    height: 40px;
+    padding: 5px 5px 1px;
+}
+
+.feed-img {
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom: 250px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.feed-icon {
+    height: 40px;
+    padding: 5px 5px 1px;
+}
+
+.back-img {
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    bottom: 120px;
+    border: none;
+    box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+    border-radius: 40%;
+    background-color: #fff;
+}
+
+.back-icon {
+    height: 40px;
+    padding: 5px 5px 1px;
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.question h3 {
+    font-size: 20px;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.submit-btn {
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #10353e;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: #10353e;
+    border: 1px solid #10353e;
+}
+
+.bg-dark {
+    background-color: #10353e;
+    color: white;
+}
+
+.bg-light {
+    background-color: #d3f1f1;
+}
+
+.bg-dark .question h3 {
+    color: #10353e;
+}
+
+.quizForm {
+    border: solid #10353e;
+    border-radius: 20px;
+    height: fit-content;
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.bg-dark .quizForm {
+    background-color: #d3f1f1;
+    color: black;
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive Media Queries */
+
+/* For devices with max-width 1200px */
+@media (max-width: 1200px) {
+    .quizForm {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .submit-btn {
+        width: 150px;
+    }
+}
+
+/* For devices with max-width 768px */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 25px;
+    }
+
+    .theme-switcher-container {
+        right: 10px;
+        top: 10px;
+    }
+
+    .theme-selector {
+        height: 25px;
+        width: 25px;
+    }
+
+    .question {
+        font-size: 14px;
+    }
+
+    .question h3 {
+        font-size: 18px;
+    }
+
+    .quizForm {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .submit-btn {
+        width: 120px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo-img {
+        height: 100px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+        margin-left: 0;
+    }
+}
+
+/* For devices with max-width 480px */
+@media (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    .main-heading {
+        font-size: 22px;
+    }
+
+    .theme-select-icon {
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .theme-selector-container {
+        position: fixed;
+        left: 20px;
+        top: 50px;
+    }
+
+    .buttons-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .home-img {
+        cursor: pointer;
+        position: fixed;
+        left: 10px;
+        top: 200px;
+        border: none;
+        box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+        border-radius: 40%;
+        background-color: #fff;
+    }
+
+    .home-icon {
+        height: 40px;
+        padding: 5px 5px 1px;
+    }
+
+    .feed-img {
+        cursor: pointer;
+        position: fixed;
+        left: 10px;
+        bottom: 200px;
+        border: none;
+        box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+        border-radius: 40%;
+        background-color: #fff;
+    }
+
+    .feed-icon {
+        height: 40px;
+        padding: 5px 5px 1px;
+    }
+
+    .question {
+        font-size: 14px;
+    }
+
+    .question h3 {
+        font-size: 18px;
+    }
+
+    .quizForm {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .submit-btn {
+        width: 120px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .logo-img {
+        height: 80px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
