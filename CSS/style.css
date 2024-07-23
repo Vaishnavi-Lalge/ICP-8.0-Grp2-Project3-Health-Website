@@ -175,7 +175,7 @@ button a {
 #img {
   height: 400px;
   width: 100%;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 70px 70px;
 }
 
 .explore-card img {
@@ -686,7 +686,6 @@ button a {
   }
   
   .explore-card {
-    
     background-color: #F0F0F0;
     margin: 20px;
     transition: transform 400ms ease-in;
