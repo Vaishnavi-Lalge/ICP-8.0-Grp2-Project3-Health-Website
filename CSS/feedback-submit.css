@@ -15,7 +15,7 @@
     cursor: pointer;
     position: fixed;
     left: 10px;
-    top: 120px;
+    top: 155px;
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
     border-radius: 40%;
@@ -104,6 +104,20 @@ h2 {
     text-align: center;
     margin:10px 0;
 }   
+
+.contact {
+    border-right: none;
+    padding-right: 100px;
+    padding-top: 10px;
+
+}
+
+.pages {
+    border-left: none;
+    padding-left: 100px;
+    padding-top: 10px;
+    text-align: left;
+}
 
 /* media queries */
 /* Small Devices  */
