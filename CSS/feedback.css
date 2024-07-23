@@ -9,6 +9,19 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.logo-img {
+    height: 150px; 
+    width: auto;
+    margin: 0 auto; 
+}
+
+.logo-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin: 0 auto; 
+    align-items: center;
+}
+
 .theme-select-icon {
     height: 50px;
     cursor: pointer;
@@ -17,7 +30,7 @@ body {
 .theme-sector-container {
     position: fixed;
     right: 5px;
-    top: 120px;
+    top: 155px;
 }
 
 .bg-dark {
@@ -34,7 +47,7 @@ body {
     cursor: pointer;
     position: fixed;
     left: 10px;
-    top: 120px;
+    top: 155px;
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
     border-radius: 40%;
