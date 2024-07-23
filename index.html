@@ -36,8 +36,9 @@
   <div class="Scroll-container">
       
       <img src="./Images/Left-animation (1).gif" class="switch-btn" onclick="prev()">
-      <span class="Scroll"><img src="./Images/7wonder1.jpeg" class="Scroll-img" id="Scroll-image">
-      </span>
+
+      <span class="Scroll"><img src="./Images/7wonder1.jpeg" class="Scroll-img" id="Scroll-image"></span>
+
       <img src="./Images/Right-animation.gif" class="switch-btn" onclick="next()">
   </div>
 </div>
@@ -116,26 +117,21 @@
                 }
         
 
-                function darkMode(){
+    function darkMode(){
     const mainBody = document.getElementById('main-body');
     mainBody.classList.remove('bg-light');
     mainBody.classList.add('bg-dark');
-}
+    }
 
-function lightMode(){
+    function lightMode(){
     const mainBody = document.getElementById('main-body');
     mainBody.classList.remove('bg-dark');
-    mainBody.classList.add('bg-light');
-}
+    mainBody.classList.add('bg-light'); 
+    }
 
-
-
-
-
-
-            </script>
+     </script>
                 
-                <footer>
+            <footer>
                     <div class="footer-container">
                 
                         <div class="pages">
@@ -180,16 +176,5 @@ function lightMode(){
                     </div>
                 </footer>
                 
-                
-                
-                
-                
-                
-
-
-
-
-
-    
 </body>
 </html>

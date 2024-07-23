@@ -25,15 +25,11 @@ header {
   margin-left: 15px; /* Adds space between the logo and the text */
 }
 
-
-
 nav {
   text-align: center;
   margin: 0 auto;
   padding: 0 15px;
 }
-
-
 
 .heading2 {
   font-size: 50px;
@@ -70,8 +66,6 @@ nav {
   align-items: center;
   margin: 2px auto;
 }
-
-
 
 .moving-text {
   font-size: 30px;
@@ -243,18 +237,10 @@ button a {
   color: white;
 }
 
-
-
-
-
-
-
 /* Responsive Media Queries */
 
 /* For devices with max-width 1200px */
 @media (max-width: 1200px) {
-
-  
   header {
     background-color: #007a86;
     color: #fff;
@@ -286,6 +272,7 @@ button a {
     box-shadow: 0px 0px 40px 0px #10353e;
     transition-duration: 0.9s;
       }
+
     .main-heading{
           font-size: 50px;
           font-family: Georgia, 'Times New Roman', Times, serif;
@@ -309,12 +296,7 @@ button a {
     margin: 2px auto;
   }
   
-
-  
-  
-  
-   .user-Scroll {
-
+  .user-Scroll {
     border: 4px solid #10353e;
     box-shadow: 0 0 6px rgba(36, 67, 40, 0.8);
     background-color: #fff;
@@ -323,6 +305,7 @@ button a {
     background-image: url('../Images/Home img.jpg');
     padding: 10px;
   }
+
   .bttn {
     padding: 10px 30px;
     background-color: #50adff;
@@ -412,6 +395,8 @@ button a {
     box-shadow: 0px 0px 20px 0px #10353e;
   }
 }
+
+
 /* For devices with max-width 768px */
 @media (max-width: 768px) {
  header {
@@ -466,8 +451,6 @@ button a {
    .user-Scroll {
     display: none;
   }
-  
-
   
   .bttn {
     padding: 10px 30px;
@@ -567,9 +550,6 @@ button a {
   
   }
   
-  
-
-
   .contact {
     margin-top: 20px;
     padding-left: 20px;
@@ -578,15 +558,10 @@ button a {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   
   }
-
-
-
-
 }
 
 /* For devices with max-width 480px */
 @media (max-width: 480px) {
-
   header {
     background-color: #007a86;
     color: #fff;
@@ -618,8 +593,6 @@ button a {
           font-weight: bold;
         }
   
-  
-  
   .main-class {
     align-items: center;
     margin: 2px auto;
@@ -643,8 +616,6 @@ button a {
    .user-Scroll {
     display: none;
   }
-  
-
   
   .bttn {
     padding: 10px 30px;
@@ -735,8 +706,7 @@ button a {
     box-shadow: 0px 0px 20px 0px #10353e;
   }
 
-
-  .blink {
+ .blink {
     animation: blinker 1.5s linear infinite;
     color: #10353e;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -745,8 +715,7 @@ button a {
     font-weight: bold;
   }
 
-
-  .pages {
+.pages {
     display: none;
   }
 
@@ -754,13 +723,10 @@ button a {
   .footer-container {
     display: flex;
     flex-direction: row;
-    
-    
-  }
+    }
   
   .contact {
    display: none;
-  
   }
 
 
@@ -775,21 +741,6 @@ button a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-items: center;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 }
 
 
