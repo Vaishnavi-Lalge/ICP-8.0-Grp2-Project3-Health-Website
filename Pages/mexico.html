@@ -111,7 +111,7 @@
     </div>
     <h2>Test Your Knowledge</h2>
     <a href="./quiz-mexico.html" target="_blank">
-        <button class="quiz-btn">Take a quiz </button>
+        <button class="quiz-btn" id="quiz-btn">Take a quiz </button>
     </a>
     <h2 class="know-about">Explore Other Wonders Too...</h2>
         <div class="explore-container">
@@ -207,14 +207,10 @@
         card = document.getElementById("data-card")
         card.classList.remove("light-card")
         card.classList.add("dark-card")
-        var h2Element = document.getElementById("two");
-        if (h2Element) {
-        h2Element.style.color = "white";
-     }
+        quizbtn =  document.getElementById("quiz-btn")
+        quizbtn.classList.remove("quiz-btn")
+        quizbtn.classList.add("quiz-btnlb")
 }
-        
-
-      }
       function lightmode(){
         body = document.getElementById("body")
         body.classList.remove("darkbg")

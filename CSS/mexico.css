@@ -199,6 +199,17 @@ h3{
     background-color:#d3f1f1;
     color: black;
 }
+.darkbg h1, .bg-dark h3 {
+    color: white;
+}
+
+.darkbg h3 {
+    color: #10353e;
+}
+.darkbg .btn {
+    background-color: #d3f1f1;
+    color: #10353e;
+}
 .modebtn{
     border: none;
     cursor: pointer;
@@ -299,6 +310,22 @@ h3{
     font-weight: bold;
     width: 400px;
     text-decoration: none;
+}
+.quiz-btnlb{
+    background-color: #d3f1f1;
+    color:#10353e;
+    padding: 15px 20px;
+    display: block;
+    margin: 20px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    width: 400px;
+    text-decoration: none;
+
 }
 a{
     text-decoration: none;
