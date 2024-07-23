@@ -1,148 +1,140 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>italy Colosseum</title>
-    <link rel="stylesheet" href="./../CSS/italy.css">
-       
+    <title>Italy Colosseum</title>
+    <link rel="stylesheet" href="../CSS/italy.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-
-<body class="main-body">
+<body class="bg-light" id="main-body">
     <header>
-        <nav>
-            <div class="logo">
-                
-            <p class="logo-text">W O N D E R S ⭐ W O R L D</p>
-                
-            </div>
-        </nav>
-    </header>
-    <div class="content">
-        <!-- Your main content here -->
-    </div>
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
+        
+        <h1 class="logo-text">W O N D E R S ⭐ W O R L D</h1>
 
-    <div class="theme-selector-container">
-
-        <img src="./../Images\light.png" alt="golden" class="theme-select-icon" onclick="enableLight()" />
-        <img src="./../Images\dark.png" alt="black" class="theme-select-icon" onclick="enableDark()" />
+        <img src="../Images/logo.png" alt="Logo" class="logo-img">
     </div>
+</nav>
+</header>
+<div class="theme-selector-container">
+
+    <img src="./../Images\sun.png" class="theme-select-icon" onclick="lightMode()" />
+    <img src="./../Images/dark.png" class="theme-select-icon" onclick=" darkMode()" />
+</div>
+    
+        <h1 class="wonder-heading">Italy Colosseum</h1>
     <img src="../Images\italy.jpg" id="main-product-img">
     <div class="product-img-container">
-        <img src="../Images\Italy-wonder1.webp" class="product-img" onclick="changeImage('../Images\Italy-wonder1.webp.jpg')">
-        <img src="../Images\Italy-wonder2.jpg" class="product-img" onclick="changeImage('../Images\Italy-wonder2.jpg')">
-        <img src="../Images\it5.jpeg" class="product-img" onclick="changeImage('../Images\it5.jpeg')">
-        <img src="../Images\italy.jpg" class="product-img" onclick="changeImage('../Images\italy.jpg')">
+        <img src="../Images\Italy-wonder1.webp" class="product-img" onclick="changeImage('../Images/Italy-wonder1.webp')">
+        <img src="../Images\Italy-wonder2.jpg"  class="product-img" onclick="changeImage('../Images/Italy-wonder2.jpg')">
+        <img src="../Images\it3.jpeg"           class="product-img" onclick="changeImage('../Images/it3.jpeg')">
+        <img src="../Images\i5.jpeg"            class="product-img" onclick="changeImage('../Images/i5.jpeg')">
     </div>
-  
-   <span class="data-container"> Let's Know about italy Colosseum</span>
-   <div class="data">
-    <div class="data-card">
-        <p>
-           <b> Wonders Name : </b>ITALY COLOSSEUM<br/>
-           <b> Location : </b> Italy<br/>
-           <b> Material :</b>concrete, 3.5 million cubic feet of travertine, and similar amounts of marble, stone and timber <br/>
-           <b> Place and others :</b> The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. 
-        </p>
+    <h1 class="know-about">Let's Know about Italy Colosseum</h1>
+    <div class="info-container">
+        <div class="info">
+            <ul>
+                <li><strong>Wonder's Name</strong>: Italy Colosseum</li>
+                <li><strong>Location</strong>: 	Regio III Isis et Serapis, Rome, Italy</li>
+                <li><strong>Place and Others</strong>: The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. <br> It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world, despite its age.z</li>
+            </ul>
+        </div>
+        <div class="map-container">
+            <iframe src="" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <h1 class="know-about">Features of Italy Colosseum</h1>
+    <div class="feature-card">
+        <div class="cards">
+            <img src="../Images\i7.jpeg" class="card-img">
+            <h3>Italy Colosseum</h3>
+            <ul>
+                <li> Regio III Isis et Serapis, Rome, Italy</li>
+                
+            </ul>
+        </div>
+        <div class="cards">
+            <img src="../Images\i6.jpeg" class="card-img">
+            <h3>Height & Dimensions</h3>
+            <ul>
+                <li> The height of the outer wall is 48 meters (157 ft / 165 Roman feet). </li>
+                
+            </ul>
+        </div>
+        <div class="cards">
+            <img src="../Images\i5.jpeg" class="card-img">
+            <h3>Constructions</h3>
+            <ul>
+                <li>Between seven and eight years in all. It was probably begun about 73-75 A.D. and was almost completed in 79 when Vespasian died, </li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="know-about">Want to Know more about Italy Colosseum?</h1>
+    <div class="video-container">
+        <iframe width="660" height="415" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h1 class="know-about">Test your Knowledge</h1>
+    <button class="btn" onclick="window.location.href='../Pages/italy-quiz.html'">Take a Quiz</button>
+    <h1 class="know-about">Explore Other Wonders Too...</h>
+    <div class="explore-container">
+        <div class="wonders">
+            <img src="../Images/Brazil-wonder1.webp" class="wonders-img">
+            <h3>Christ the Redeemer, Brazil</h3>
+            <button class="btns" onclick="window.location.href='../Pages/brazil.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/Italy-wonder1.webp" class="wonders-img">
+            <h3>Colosseum, Italy</h3>
+            <button class="btns" onclick="window.location.href='../Pages/Italy.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/Mexico-wonder1.webp" class="wonders-img">
+            <h3>Chichén Itza, Mexico</h3>
+            <button class="btns" onclick="window.location.href='../Pages/mexico.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/China-wonder1.webp" class="wonders-img">
+            <h3>Great Wall of China, China</h3>
+            <button class="btns" onclick="window.location.href='../Pages/china.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/Jorden-wonder1.webp" class="wonders-img">
+            <h3>Petra, Jordan</h3>
+            <button class="btns" onclick="window.location.href='../Pages/jorden.html'">Explore</button>
+        </div>
+        <div class="wonders">
+            <img src="../Images/Peru-wonder1.webp" class="wonders-img">
+            <h3>Machu Picchu, Peru</h3>
+            <button class="btns" onclick="window.location.href='../Pages/peru.html'">Explore</button>
+        </div>
 
     </div>
-    <div class="map">
-        <iframe src="" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-  </div>
-  <h2>Features of italy Colosseum</h2>
-  <div class="info">
-    <div class="card">
-        <img src="./../Images/icon1.png" alt="img" height="20px">
-        <span class="highlight">Italy Colosseum</span>
 
-        <p>
-            Regio III Isis et Serapis, Rome, Italy
-        </p>
-    </div>
-
-    <div class="card">
-        <img src="./../Images/icon1.png" alt="img" height="20px">
-        <span class="highlight">Height & Dimensions</span>
-
-        <p>
-            The height of the outer wall is 48 meters (157 ft / 165 Roman feet). 
-
-        </p>
-    </div>
-
-    <div class="card">
-        <img src="./../Images/icon1.png" alt="img" height="20px">
-        <span class="highlight">Constructions</span>
-
-        <p>
-            Between seven and eight years in all. It was probably begun about 73-75 A.D. and was almost completed in 79 when Vespasian died, 
-
-        </p>
-    </div>
-</div>
-    <h3>Test your knowledge</h3>
-    <button class="bttn"><a href="italy-quiz.html">Take a Quiz </a>
-
-    </button>
+    <div class="buttons-container">
+        <div class="home-img">
+            <a href='/'>
+                <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+            </a>
+        </div>
     
-    <p class="Other-wonders">Explore Other Wonders Too...</p>
-   <div class="explore-container">
+        <div class="feed-img">
+            <a href='/pages/feedback'>
+                <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+            </a>
+        </div>
+    </div>
     
-    <div class="explore-card">
-        <img src="./../Images/taj-card3.jpg" alt="Christ the Redeemer, Brazil" id="img">
-        <span class="explore-info">Taj Mahal, India</span>
-        <button class="btn"><a href="india.html">Explore</a></button>
-    </div>
-    <div class="explore-card">
-        <img src="./../Images/italy.jpg" alt="Christ the Redeemer, Brazil" id="img">
-        <span class="explore-info">Colosseum, Italy</span>
-        <button class="btn"><a href="Italy.html">Explore</a></button>
-    </div>
-    <div class="explore-card">
-        <img src="./../Images/mex1.jpg" alt="Christ the Redeemer, Brazil" id="img">
-        <span class="explore-info">Chichen Itza, Mexico</span>
-        <button class="btn"><a href="mexico.html">Explore</a></button>
-    </div><br/>
 
-    <div class="explore-card">
-        <img src="./../Images/gwc.jpg" alt="Christ the Redeemer, Brazil" id="img">
-        <span class="explore-info">Great Wall , China</span>
-        <button class="btn"><a href="china.html">Explore</a></button>
-    </div>
-    <div class="explore-card">
-        <img src="./../Images/petra.jpg" alt="Christ the Redeemer, Brazil" id="img">
-        <span class="explore-info">Petra , Jordan</span>
-        <button class="btn"><a href="jorden.html">Explore</a></button>
-    </div>
-    <div class="explore-card">
-        <img src="./../Images/machu-pichu.jpg" alt="Christ the Redeemer, Brazil" id="img">
-        <span class="explore-info">Machu picchu, Peru</span>
-        <button class="btn"><a href="peru.html">Explore</a></button>
-    </div>
-</div>
-        
-   
-<footer>
-    <p class="foot-text">&copy; 2024 Wonders World.All rights reserved.</p>
-    <div class="social-media ">
-    <p class="social-text">Follow Us On</p>
-
-   <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook Account"><img src="./../Images/facebook.png" class="social-icon"></a>
-   <a href="https://youtu.be/fYR5hRdYh9Q?si=Y87MD0xDPETFc6-C" alt="Visit to YouTube Account"><img src="./../Images/youtube (1).png" class="social-icon"></a> 
-   <a href="https://www.instagram.com/seven_wonders_of_world?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw" alt="Visit to Instagram Account"><img src="./../Images/instagram.png"  class="social-icon"></a>
-   </div>
-  </footer>
-   
-
+    
 
     <script>
-        function changeImage(imageName){
+         function changeImage(imageName){
             const mainImage = document.getElementById('main-product-img');
             mainImage.src = imageName;
         }
-       
         function darkMode(){
             const mainBody = document.getElementById('main-body');
             mainBody.classList.remove('bg-light');
@@ -154,7 +146,50 @@
             mainBody.classList.remove('bg-dark');
             mainBody.classList.add('bg-light');
         }
-    </script>
-</body>
 
+    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="contact">
+                <b><u>CONTACT US</u></b>
+                <br><br>
+                Email:<br><a href="mailto: Mail"> wondersworld@gamil.com </a>
+                <br><br>
+                Tel no. :<br><a href="tel: Number"> 9981123451 </a>
+                
+            </div>
+            <div>
+                <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+                <div class="social-media">
+                    <p class="social-text">Follow Us On</p>
+
+                    <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                            src="../Images/facebook.png" class="social-icon"></a>
+
+                    <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                            src="../Images/youtube (1).png" class="social-icon"></a>
+
+                    <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                        <img src="../Images/instagram.png" class="social-icon"></a>
+
+                </div>
+            </div>
+            <div class="pages">
+                <b><u>QUICK LINKS</u></b>
+                <ul>
+                    <li><a href='/'>Home</a></li>
+                    <li><a href='/pages/india'>Taj Mahal</a></li>
+                    <li><a href='/pages/brazil'>Christ Redeemer</a></li>
+                    <li><a href='/pages/china'>The Great Wall of China</a></li>
+                    <li><a href='/pages/italy'>Colosseum</a></li>
+                    <li><a href='/pages/mexico'>Chichen Itza</a></li>
+                    <li><a href='/pages/jorden'>Petra</a></li>
+                    <li><a href='/pages/peru'>Macchu Picchu</a></li>
+                    <li><a href='/pages/feedback'>Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
 </html>
