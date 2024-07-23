@@ -189,6 +189,7 @@ h3{
     justify-content: start;
     position: fixed;
     right: 30px;
+    top:180px;
 }
 .darkbg{
     background-color:#10353e ;
