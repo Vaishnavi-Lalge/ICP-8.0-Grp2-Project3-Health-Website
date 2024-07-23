@@ -222,9 +222,12 @@
         card = document.getElementById("data-card")
         card.classList.remove("dark-card")
         card.classList.add("light-card")
-        var subheadings = document.getElementsByClassName("subheading");
+        quizbtn =  document.getElementById("quiz-btn")
+        quizbtn.classList.remove("quiz-btnlb")
+        quizbtn.classList.add("quiz-btn")
+        var subheadings = document.getElementsByClassName("h2");
         for (var i = 0; i < subheadings.length; i++) {
-        subheadings[i].style.color = "black";
+        subheadings[i].style.color = "#10353e";
     }
       }
     </script>
