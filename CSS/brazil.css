@@ -541,27 +541,26 @@ footer {
     }
 
     /* Footer adjustments */
-    .social-media {
-        visibility: visible;
-    }
-
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 100%;
-        height: 20px;
-    }
-
-    .contact,
     .pages {
-        visibility: hidden;
-    }
-
+        display: none;
+      }
+     .footer-container {
+        display: flex;
+        flex-direction: row;
+         }
+      .contact {
+       display: none;
+      }
     .social-icon {
-        width: 25px;
-        height: 25px;
-    }
+        height: 30px;
+        width: 30px;
+      }
+      .social-media {
+        margin-top: 70px;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        align-items: center;
+      }
 
     .foot-text {
         margin-top: 3px;
