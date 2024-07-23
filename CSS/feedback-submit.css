@@ -1,8 +1,21 @@
+.logo-img {
+    height: 150px; 
+    width: auto;
+    margin: 0 auto; 
+}
+
+.logo-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin: 0 auto; 
+    align-items: center;
+}
+
 .home-img{
     cursor: pointer;
     position: fixed;
     left: 10px;
-    top: 120px;
+    top: 155px;
     border: none;
     box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
     border-radius: 40%;
@@ -29,6 +42,33 @@
     height: 40px;
     padding:5px 5px 1px;
 }
+
+.theme-select-icon {
+    height: 50px;
+    cursor: pointer;
+}
+
+.theme-sector-container {
+    position: fixed;
+    right: 5px;
+    top: 155px;
+}
+
+.bg-dark {
+    background-color: #10353e;
+    color: white;
+}
+
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark .Thank-txt {
+    color: white;
+}
+
+.bg-dark .Thank-box{
+    border: solid white;
+}
+
 .envelope-img {
     height: 500px;
     display: block;
@@ -64,6 +104,20 @@ h2 {
     text-align: center;
     margin:10px 0;
 }   
+
+.contact {
+    border-right: none;
+    padding-right: 100px;
+    padding-top: 10px;
+
+}
+
+.pages {
+    border-left: none;
+    padding-left: 100px;
+    padding-top: 10px;
+    text-align: left;
+}
 
 /* media queries */
 /* Small Devices  */

@@ -23,7 +23,7 @@
             flex-direction: row;
             justify-content: start;
             right: 20px;
-            top: 70px;
+            top: 170px;
             position: fixed;
         }
         nav{
@@ -47,6 +47,7 @@
             border-radius: 10px;
             padding: 5px 8px;
             cursor: pointer;
+            background-color: transparent;
         }
         .submit-btn{
             background-color: #0f5858;
@@ -107,68 +108,89 @@
             align-items: center;
         }
         .footer-container {
-        display: flex;
-        flex-direction: row;
+            display: flex;
+            flex-direction: row;
+            }
+
+            .contact {
+            margin-top: 40px;
+            padding-left: 260px;
+            padding-top: 10px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+
+            .pages {
+            font-size: 18px;
+            margin-top: 5px;
+            padding-right: 270px;
+            padding-top: 10px;
+            text-align: left;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            a {
+            text-decoration: none;
+            color: #fff;
+            }
+
+
+            .social-icon {
+            height: 50px;
+            width: 50px;
+            }
+
+            .social-media {
+            margin-top: 70px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            align-items: center;
+            }
+
+            nav {
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 15px;
+            }
+
+            footer {
+            background-color: #007a86;
+            color: #fff;
+            align-items: center;
+            text-align: center;
+            padding: 6px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 6px auto;
+            justify-content: space-around;
+            }
+
+            .foot-text {
+            text-align: center;
+            font-size: 20px;
+            }
+
+            .social-text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            }
+
+        .feed-img{
+            cursor: pointer;
+            position: fixed;
+            left: 10px;
+            bottom: 350px;
+            border: none;
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+            border-radius: 40%;
+            background-color: #fff;
         }
 
-        .contact {
-        margin-top: 40px;
-        padding-left: 260px;
-        padding-top: 10px;
-        font-size: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-        }
-
-        .pages {
-        font-size: 18px;
-        margin-top: 5px;
-        padding-right: 270px;
-        padding-top: 10px;
-        text-align: left;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        a {
-        text-decoration: none;
-        color: #fff;
-        }
-
-
-        .social-icon {
-        height: 50px;
-        width: 50px;
-        }
-
-        .social-media {
-        margin-top: 70px;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        align-items: center;
-        }
-
-        nav {
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 15px;
-        }
-
-        footer {
-        background-color: #007a86;
-        color: #fff;
-        align-items: center;
-        text-align: center;
-        padding: 6px 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 6px auto;
-        justify-content: space-around;
-        }
-
-        .foot-text {
-        text-align: center;
-        font-size: 20px;
+        .feed-icon{
+            height: 40px;
+            padding:5px 5px 1px;
         }
 
         .social-text {
@@ -210,6 +232,42 @@
             box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
 
         }
+        @media only screen and (max-width: 1200px) {
+            .quiz-container {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .quiz-container {
+                font-size: 13px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .quiz-container {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            .quiz-container {
+                font-size: 11px;
+            }
+            .mode-btnholder {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .quiz-container {
+                font-size: 10px;
+            }
+            .mode-btnholder {
+                margin-bottom: 10px;
+            }
+}
 
 </style>
 </head>
@@ -372,6 +430,11 @@
                     <img src="./../Images/home.png" alt="home-png" class="home-icon" />
                 </a>
             </div>
+        </div>
+        <div class="feed-img">
+            <a href="../Pages/feedback.html">
+                <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
+            </a>
         </div>
        
         <div class="back-img">
