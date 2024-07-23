@@ -94,7 +94,7 @@ nav {
 }
 
 .user-Scroll {
-  border: none;
+  border: 3px solid #10353e;
   box-shadow: 0 0 6px rgba(36, 67, 40, 0.8);
   background-color: #fff;
   border-radius: 10px;
@@ -161,6 +161,7 @@ button a {
 }
 
 .explore-card {
+  border-radius: 10px;
   background-color: #F0F0F0;
   margin: 20px;
   transition: transform 400ms ease-in;
@@ -174,7 +175,7 @@ button a {
 #img {
   height: 400px;
   width: 100%;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .explore-card img {
@@ -313,7 +314,8 @@ button a {
   
   
    .user-Scroll {
-    border: none;
+
+    border: 4px solid #10353e;
     box-shadow: 0 0 6px rgba(36, 67, 40, 0.8);
     background-color: #fff;
     border-radius: 10px;
@@ -684,6 +686,7 @@ button a {
   }
   
   .explore-card {
+    
     background-color: #F0F0F0;
     margin: 20px;
     transition: transform 400ms ease-in;

@@ -72,10 +72,21 @@
             width: 50%;
             margin: auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            background-color: white;
+            border: 1px solid black;
             border-radius: 10px;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            box-shadow : 10px 10px 10px 10px #cbe4ea;
+        }
+        .darkquiz{
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            color:black;
+            background-color: #d3f1f1;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
         }
         header {
         background-color: #007a86;
@@ -181,7 +192,7 @@
             cursor: pointer;
             position: fixed;
             left: 10px;
-            bottom: 350px;
+            bottom: 280px;
             border: none;
             box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
             border-radius: 40%;
@@ -210,6 +221,7 @@
             position: fixed;
             left: 10px;
             top: 200px;
+            padding-bottom: 4px;
             border: none;
             box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
             border-radius: 40%;
@@ -271,8 +283,8 @@
 
 </style>
 </head>
-<body  >
-    <header>
+<body  class="lightbg" id="body">
+    <header >
         <nav>
             <div class="logo">
                 <header>
@@ -286,10 +298,10 @@
     </header><br>
     <h1>Quiz on Chichén Itzá </h1>
     <div class="mode-btnholder">
-        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
-        <button onclick="lightmode()" class="modebtn"><img src="../Images/sun_.png" class="mode-img" ></button>
+        <button onclick="lightmode() " class="modebtn"><img src="../Images/sun_.png" class="mode-img"></button>
+        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img" ></button>
     </div>
-    <div class="quiz-container lightbg" id="body">
+    <div class="quiz-container">
         <form id="mexico-quizForm">
             <div class="question">
                 <h3>  1. When was Chichen Itza likely founded?</h3>
@@ -475,11 +487,21 @@
         body = document.getElementById("body")
         body.classList.remove("lightbg")
         body.classList.add("darkbg")
+        const quizContainers = document.getElementsByClassName("quiz-container");
+        for (let container of quizContainers) {
+        container.classList.remove("quiz-container");
+        container.classList.add("darkquiz");
+    }
       }
       function lightmode(){
         body = document.getElementById("body")
         body.classList.remove("darkbg")
         body.classList.add("lightbg")
+        const quizContainers = document.getElementsByClassName("darkquiz");
+        for (let container of quizContainers) {
+        container.classList.remove("darkquiz");
+        container.classList.add("quiz-container");
+    }
 
       }
 </script>
