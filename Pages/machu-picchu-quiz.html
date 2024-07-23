@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz</title>
+    <title>Machu Picchu Quiz </title>
     <style>
         body{
             margin: 0px;
@@ -34,12 +35,12 @@
     
         .darkbg {
             background-color: #10353e;
-            color: white;
+            color: beige;
         }
     
         .lightbg {
             background-color: #d3f1f1;
-            
+            color: black;
         }
     
         .modebtn {
@@ -211,6 +212,7 @@
 
         }
 
+
 </style>
 </head>
 <body  >
@@ -226,93 +228,78 @@
             </div>
         </nav>
     </header><br>
-    <h1>Quiz on italy colosseum </h1>
+    <h1>Machu Picchu Quiz </h1>
     <div class="mode-btnholder">
         <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
-        <button onclick="lightmode()" class="modebtn"><img src="../Images/sun_.png" class="mode-img" ></button>
+        <button onclick="lightmode()" class="modebtn"><img src="../Images/light.png" class="mode-img" ></button>
     </div>
     <div class="quiz-container lightbg" id="body">
-        <form id="italy-quizForm">
+        <form id="mexico-quizForm">
             <div class="question">
-                <h3>1. When was the Colosseum built?</h3>
-                <label><input type="radio" name="q1" value="A"> A) 72 AD</label><br>
-                <label><input type="radio" name="q1" value="B"> B) 80 AD</label><br>
-                <label><input type="radio" name="q1" value="C"> C) 100 AD</label><br>
-                <label><input type="radio" name="q1" value="D"> D) 120 AD</label>
+                <h3>1. Where is the machu picchu located?</h3>
+                <label><input type="radio" name="q1" value="A"> A) Bolivia</label><br>
+                <label><input type="radio" name="q1" value="B"> B) Chile</label><br>
+                <label><input type="radio" name="q1" value="C"> C) Peru</label><br>
+                <label><input type="radio" name="q1" value="D"> D) Brazil</label>
             </div>
-            
+    
             <div class="question">
-                <h3>2. How many spectators could the Colosseum hold?</h3>
-                <label><input type="radio" name="q2" value="A"> A) 50,000</label><br>
-                <label><input type="radio" name="q2" value="B"> B) 75,000</label><br>
-                <label><input type="radio" name="q2" value="C"> C) 100,000</label><br>
-                <label><input type="radio" name="q2" value="D"> D) 150,000</label>
+                <h3>2. Around how many people lived in Machu Picchu?</h3>
+                <label><input type="radio" name="q2" value="A"> A) 100</label><br>
+                <label><input type="radio" name="q2" value="B"> B) 1000</label><br>
+                <label><input type="radio" name="q2" value="C"> C) 50000</label><br>
+                <label><input type="radio" name="q2" value="D"> D) 20000</label>
             </div>
-            
+    
             <div class="question">
-                <h3>3. What is the original name of the Colosseum?</h3>
-                <label><input type="radio" name="q3" value="A"> A) Flavian Amphitheatre</label><br>
-                <label><input type="radio" name="q3" value="B"> B) Augustus Arena</label><br>
-                <label><input type="radio" name="q3" value="C"> C) Trajan Stadium</label><br>
-                <label><input type="radio" name="q3" value="D"> D) Hadrian Coliseum</label>
+                <h3>3.  Which of the following best describes the geography of where Machu Picchu is located?</h3>
+                <label><input type="radio" name="q3" value="A"> A) On an island</label><br>
+                <label><input type="radio" name="q3" value="B"> B) Desert</label><br>
+                <label><input type="radio" name="q3" value="C"> C) High in Mountains</label><br>
+                <label><input type="radio" name="q3" value="D"> D) Rain Forest</label>
             </div>
-            
+    
             <div class="question">
-                <h3>4. Which Roman emperor commissioned the construction of the Colosseum?</h3>
-                <label><input type="radio" name="q4" value="A"> A) Nero</label><br>
-                <label><input type="radio" name="q4" value="B"> B) Augustus</label><br>
-                <label><input type="radio" name="q4" value="C"> C) Vespasian</label><br>
-                <label><input type="radio" name="q4" value="D"> D) Constantine</label>
+                <h3>4. Machu Picchu was part of what empire?</h3>
+                <label><input type="radio" name="q4" value="A"> A) Aztec Empire</label><br>
+                <label><input type="radio" name="q4" value="B"> B) Maya Empire</label><br>
+                <label><input type="radio" name="q4" value="C"> C) Inca Empire</label><br>
+                <label><input type="radio" name="q4" value="D"> D) Assyrian Empire</label>
             </div>
-            
+    
             <div class="question">
-                <h3>5. The Colosseum was primarily used for:</h3>
-                <label><input type="radio" name="q5" value="A"> A) Gladiator contests</label><br>
-                <label><input type="radio" name="q5" value="B"> B) Theatrical performances</label><br>
-                <label><input type="radio" name="q5" value="C"> C) Political rallies</label><br>
-                <label><input type="radio" name="q5" value="D"> D) All of the above</label>
+                <h3>5.  When do archeologists estimate that Machu Picchu was built?</h3>
+                <label><input type="radio" name="q5" value="A"> A) 200 AD</label><br>
+                <label><input type="radio" name="q5" value="B"> B) 1450 AD</label><br>
+                <label><input type="radio" name="q5" value="C"> C) 800 AD</label><br>
+                <label><input type="radio" name="q5" value="D"> D) 1800 AD</label>
             </div>
-            
+    
             <div class="question">
-                <h3>6. How many levels did the Colosseum originally have?</h3>
-                <label><input type="radio" name="q6" value="A"> A) 3</label><br>
-                <label><input type="radio" name="q6" value="B"> B) 4</label><br>
-                <label><input type="radio" name="q6" value="C"> C) 5</label><br>
-                <label><input type="radio" name="q6" value="D"> D) 6</label>
+                <h3>6.  What is Machu Picchu's nickname?</h3>
+                <label><input type="radio" name="q6" value="A"> A) Could City</label><br>
+                <label><input type="radio" name="q6" value="B"> B) Lost City</label><br>
+                <label><input type="radio" name="q6" value="C"> C) Cliff City</label><br>
+                <label><input type="radio" name="q6" value="D"> D) City of Air</label>
             </div>
-            
+    
             <div class="question">
-                <h3>7. What caused significant damage to the Colosseum over the centuries?</h3>
-                <label><input type="radio" name="q7" value="A"> A) Earthquakes</label><br>
-                <label><input type="radio" name="q7" value="B"> B) Fire</label><br>
-                <label><input type="radio" name="q7" value="C"> C) Vandalism</label><br>
-                <label><input type="radio" name="q7" value="D"> D) All of the above</label>
+                <h3>7.What was the purpose of the Intihuatana?</h3>
+                <label><input type="radio" name="q7" value="A"> A) It was the area where the commoners lived</label><br>
+                <label><input type="radio" name="q7" value="B"> B) It held the sun in place and kept it on its correct path</label><br>
+                <label><input type="radio" name="q7" value="C"> C) It was a palace for the king to spend the cold winters</label><br>
+                <label><input type="radio" name="q7" value="D"> D) It prevented the god of the sky from sending lightning against the city</label>
             </div>
-            
+    
             <div class="question">
-                <h3>8. What material was used to build the Colosseum?</h3>
-                <label><input type="radio" name="q8" value="A"> A) Marble</label><br>
-                <label><input type="radio" name="q8" value="B"> B) Limestone</label><br>
-                <label><input type="radio" name="q8" value="C"> C) Granite</label><br>
-                <label><input type="radio" name="q8" value="D"> D) Travertine</label>
+                <h3>8. Which of the city districts was where the commoners lived and supplies ?</h3>
+                <label><input type="radio" name="q8" value="A"> A)Popular district </label><br>
+                <label><input type="radio" name="q8" value="B"> B) District of nobility</label><br>
+                <label><input type="radio" name="q8" value="C"> C) Sacred district</label><br>
+                <label><input type="radio" name="q8" value="D"> D)All of the above </label>
             </div>
-            
-            <div class="question">
-                <h3>9. Which part of the Colosseum was used for the best seats (for senators and VIPs)?</h3>
-                <label><input type="radio" name="q9" value="A"> A) Podium</label><br>
-                <label><input type="radio" name="q9" value="B"> B) Cavea</label><br>
-                <label><input type="radio" name="q9" value="C"> C) Arena</label><br>
-                <label><input type="radio" name="q9" value="D"> D) Hypogeum</label>
-            </div>
-            
-            <div class="question">
-                <h3>10. In what year did the last recorded games take place in the Colosseum?</h3>
-                <label><input type="radio" name="q10" value="A"> A) 523 AD</label><br>
-                <label><input type="radio" name="q10" value="B"> B) 615 AD</label><br>
-                <label><input type="radio" name="q10" value="C"> C) 735 AD</label><br>
-                <label><input type="radio" name="q10" value="D"> D) 887 AD</label>
-            </div>
-            
+    
+      
             <button type="button" class ="submit-btn" onclick="checkAnswers()">Submit your quiz</button>
         </form>
     
@@ -366,35 +353,34 @@
         <div class="buttons-container">
             <div class="home-img">
                 <a href="../index.html">
-                    <img src="./../Images/home.png" alt="home-png" class="home-icon" />
+                    <img src="../Images/home.png" alt="home-png" class="home-icon" />
                 </a>
             </div>
         </div>
        
         <div class="back-img">
-            <a href="../Pages/mexico.html">
-            <img src="./../Images/back.png" alt="back-png" class="back-icon" />
+            <a href="    ">
+            <img src="../Images/back.png" alt="back-png" class="back-icon" />
             </a>
         </div>
    
     <script>
         function checkAnswers() {
             const answers = {
-                q1: 'B',
-                q2: 'C',
-                q3: 'A',
+                q1: 'C',
+                q2: 'B',
+                q3: 'C',
                 q4: 'C',
-                q5: 'D',
+                q5: 'B',
                 q6: 'B',
-                q7: 'D',
-                q8: 'D',
-                q9: 'A',
-                q10: 'A',
+                q7: 'B',
+                q8: 'A',
+                
             };
 
             const form = document.forms['mexico-quizForm'];
             let score = 0;
-            for (let i = 1; i <= 10; i++) {
+            for (let i = 1; i <= 8; i++) {
                 const q = 'q' + i;
                 const selected = form[q].value;
                 if (selected === answers[q]) {
@@ -417,5 +403,6 @@
 
       }
 </script>
+
 </body>
 </html>
