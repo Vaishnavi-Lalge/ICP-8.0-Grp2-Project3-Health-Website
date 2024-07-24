@@ -22,8 +22,8 @@
     <br/>
     <h1>Chichén Itzá</h1>
     <div class="mode-btnholder">
-        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
-        <button onclick="lightmode()" class="modebtn"><img src="../Images/sun_.png" class="mode-img" ></button>
+        <button onclick="lightmode() " class="modebtn"><img src="../Images/sun_.png" class="mode-img"></button>
+        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img" ></button>
     </div>
     <img src="../Images/mex5.avif" id="main-img">
     <div class="img-container">
@@ -48,7 +48,7 @@
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.7737525677703!2d-88.5684769!3d20.678781649999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5138b9a098f833%3A0xf70a67530750d45!2s97751%20Chich%C3%A9n-Itz%C3%A1%2C%20Yucatan%2C%20Mexico!5e0!3m2!1sen!2sin!4v1721456472363!5m2!1sen!2sin" 
         width="450" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <h2>Amazing facts about Chichen Itza</h2>
+    <h2 id="subheading" class="h2">Amazing facts about Chichen Itza</h2>
     <div class="container">
         <div class="mcard">
             <img src="../Images/suneffect.jpg"  class="card-img">
@@ -91,7 +91,7 @@
         </div>
     </div>
     <br/>
-    <h2>Want to know more about Chichen Itza?</h2>
+    <h2 id="subheading " class="h2">Want to know more about Chichen Itza?</h2>
     <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zJCrrTk-dLQ?si=QPrRAIWyD6qh1uYd" title="YouTube video player" frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media;gyroscope; picture-in-picture; web-share"
      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -109,11 +109,11 @@
             </a>
         </div>
     </div>
-    <h2>Test Your Knowledge</h2>
+    <h2 id="subheading" class="h2">Test Your Knowledge</h2>
     <a href="./quiz-mexico.html" target="_blank">
-        <button class="quiz-btn">Take a quiz </button>
+        <button class="quiz-btn" id="quiz-btn">Take a quiz </button>
     </a>
-    <h2 class="know-about">Explore Other Wonders Too...</h2>
+    <h2 class="know-about h2" id="subheading" >Explore Other Wonders Too...</h2>
         <div class="explore-container">
             <div class="wonders">
                 <img src="../Images/Brazil-wonder1.webp" class="wonders-img">
@@ -207,9 +207,14 @@
         card = document.getElementById("data-card")
         card.classList.remove("light-card")
         card.classList.add("dark-card")
-        
-
-      }
+        quizbtn =  document.getElementById("quiz-btn")
+        quizbtn.classList.remove("quiz-btn")
+        quizbtn.classList.add("quiz-btnlb")
+        var subheadings = document.getElementsByClassName("h2");
+        for (var i = 0; i < subheadings.length; i++) {
+        subheadings[i].style.color = "white";
+    }
+}
       function lightmode(){
         body = document.getElementById("body")
         body.classList.remove("darkbg")
@@ -217,6 +222,13 @@
         card = document.getElementById("data-card")
         card.classList.remove("dark-card")
         card.classList.add("light-card")
+        quizbtn =  document.getElementById("quiz-btn")
+        quizbtn.classList.remove("quiz-btnlb")
+        quizbtn.classList.add("quiz-btn")
+        var subheadings = document.getElementsByClassName("h2");
+        for (var i = 0; i < subheadings.length; i++) {
+        subheadings[i].style.color = "#10353e";
+    }
       }
     </script>
 </body>

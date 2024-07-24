@@ -14,7 +14,7 @@
    3. JavaScript
 ---
 ## Home Page
-![home page]( )
+![home page](/Images/screen-shots/homPage.png)
 
 ## Taj Mahal Page
 ![Taj Mahal Page]( )

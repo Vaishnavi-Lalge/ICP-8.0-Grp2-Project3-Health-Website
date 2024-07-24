@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christ the Redeemer</title>
     <link rel="stylesheet" href="./../CSS/brazil.css">
+    
+    
+    
        
 </head>
 
@@ -42,7 +45,7 @@
 
 <div class="theme-selector-container">
 
-    <img src="./../Images/sun.png" class="theme-select-icon" onclick="lightMode()" />
+    <img src="./../Images/sun_.png" class="theme-select-icon" onclick="lightMode()" />
     <img src="./../Images/dark.png" class="theme-select-icon" onclick=" darkMode()" />
 </div>
     
@@ -90,8 +93,8 @@
 
             
             <p>
-                a world-famous statue in Rio de Janeiro, Brazil.
-                It is 30 meters tall with a 28-meter arm span.
+               <li> a world-famous statue in Rio de Janeiro, Brazil.
+                It is 30 meters tall with a 28-meter arm span.</li>
             </p>
         </div>
 
@@ -99,8 +102,8 @@
             <img src="./../Images/Brazil 3.jpg" alt="img" height="20px">
             <span class="highlight">Height & Dimensions</span>
 
-            <p>
-                It is 30 meters tall with a 28-meter arm span.
+            <p><li>
+                It is 30 meters tall with a 28-meter arm span.</li>
             </p>
         </div>
 
@@ -108,8 +111,8 @@
             <img src="./../Images/Brazil 1.jpg" alt="img" height="20px">
             <span class="highlight">Constructions</span>
 
-            <p>
-                Built between 1922 and 1931, designed by Heitor da Silva Costa and sculpted by Paul Landowski.
+            <p><li>
+                Built between 1922 and 1931, designed by Heitor da Silva Costa and sculpted by Paul Landowski.</li>
 
             </p>
         </div>
@@ -164,48 +167,49 @@
    
 <footer>
     <div class="footer-container">
-        <div class="contact">
-            <b><u>CONTACT US</u></b>
-            <br><br>
-            Email:<br><a href="mailto: Mail"> wondersworld@gamil.com </a>
-            <br><br>
-            tell no. :<br><a href="tel: Number"> 9981123451 </a>
-            
-        </div>
-        <div>
-            <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
-            <div class="social-media">
-                <p class="social-text">Follow Us On</p>
 
-                <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
-                        src="../Images/facebook.png" class="social-icon"></a>
-
-                <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
-                        src="../Images/youtube (1).png" class="social-icon"></a>
-
-                <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
-                    <img src="../Images/instagram.png" class="social-icon"></a>
-
-            </div>
-        </div>
         <div class="pages">
             <b><u>QUICK LINKS</u></b>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../Pages/india.html">Taj Mahal</a></li>
                 <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
-                <li><a href="../Pages/china.html">The Great Wall of China</a></li>
+                <li><a href="../Pages/china.html">The Great Wall</a></li>
                 <li><a href="../Pages/Italy.html">Colosseum</a></li>
                 <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
                 <li><a href="../Pages/jorden.html">Petra</a></li>
                 <li><a href="../Pages/peru.html">Machu pichu</a></li>
-                <li><a href="../Pages/feedback.html">Feaadback</a></li>
+                <li><a href="../Pages/feedback.html">Feedback</a></li>
             </ul>
         </div>
-    </div>
+      <div>
+            <div class="social-media">
+                <p class="social-text"><b><u>FOLLOW US</u></b></p>
 
+                <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
+                  src="./../Images/facebook.png" class="social-icon"></a>
+
+                <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
+                       src="./../Images/youtube (1).png" class="social-icon"></a>
+
+                <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
+                    <img src="./../Images/instagram.png" class="social-icon"></a><br><br>
+                    <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
+
+            </div>
+        </div>
+        <div class="contact">
+        
+            <b><u>CONTACT US</u></b>
+            <br><br>
+            Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
+            <br><br>
+            Tell no<br><a href="tel: Number"> +91 9981123451 </a>
+            
+        </div>
+    </div>
 </footer>
-   
+
 
 
     <script>
@@ -214,23 +218,25 @@
             if (num == 1) {
                 mainImage.src = "./../Images/Brazil 2.jpg";
             } else if (num == 2) {
-                mainImage.src = "./../Images/Brazil 1.jpg";
+                mainImage.src = "./../Images/Brazil 3.jpg";
             } else if (num == 3) {
                 mainImage.src = "./../Images/Brazil 4.jpg";
             } else if (num == 4) {
-                mainImage.src = "./../Images/Brazil 3.jpg";
+                mainImage.src = "./../Images/Brazil 5.jpg";
             } else if (num == 4) {
-                mainImage.src = "./../Images/Brazil 3.jpg";
+                mainImage.src = "./../Images/Brazil 4.jpg";
             }
+
+            function changeImage(imageName){
+            const mainImage = document.getElementById('main-product-img');
+            mainImage.src = imageName;
+        }
 
         }
         /*Theme switch /
          /*theme-matched*/
 
-         function changeImage(imageName){
-            const mainImage = document.getElementById('main-product-img');
-            mainImage.src = imageName;
-        }
+         
         function darkMode(){
             const mainBody = document.getElementById('main-body');
             mainBody.classList.remove('bg-light');
