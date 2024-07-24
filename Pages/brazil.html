@@ -7,8 +7,6 @@
     <title>Christ the Redeemer</title>
     <link rel="stylesheet" href="./../CSS/brazil.css">
     
-    
-    
        
 </head>
 
@@ -119,14 +117,15 @@
     </div>
     <h1 class="know-about">Want to Know more about Christ Redeemer</h1>
    <div class="video-container">
-    <iframe width="660" height="315" src="https://www.youtube.com/embed/k_615AauSds?si=OtZtfTDJqRCIctJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="660" height="415" src="https://www.youtube.com/embed/k_615AauSds?si=OtZtfTDJqRCIctJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
     
 
     <h1>Test your knowledge</h1>
     
-    <button class="btn-quiz" onclick="window.location.href='../Pages/Brazil-quiz.html'">Take a Quiz</button>
-    
+    <button class="btn-quiz" onclick="showAlert()">Take a Quiz</button>
+
+
     
     <h1 class="Other-wonders">Explore Other Wonders Too...</h1>
    <div class="explore-container">
@@ -248,6 +247,13 @@
             mainBody.classList.remove('bg-dark');
             mainBody.classList.add('bg-light');
         }
+
+        /* take a quiz- alert*/
+
+      function showAlert() {
+    alert("You will be redirected to the Brazil quiz page!");
+    window.location.href = '../Pages/Brazil-quiz.html';
+    }
 
     </script>
 </body>
