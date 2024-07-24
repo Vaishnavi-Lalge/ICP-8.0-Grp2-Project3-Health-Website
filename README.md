@@ -1,4 +1,4 @@
-![quiz-page](https://github.com/user-attachments/assets/b6a5e7d6-e557-4f9a-938b-6bf024eb8cf1)# Project name : Wonder's World
+# Project name : Wonder's World
 ---
 ### Wonder's World is a website dedicated to providing information and quizzes about the Seven Wonders of the World.
 ---
