@@ -38,7 +38,7 @@
 ![Great Wall Page](/Images/screen-shots/china.png)
 
 ## Feedback Page
-![feedback page](/Images/screen-shots/feedback.png)
+![feedback page](/Images/screen-shots/feedback-page.png)
 ---
 ### Usage
 1. Navigate through the website using the navigation bar to explore different sections.
