@@ -571,3 +571,43 @@ a{
               margin-left: 15px; /* Adds space between the logo and the text */
             }
           }
+          @media (max-width: 768px) {
+            .pages {
+                display: none;
+            }
+            .footer-container {
+                display: flex;
+                flex-direction: row;
+            }
+            .contact {
+                margin-top: 20px;
+                padding-left: 20px;
+                padding-top: 10px;
+                font-size: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .pages {
+                display: none;
+            }
+            .footer-container {
+                display: flex;
+                flex-direction: row;
+            }
+            .contact {
+                display: none;
+            }
+            .social-icon {
+                height: 30px;
+                width: 30px;
+            }
+            .social-media {
+                margin-top: 70px;
+                font-size: 15px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                align-items: center;
+            }
+        }
+        
