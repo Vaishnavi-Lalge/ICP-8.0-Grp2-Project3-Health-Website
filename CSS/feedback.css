@@ -406,6 +406,23 @@ h3 {
     margin: 0 10px 0 10px;
 }
 
+@media (max-width: 768px){
+pages {
+    display: none;
+  }
+.footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  }
+}
+
 /* Tablets Devices  */
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .footer-container {
@@ -462,3 +479,4 @@ h3 {
     
    
 }
+
