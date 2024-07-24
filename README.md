@@ -17,25 +17,28 @@
 ![home page](/Images/screen-shots/homPage.png)
 
 ## Taj Mahal Page
-![Taj Mahal Page]( )
+![Taj Mahal Page](/Images/screen-shots/India.png )
 
 ## Christ Redeemer Page
-![Christ Redeemer page]()
+![Christ Redeemer page](/Images/screen-shots/brazil.png)
 
 ## Petra page
-![Petra page]()
+![Petra page](/Images/screen-shots/jordan.png)
 
 ## Chichen Itza Page
-![Chichen Itza page]()
+![Chichen Itza page](/Images/screen-shots/mexico.png)
 
 ## Machu pichu Page
-![Machu pichu page]()
+![Machu pichu page](/Images/screen-shots/peru.png)
 
 ## Colosseum Page
-![Colosseum page]()
+![Colosseum page](/Images/screen-shots/italy.png)
 
 ## Great Wall Page
-![Great Wall Page]()
+![Great Wall Page](/Images/screen-shots/china.png)
+
+## Feedback Page
+![feedback page](/Images/screen-shots/feedback.png)
 ---
 ### Usage
 1. Navigate through the website using the navigation bar to explore different sections.
