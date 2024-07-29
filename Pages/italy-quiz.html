@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>italy Quiz </title>
+    <title>quiz</title>
     <style>
         body{
             margin: 0px;
             padding: 0px;
-            background-color: #d3f1f1;
         }
         h1 {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -17,15 +16,15 @@
         .mode-img {
             height: 30px;
             width: 30px;
-            cursor: pointer;
         }
     
         .mode-btnholder {
             display: flex;
-  gap: 10px;
-  position: absolute;
-  right: 20px;
-  position: fixed;
+            flex-direction: row;
+            justify-content: start;
+            right: 20px;
+            top: 170px;
+            position: fixed;
         }
         nav{
             text-align: center;
@@ -33,15 +32,14 @@
             padding: 0 15px;
         }
     
-        .darkbg. {
+        .darkbg {
             background-color: #10353e;
             color: beige;
         }
     
         .lightbg {
-    
+            background-color: #d3f1f1;
             color: black;
-            background-color: white;
         }
     
         .modebtn {
@@ -49,6 +47,7 @@
             border-radius: 10px;
             padding: 5px 8px;
             cursor: pointer;
+            background-color: transparent;
         }
         .submit-btn{
             background-color: #0f5858;
@@ -73,10 +72,21 @@
             width: 50%;
             margin: auto;
             padding: 20px;
-            border: 1px solid #ccc;
+            background-color: white;
+            border: 1px solid black;
             border-radius: 10px;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            box-shadow : 10px 10px 10px 10px #cbe4ea;
+        }
+        .darkquiz{
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            color:black;
+            background-color: #d3f1f1;
+            border: 1px solid black;
+            border-radius: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
         }
         header {
         background-color: #007a86;
@@ -109,68 +119,89 @@
             align-items: center;
         }
         .footer-container {
-        display: flex;
-        flex-direction: row;
+            display: flex;
+            flex-direction: row;
+            }
+
+            .contact {
+            margin-top: 40px;
+            padding-left: 260px;
+            padding-top: 10px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            }
+
+            .pages {
+            font-size: 18px;
+            margin-top: 5px;
+            padding-right: 270px;
+            padding-top: 10px;
+            text-align: left;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            a {
+            text-decoration: none;
+            color: #fff;
+            }
+
+
+            .social-icon {
+            height: 50px;
+            width: 50px;
+            }
+
+            .social-media {
+            margin-top: 70px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            align-items: center;
+            }
+
+            nav {
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 15px;
+            }
+
+            footer {
+            background-color: #007a86;
+            color: #fff;
+            align-items: center;
+            text-align: center;
+            padding: 6px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 6px auto;
+            justify-content: space-around;
+            }
+
+            .foot-text {
+            text-align: center;
+            font-size: 20px;
+            }
+
+            .social-text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            }
+
+        .feed-img{
+            cursor: pointer;
+            position: fixed;
+            left: 10px;
+            bottom: 280px;
+            border: none;
+            box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
+            border-radius: 40%;
+            background-color: #fff;
         }
 
-        .contact {
-        margin-top: 40px;
-        padding-left: 260px;
-        padding-top: 10px;
-        font-size: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-        }
-
-        .pages {
-        font-size: 18px;
-        margin-top: 5px;
-        padding-right: 270px;
-        padding-top: 10px;
-        text-align: left;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        a {
-        text-decoration: none;
-        color: #fff;
-        }
-
-
-        .social-icon {
-        height: 50px;
-        width: 50px;
-        }
-
-        .social-media {
-        margin-top: 70px;
-        font-size: 25px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        align-items: center;
-        }
-
-        nav {
-        text-align: center;
-        margin: 0 auto;
-        padding: 0 15px;
-        }
-
-        footer {
-        background-color: #007a86;
-        color: #fff;
-        align-items: center;
-        text-align: center;
-        padding: 6px 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 6px auto;
-        justify-content: space-around;
-        }
-
-        .foot-text {
-        text-align: center;
-        font-size: 20px;
+        .feed-icon{
+            height: 40px;
+            padding:5px 5px 1px;
         }
 
         .social-text {
@@ -190,6 +221,7 @@
             position: fixed;
             left: 10px;
             top: 200px;
+            padding-bottom: 4px;
             border: none;
             box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
             border-radius: 40%;
@@ -200,23 +232,6 @@
             height: 40px;
             padding:5px 5px 1px;
         }
-
-        .feed-img {
-        cursor: pointer;
-        position: fixed;
-        left: 10px;
-        bottom: 200px;
-        border: none;
-        box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
-        border-radius: 40%;
-        background-color: #fff;
-    }
-
-    .feed-icon {
-        height: 40px;
-        padding: 5px 5px 1px;
-    }
-
         .back-icon{
             position: fixed;
             bottom: 50px;
@@ -229,12 +244,153 @@
             box-shadow: 0 0 10px rgba(36, 67, 40, 0.8);
 
         }
+        @media only screen and (max-width: 1200px) {
+            .quiz-container {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .quiz-container {
+                font-size: 13px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .quiz-container {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            .quiz-container {
+                font-size: 11px;
+            }
+            .mode-btnholder {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .quiz-container {
+                font-size: 10px;
+            }
+            .mode-btnholder {
+                margin-bottom: 10px;
+            }
+}
+@media (max-width: 768px) {
+    .pages {
+        display: none;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact {
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+}
+
+@media (max-width: 480px) {
+    .pages {
+        display: none;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact {
+        display: none;
+    }
+    .social-icon {
+        height: 30px;
+        width: 30px;
+    }
+    .social-media {
+        margin-top: 70px;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        align-items: center;
+    }
+}
+@media (max-width: 1200px) {
+
+  
+header {
+  background-color: #007a86;
+  color: #fff;
+  padding: 0 15px; /* Adjust padding as needed */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height:150px; /* Matches the header height */
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin-left: 15px; /* Adds space between the logo and the text */
+}
+}
+/* For devices with max-width 768px */
+@media (max-width: 768px) {
+header {
+  background-color: #007a86;
+  color: #fff;
+  padding: 0 10px; /* Adjust padding as needed */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  display: none;
+}
+
+.logo-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin-left: 15px; /* Adds space between the logo and the text */
+}
+}
+
+/* For devices with max-width 480px */
+@media (max-width: 480px) {
+
+header {
+  background-color: #007a86;
+  color: #fff;
+  padding: 0 8px; /* Adjust padding as needed */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  display: none;
+}
+.logo-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  margin-left: 15px; /* Adds space between the logo and the text */
+}
+}
 
 
 </style>
 </head>
-<body  >
-    <header>
+<body  class="lightbg" id="body">
+    <header >
         <nav>
             <div class="logo">
                 <header>
@@ -246,13 +402,13 @@
             </div>
         </nav>
     </header><br>
-    <h1>Quiz on italy colosseum </h1>
+    <h1>Quiz on italy  Colosseum </h1>
     <div class="mode-btnholder">
-        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img"></button>
-        <button onclick="lightmode()" class="modebtn"><img src="../Images/sun_.png" class="mode-img" ></button>
+        <button onclick="lightmode() " class="modebtn"><img src="../Images/sun_.png" class="mode-img"></button>
+        <button onclick="darkmode()" class="modebtn"><img src="../Images/dark.png" class="mode-img" ></button>
     </div>
-    <div class="quiz-container lightbg" id="body">
-        <form id="italy-quizForm">
+    <div class="quiz-container">
+     <form id="italy-quizForm">
             <div class="question">
                 <h3>1. When was the Colosseum built?</h3>
                 <label><input type="radio" name="q1" value="A"> A) 72 AD</label><br>
@@ -374,7 +530,7 @@
                 q10: 'A',
             };
 
-            const form = document.forms['quizForm'];
+            const form = document.forms['mexico-quizForm'];
             let score = 0;
             for (let i = 1; i <= 10; i++) {
                 const q = 'q' + i;
@@ -388,62 +544,26 @@
 
         }
         function darkmode(){
-        const body = document.getElementById("body")
+        body = document.getElementById("body")
         body.classList.remove("lightbg")
         body.classList.add("darkbg")
+        const quizContainers = document.getElementsByClassName("quiz-container");
+        for (let container of quizContainers) {
+        container.classList.remove("quiz-container");
+        container.classList.add("darkquiz");
+    }
       }
       function lightmode(){
-        const body = document.getElementById("body")
+        body = document.getElementById("body")
         body.classList.remove("darkbg")
         body.classList.add("lightbg")
+        const quizContainers = document.getElementsByClassName("darkquiz");
+        for (let container of quizContainers) {
+        container.classList.remove("darkquiz");
+        container.classList.add("quiz-container");
+    }
 
       }
-        </script>
-        
-          <footer>
-        <div class="footer-container">
-    
-            <div class="pages">
-                <b><u>QUICK LINKS</u></b>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../Pages/india.html">Taj Mahal</a></li>
-                    <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
-                    <li><a href="../Pages/china.html">The Great Wall</a></li>
-                    <li><a href="../Pages/Italy.html">Colosseum</a></li>
-                    <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
-                    <li><a href="../Pages/jorden.html">Petra</a></li>
-                    <li><a href="../Pages/peru.html">Machu pichu</a></li>
-                    <li><a href="../Pages/feedback.html">Feedback</a></li>
-                </ul>
-            </div>
-          <div>
-                <div class="social-media">
-                    <p class="social-text"><b><u>FOLLOW US</u></b></p>
-    
-                    <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
-                      src="../Images/facebook.png" class="social-icon"></a>
-    
-                    <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
-                           src="../Images/youtube (1).png" class="social-icon"></a>
-    
-                    <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
-                        <img src="../Images/instagram.png" class="social-icon"></a><br><br>
-                        <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
-    
-                </div>
-            </div>
-            <div class="contact">
-            
-                <b><u>CONTACT US</u></b>
-                <br><br>
-                Email<br><a href="mailto: Mail"> wondersworld@gmail.com </a>
-                <br><br>
-                Tell no<br><a href="tel: Number"> +91 9981123451 </a>
-                
-            </div>
-        </div>
-    </footer>
-
+</script>
 </body>
 </html>
