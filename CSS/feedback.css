@@ -23,7 +23,7 @@ body {
 }
 
 .theme-select-icon {
-    height: 50px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -184,7 +184,7 @@ h3 {
     cursor: pointer;
 }
 
-.feed-img {
+.feed {
     height: 100px;
 }
 
@@ -420,7 +420,7 @@ pages {
     padding-top: 10px;
     font-size: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  }
+ }
 }
 
 /* Tablets Devices  */
