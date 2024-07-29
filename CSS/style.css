@@ -92,9 +92,8 @@ nav {
   box-shadow: 0 0 6px rgba(36, 67, 40, 0.8);
   background-color: #fff;
   border-radius: 10px;
-  margin-bottom: 50px;
   background-image: url('../Images/Home img.jpg');
-  padding: 10px;
+  padding: 10px 10px; 
 }
 
 .Scroll-container {
@@ -110,9 +109,10 @@ nav {
 }
 
 .Scroll-img {
+  border: 1px solid #10353e;
   border-radius: 20px;
   height: 600px;
-  width: 900px;
+  width: 800px;
 }
 
 .bttn {
