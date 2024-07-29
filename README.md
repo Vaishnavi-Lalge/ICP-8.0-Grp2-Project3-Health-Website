@@ -45,10 +45,9 @@
 
 ---
 ### Usage
-1. Navigate through the website using the navigation bar to explore different sections.
-2. Read about each Wonder in the information pages.
-3. Test your knowledge by taking quizzes provided on the site.
-4. Provide feedback using the form located at Feedback.
+1. Read about each Wonder in the information pages.
+2. Test your knowledge by taking quizzes provided on the site.
+3. Provide feedback using the form located at Feedback.
 ---
 ## How To Contribute :
 ### We welcome contributions from the community to help us expand and improve this handbook if you would like to contribute follow the below steps :
