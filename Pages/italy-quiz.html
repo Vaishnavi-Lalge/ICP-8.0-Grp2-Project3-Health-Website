@@ -370,13 +370,13 @@
                     <img src="./../Images/home.png" alt="home-png" class="home-icon" />
                 </a>
             </div>
-        </div>
+        
        <div class="feed-img">
            <a href="../pages/feedback.html">
                <img src="./../Images/feed.png" alt="feed-png" class="feed-icon" />
            </a>
        </div>
-    
+        </div>
         <div class="back-img">
             <a href="../Pages/italy.html">
             <img src="./../Images/back.png" alt="back-png" class="back-icon" />
@@ -398,7 +398,7 @@
                 q10: 'A',
             };
 
-            const form = document.forms['mexico-quizForm'];
+            const form = document.forms['quizForm'];
             let score = 0;
             for (let i = 1; i <= 10; i++) {
                 const q = 'q' + i;
@@ -412,12 +412,12 @@
 
         }
         function darkmode(){
-        body = document.getElementById("body")
+        const body = document.getElementById("body")
         body.classList.remove("lightbg")
         body.classList.add("darkbg")
       }
       function lightmode(){
-        body = document.getElementById("body")
+        const body = document.getElementById("body")
         body.classList.remove("darkbg")
         body.classList.add("lightbg")
 
