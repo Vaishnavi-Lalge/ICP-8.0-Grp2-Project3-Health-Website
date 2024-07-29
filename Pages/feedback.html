@@ -37,8 +37,8 @@
     <div class="form-container">
         <h4>It will take only few minutes!!</h4>
         <form id="feedbackForm">
-            <label for="inputName">Your Name :</label>
-            <input type="text" placeholder="Pratham" id="inputName" required /><br><br>
+            <span style="color: #0f5858;">Your Name :</span>
+            <input type="text" placeholder="Enter your name" id="inputName" required /><br><br>
 
             <label for="inputEmail">Email Address :</label>
             <input type="text" placeholder="abc@gmail.com" id="inputEmail" required /><br><br>
@@ -67,11 +67,21 @@
             <label for="msg">Write your Suggestions:</label>
             <textarea id="msg" name="msg"></textarea>
             <br><br>
-            <button>
-                <a href="../Pages/feedback-submitted.html">Submit</a>
+            <button id="submit" onclick="save()">
+                <a href="/Pages/feedback-submitted.html">
+                    Submit
+                </a>
             </button>
     </div>
 
+    <script>
+        function save(){
+            const inputNameElement = document.getElementById('inputName');
+
+            localStorage.setItem('inputName', inputNameElement.value);
+        }
+    </script>
+   
     <script>
         const yesRadio = document.getElementById('yes');
         const noRadio = document.getElementById('no');
@@ -151,50 +161,6 @@
 
     </script>
 
-    <!-- <footer>
-        <div class="footer-container">
-            <div class="contact">
-                <b><u>CONTACT US</u></b>
-                <br><br>
-                Email:<br><a href="mailto: Mail"> wondersworld@gamil.com </a>
-                <br><br>
-                tel phn :<br><a href="tel: Number"> 9981123451 </a>
-
-            </div>
-            <div>
-                <p class="foot-text">&copy; 2024 Wonders World. All rights reserved.</p>
-                <div class="social-media">
-                    <p class="social-text">Follow Us On</p>
-
-                    <a href="https://www.facebook.com/share/xZMDCwXq9PhZpg6N/" alt="Visit to Facebook account"><img
-                            src="../Images/facebook.png" class="social-icon"></a>
-
-                    <a href="https://youtu.be/fYR5hRdYh9Q?si=VsPpX9PbQy7TicTT" alt="Visit to YouTube account"><img
-                            src="../Images/youtube (1).png" class="social-icon"></a>
-
-                    <a href="https://www.instagram.com/seven_wonders_of_world/" alt="Visit to Instagram account">
-                        <img src="../Images/instagram.png" class="social-icon"></a>
-
-                </div>
-            </div>
-            <div class="pages">
-                <b><u>QUICK LINKS</u></b>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../Pages/india.html">Taj Mahal</a></li>
-                    <li><a href="../Pages/brazil.html">Christ Redeemer</a></li>
-                    <li><a href="../Pages/china.html">The Great Wall of China</a></li>
-                    <li><a href="../Pages/Italy.html">Colosseum</a></li>
-                    <li><a href="../Pages/mexico.html">Chichen Itza</a></li>
-                    <li><a href="../Pages/jorden.html">Petra</a></li>
-                    <li><a href="../Pages/peru.html">Machu pichu</a></li>
-                    <li><a href="../Pages/feedback.html">Feedback</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </footer> -->
-
     <footer>
         <div class="footer-container">
 
@@ -238,7 +204,7 @@
 
             </div>
         </div>
-               
+
     </footer>
 </body>
 
