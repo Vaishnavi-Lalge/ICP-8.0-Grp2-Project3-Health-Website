@@ -79,7 +79,8 @@
         <iframe width="660" height="415" src="https://www.youtube.com/embed/IbK0T-FYraE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <h1 class="know-about">Test your Knowledge</h1>
-    <button class="btn" onclick="window.location.href='../Pages/taj-mahal-quiz.html'">Take a Quiz</button>
+    <button class="btn" onclick="showAlert(); window.location.href='../Pages/taj-mahal-quiz.html'">Take a Quiz</button>
+
     <h1 class="know-about">Explore Other Wonders Too...</h>
     <div class="explore-container">
         <div class="wonders">
@@ -148,6 +149,15 @@
             mainBody.classList.remove('bg-dark');
             mainBody.classList.add('bg-light');
         }
+
+        function showAlert() {
+    alert("You will be redirected to the Taj Mahal quiz page!");
+    window.location.href = '../Pages/taj-mahal-quiz.html';
+    }
+
+    
+    
+
 
     </script>
     <footer>
